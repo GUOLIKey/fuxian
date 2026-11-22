@@ -1,0 +1,100 @@
+{
+  "data_hashes": {
+    "data.npz": "ad73dc9a3ffdbae7e7e1d91f5caac9b98c62b38c63697bd8de3beb896edaef48",
+    "iid_partitions.npz": "67ab84f489069b3639847edbbaa25781dcf57148464e1b9d31f96725a840ed73",
+    "medium_partitions.npz": "65ae0f85ce0bca72b1a4c4f3e041cf170727edb1f4516ee70c407781fb754789",
+    "severe_partitions.npz": "1e694a7d3a3277cb6318ea1c8271a9de002f42ada8d4dc97ea8da94b87cfc04c"
+  },
+  "data_hashes_ok": {
+    "data.npz": true,
+    "iid_partitions.npz": true,
+    "medium_partitions.npz": true,
+    "severe_partitions.npz": true
+  },
+  "r11a_hashes": {
+    "ROUND11A_REPORT.md": "a7d1f5dd9fa585438b30e9c68488233a1cb3871fd809330c40302ed0f844170f",
+    "evaluation_protocol.md": "87c9a6d2bfc10b8fdb9bb5d3a9770dab854cf503f4f33366c35641504516c90c",
+    "evaluator_config.json": "eae8a3ddad1c208315d0ac87092297be0039e0130d7f47dabfc6d180a8f55d25",
+    "gmm_k_comparison.csv": "4bbefce981f27f75338e42117d3f9e2d6ab5dcbffa55143469cd6066ad48d606",
+    "global_vs_union_mog.csv": "91d34c47bf8952696ff48501e790383a829b2a9806dc6a9fced0e0311723f4c7",
+    "evaluator_calibration.csv": "3f3d258d6e569a13c78624f4c302a3f041eb7f7f9b4588e207b5f11f9bb94274",
+    "reconstruction_diagnostics.csv": "ffa5f02ad1e13d7aa30ad63ba5c8581d701f820454c573554f60de2abd0965fa",
+    "latent_separability.csv": "743bf14d971a2fa8a8c06ea30b14dea69a2d69168969460df1711beb0bb4a76d",
+    "summary.json": "f4c6773ee37768a1d85af49476473bdc9db7c988bb15f5c29c4c78e408b5d70e"
+  },
+  "evaluator_config": {
+    "primary_classifier": "calibrated_isotonic",
+    "tau": 0.5,
+    "radius": 5.1852652072906436,
+    "tau_rule": "validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used",
+    "radius_rule": "fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+  },
+  "class_counts": {
+    "train": [
+      1057,
+      191,
+      112
+    ],
+    "val": [
+      265,
+      46,
+      28
+    ],
+    "test": [
+      333,
+      58,
+      36
+    ]
+  },
+  "models": [
+    {
+      "model": "fedvade_severe_seed0",
+      "training_seed": 0,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed0/selected_server.pt",
+      "checkpoint_sha256": "f74c3c0305aa64bd0164d69ea3d4718a80e65bec81135a9827aa20cd7676c49a",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed0/last_full.pt"
+    },
+    {
+      "model": "fedvade_severe_seed1",
+      "training_seed": 1,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed1/selected_server.pt",
+      "checkpoint_sha256": "7abb61c424de8a9883c624c4ce219f3594470dcd0be967d61b662605696778d7",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed1/last_full.pt"
+    },
+    {
+      "model": "fedvade_severe_seed2",
+      "training_seed": 2,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed2/selected_server.pt",
+      "checkpoint_sha256": "dfe443457e398626c86290f4de3fbdf2b944bddf0064a008e92e2c2d450620f1",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed2/last_full.pt"
+    },
+    {
+      "model": "centralized",
+      "training_seed": 0,
+      "kind": "reference",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/references/centralized/selected_server.pt",
+      "checkpoint_sha256": "32e12da255a207531ba59bc28fb559f5e9e7ac639d880aa474f10bd5777ed7d8",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 0,
+      "local_Ks": "",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/references/centralized/last_full.pt"
+    }
+  ],
+  "training": "none; frozen Round 10 checkpoints only"
+}

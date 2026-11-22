@@ -1,0 +1,7 @@
+{
+  "K": 6,
+  "covariance": "diag",
+  "mean_bic": 333085.5537776634,
+  "mean_val_ll": -17.568341195008102,
+  "rule": "lowest mean BIC on fit samples among stable configs"
+}

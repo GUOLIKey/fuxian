@@ -1,0 +1,11 @@
+{
+  "selected_M": 10000,
+  "mean_main_val_ll": {
+    "100": -18.15671947384312,
+    "1000": -17.75786785015148,
+    "10000": -17.67627938228527
+  },
+  "delta": 0.05,
+  "rule": "select 10000 only if mean val LL exceeds 1000 by > 0.05; otherwise 1000; 100 is baseline only",
+  "finished_at": 1795372749.8536432
+}

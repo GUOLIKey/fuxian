@@ -1,0 +1,19 @@
+START audit.py
+DONE audit.py 1.8s
+START protocol.py
+DONE protocol.py 1.8s
+START smoke_round11b_pre.py
+DONE smoke_round11b_pre.py 2.4s
+START run_m_sweep.py
+DONE run_m_sweep.py 66.7s
+START run_covariance_ablation.py
+DONE run_covariance_ablation.py 137.0s
+START run_k_capacity.py
+DONE run_k_capacity.py 145.0s
+START run_federated_aggregation.py
+DONE run_federated_aggregation.py 140.4s
+START oracle_gap.py
+DONE oracle_gap.py 1.8s
+START report.py
+DONE report.py 1.8s
+START publish_round11b_pre.py

@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "diag_val_ll": -18.661532975637517,
+  "full_shrunk_train_nll": -17.250947123204377,
+  "diag_rare_proxy_100": 0.1,
+  "full_shrunk_rare_proxy_100": 0.08,
+  "moment_rare_proxy_100": 0.07,
+  "moment_init_em_rare_proxy_100": 0.07,
+  "moment_uneven_groups": [
+    1.6946707899641693,
+    0.0,
+    1.0856853276033416
+  ],
+  "min_eig": 0.8465560449193666,
+  "max_cond": 11.973263165050955,
+  "chol_ok": true,
+  "init_mode": "means_weights_precisions",
+  "elapsed_seconds": 0.582726001739502
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "GITHUB_PUBLISH",
+  "status": "RUNNING",
+  "current_model": "fedvade_severe_seed2",
+  "current_config": "report generated",
+  "completed": 255,
+  "total": 255,
+  "best_val_ll": null,
+  "rare_mode_proxy": null,
+  "github": "PUSHING",
+  "error": null,
+  "updated_at": 1795373176.1137397
+}

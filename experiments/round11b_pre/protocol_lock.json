@@ -1,0 +1,98 @@
+{
+  "created_at": 1795372680.8384361,
+  "experiment_protocol_sha256": "941f4a7da52ad65b3218c961981b88980ee1e0dba11f4aa70b15186bd8a0352b",
+  "evaluation_protocol_sha256": "c482e4d27f12c57ebe1f2735d24943ca814d138b9ba6340584a2da714c9d4c1e",
+  "m_values": [
+    100,
+    1000,
+    10000
+  ],
+  "init_seeds": [
+    0,
+    1,
+    2
+  ],
+  "sample_seeds": [
+    0,
+    1,
+    2
+  ],
+  "inference_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "k_values": [
+    3,
+    6,
+    10
+  ],
+  "covariance_configs": [
+    [
+      "diag",
+      "diag",
+      null,
+      null
+    ],
+    [
+      "full",
+      "full",
+      0.0,
+      null
+    ],
+    [
+      "shrink_fixed",
+      "full",
+      0.25,
+      null
+    ],
+    [
+      "shrink_fixed",
+      "full",
+      0.5,
+      null
+    ],
+    [
+      "shrink_fixed",
+      "full",
+      0.75,
+      null
+    ],
+    [
+      "shrink_percomp",
+      "full",
+      null,
+      20.0
+    ],
+    [
+      "shrink_percomp",
+      "full",
+      null,
+      50.0
+    ],
+    [
+      "shrink_percomp",
+      "full",
+      null,
+      100.0
+    ]
+  ],
+  "selection_rules": {
+    "M": "choose 10000 only if mean val LL exceeds 1000 by > 0.05 nats; else 1000",
+    "covariance": "highest mean val LL among numerically stable configs; tie-break lower max condition number",
+    "K": "report BIC/val LL; do not select by rare proxy; Stage D uses K=3 primary"
+  },
+  "flags": {
+    "LOW_SUPPORT_N_EFF": 30.0,
+    "LOW_SUPPORT_WEIGHT": 0.01,
+    "PSEUDO_RARE_PROXY": 0.5,
+    "PSEUDO_RARE_MMD": 0.5,
+    "PSEUDO_RARE_SWD": 1.5,
+    "PSEUDO_RARE_MIN_CLASS2": 20,
+    "UNSAFE_MERGE_NORMALIZED_BW": 1.0
+  },
+  "total_configs": 255,
+  "training": "none"
+}

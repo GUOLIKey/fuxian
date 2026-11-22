@@ -1,0 +1,24 @@
+{
+  "started_at": 1795372677.543061,
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round11b_pre_gmm_factorization/task_round11b_pre.py"
+  ],
+  "stages": [
+    "SOURCE_AUDIT",
+    "CHECKPOINT_VALIDATION",
+    "PROTOCOL_LOCK",
+    "SMOKE_TEST",
+    "M_SWEEP",
+    "COVARIANCE_ABLATION",
+    "K_CAPACITY",
+    "FEDERATED_STATISTICS_AGGREGATION",
+    "ORACLE_COMPARISON",
+    "REPORT_GENERATION",
+    "GITHUB_PUBLISH",
+    "FINISHED"
+  ],
+  "training": "none; frozen Round 10 checkpoints only",
+  "total_configs": 255,
+  "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]"
+}

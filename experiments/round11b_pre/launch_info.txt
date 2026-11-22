@@ -1,0 +1,4 @@
+started_at=2026-11-23T02:37:55+08:00
+command=/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python /root/autodl-tmp/fedvade_project/reproduction_runs/round11b_pre_gmm_factorization/task_round11b_pre.py
+pid=124145
+launcher_exit_code=0

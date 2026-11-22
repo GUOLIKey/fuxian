@@ -69,3 +69,7 @@ Average L_c: 5.2172, L_s: 2.2133, Purity: 0.8671, ARI: 0.5334
 ## Round 11A：冻结模型生成瓶颈诊断
 
 本轮不训练新的 VaDE/FedVaDE，只复用 Round 10 冻结权重，审计稀有评价器，并比较真实重建、全局 GMM 与客户端并集 MoG、以及 K=3/6/10 的冻结 latent GMM 容量。评价器主规则 tau=0.50、radius=5.1853；验证稀有正对照 0.7857142857142857，常见负对照 0.003215434083601286。探索性结论：优先改善服务器概率聚合 / Multi-CA。测试集比较仅为探索性，不构成新的独立测试成绩。详见 [Round 11A 报告](experiments/round11a/ROUND11A_REPORT.md)、[评价协议](experiments/round11a/evaluation_protocol.md)、[评价器校准](experiments/round11a/evaluator_calibration.csv)、[全局 vs 并集](experiments/round11a/global_vs_union_mog.csv)、[GMM 容量](experiments/round11a/gmm_k_comparison.csv)。
+
+## Round 11B-pre：联邦 GMM 因素分离与统计量聚合诊断
+
+本轮不训练神经网络，只在冻结 latent 上比较 M、协方差结构、K、Union Sampling EM、矩匹配与统计量初始化，并给出集中式 full GMM oracle gap。选定 M=10000，协方差=shrink_percomp，BIC 选定 K=6 diag；暂定决策 B：优先开发 Full-Covariance / Shrinkage 服务器 GMM：在固定 M、K、来源后仍有稳定增益。。全部比较为验证集探索性诊断，不使用测试集选择模型。详见 [Round 11B-pre 报告](experiments/round11b_pre/ROUND11B_PRE_REPORT.md)、[实验协议](experiments/round11b_pre/experiment_protocol.md)、[M sweep](experiments/round11b_pre/m_sweep_results.csv)、[协方差消融](experiments/round11b_pre/covariance_ablation.csv)、[K 容量](experiments/round11b_pre/k_capacity_ablation.csv)、[联邦统计量聚合](experiments/round11b_pre/federated_statistics_aggregation.csv)。

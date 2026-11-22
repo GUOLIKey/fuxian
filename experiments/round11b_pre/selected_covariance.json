@@ -1,0 +1,9 @@
+{
+  "selected_config": "shrink_percomp",
+  "base_covariance": "full",
+  "lambda": "",
+  "kappa": 50.0,
+  "mean_val_ll": -17.490215576628938,
+  "max_cond": 26.29503186030996,
+  "rule": "highest mean val LL among stable configs; tie-break lower max condition number"
+}

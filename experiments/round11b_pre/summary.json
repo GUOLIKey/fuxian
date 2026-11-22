@@ -1,0 +1,73 @@
+{
+  "selected_M": {
+    "selected_M": 10000,
+    "mean_main_val_ll": {
+      "100": -18.15671947384312,
+      "1000": -17.75786785015148,
+      "10000": -17.67627938228527
+    },
+    "delta": 0.05,
+    "rule": "select 10000 only if mean val LL exceeds 1000 by > 0.05; otherwise 1000; 100 is baseline only",
+    "finished_at": 1795372749.8536432
+  },
+  "selected_covariance": {
+    "selected_config": "shrink_percomp",
+    "base_covariance": "full",
+    "lambda": "",
+    "kappa": 50.0,
+    "mean_val_ll": -17.490215576628938,
+    "max_cond": 26.29503186030996,
+    "rule": "highest mean val LL among stable configs; tie-break lower max condition number"
+  },
+  "selected_K": {
+    "K": 6,
+    "covariance": "diag",
+    "mean_bic": 333085.5537776634,
+    "mean_val_ll": -17.568341195008102,
+    "rule": "lowest mean BIC on fit samples among stable configs"
+  },
+  "m_summary": [
+    {
+      "M": 100,
+      "n_rows": 45,
+      "mean_val_ll": -18.15671947384312,
+      "mean_rare": 0.02032222222222222,
+      "mean_class2_mmd": 0.18440327619676694,
+      "mean_class2_swd": 0.7504162618404332,
+      "mean_mmd": 0.06736851504511315,
+      "mean_swd": 0.318652590544467
+    },
+    {
+      "M": 1000,
+      "n_rows": 45,
+      "mean_val_ll": -17.757867850151484,
+      "mean_rare": 0.011555555555555557,
+      "mean_class2_mmd": 0.16866003423386536,
+      "mean_class2_swd": 0.7213965810808531,
+      "mean_mmd": 0.07671686278878671,
+      "mean_swd": 0.3373293918193782
+    },
+    {
+      "M": 10000,
+      "n_rows": 45,
+      "mean_val_ll": -17.676279382285273,
+      "mean_rare": 0.011144444444444446,
+      "mean_class2_mmd": 0.17528983172049117,
+      "mean_class2_swd": 0.7349978690703791,
+      "mean_mmd": 0.07667524421198268,
+      "mean_swd": 0.33932116542963875
+    }
+  ],
+  "m_gain_1000_vs_100": 0.39885162369163396,
+  "m_gain_10000_vs_1000": 0.08158846786621154,
+  "cov_gain_best_vs_diag": 0.18606380565633174,
+  "d2_gain_vs_d1_full": 0.022788888888888893,
+  "d3_gain_vs_d1_full": 0.0021888888888888913,
+  "d2_oracle_rare_gap": -0.01923333333333334,
+  "d3_oracle_rare_gap": -0.03983333333333334,
+  "unsafe_merge_groups": 5,
+  "pseudo_rare_components": 0,
+  "low_support_components": 5,
+  "decision": "B",
+  "decision_text": "\u4f18\u5148\u5f00\u53d1 Full-Covariance / Shrinkage \u670d\u52a1\u5668 GMM\uff1a\u5728\u56fa\u5b9a M\u3001K\u3001\u6765\u6e90\u540e\u4ecd\u6709\u7a33\u5b9a\u589e\u76ca\u3002"
+}
