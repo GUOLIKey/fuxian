@@ -76,3 +76,5 @@ See `experiment_plan.json`, `experiment_configs.csv`,
 `multiseed_validation.csv`, `checkpoint_inventory.csv`,
 per-run `config.json`, `initialization.json`, `rounds.jsonl`, and raw `.log` files.
 The server retains all model weights. GitHub contains only text artifacts.
+
+GitHub publication verified: https://github.com/GUOLIKey/fuxian/commit/016d5a2cf134c4d93dc3d8123fe665d957457304

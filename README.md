@@ -52,4 +52,12 @@ Round 7 的标签选择结果接近作者权重，但其第 300 轮固定终点�
 
 本轮在服务器运行 9 组初始化/预训练配置（其中 1 组复用旧结果）和 8 组超参数配置；已完整记录的新增训练 16 次。最佳 seed=0 探索性 checkpoint：ARI 0.6013 ± 0.0058，Purity 0.8889 ± 0.0018，H03 第 80 轮。
 
-Round 7 F01 第 100 轮参考 ARI 为 0.6140；作者权重参考约 0.6295。所有按评价标签挑选的配置或 checkpoint 均为探索性结果，10 个推断种子不是 10 个独立训练种子。完整配置、逐轮记录、原始日志和失败情况见 [Round 9 报告](experiments/round9/ROUND9_REPORT.md)、[实验计划](experiments/round9/experiment_plan.json)、[Checkpoint 排名](experiments/round9/best_checkpoint_ranking.csv) 和 [任务日志](experiments/round9/task.log)。权重、数据、作者源码和密钥仅留在服务器。
+Round 7 F01 第 100 轮参考 ARI 为 0.6140；作者权重参考约 0.6295。H03 第 150 轮固定终点 ARI 为 0.5259，说明其中途高分未维持。16 次新增训练均完成；由于没有配置通过预设门槛，本轮没有追加 300 轮训练或多训练种子验证。
+
+以下摘自 [H03 原始训练日志](experiments/round9/H03_150.log) 的末轮记录（这是单次推断，表中 `0.5259` 是固定权重的 10 次推断均值）：
+
+```text
+Average L_c: 5.2172, L_s: 2.2133, Purity: 0.8671, ARI: 0.5334
+```
+
+查看 [H03 逐轮记录](experiments/round9/phase1/H03/rounds.jsonl)、[H03 重复推断](experiments/round9/phase1/H03/inference.csv)、[初始化对照](experiments/round9/initialization_comparison.csv)、[超参数对照](experiments/round9/hyperparameter_comparison.csv)、[Round 9 报告](experiments/round9/ROUND9_REPORT.md)、[实验计划](experiments/round9/experiment_plan.json) 和 [Checkpoint 排名](experiments/round9/best_checkpoint_ranking.csv)。所有按评价标签挑选的配置或 checkpoint 均为探索性结果，10 个推断种子不是 10 个独立训练种子。权重、数据、作者源码和密钥仅留在服务器。
