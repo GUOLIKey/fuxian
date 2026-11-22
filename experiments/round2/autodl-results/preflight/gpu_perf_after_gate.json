@@ -1,0 +1,15 @@
+{
+  "cpu_seconds_per_round": 0.6851442456245422,
+  "gpu_seconds_per_round": 0.37120628356933594,
+  "speed_ratio": 1.8457237281560381,
+  "max_absolute_differences": {
+    "client_loss": 0.00938901901244904,
+    "server_loss": 0.012041091918945312,
+    "purity": 0.0032879286049789513,
+    "ari": 0.008747669823847337
+  },
+  "formal_device": "cpu",
+  "core_outside_tolerance": [
+    "adam:decoder.decoder.2.weight"
+  ]
+}

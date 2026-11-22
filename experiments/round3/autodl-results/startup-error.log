@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/fuxian-round3/queue.py", line 3, in <module>
+    from concurrent.futures import ThreadPoolExecutor
+  File "/root/miniconda3/lib/python3.10/concurrent/futures/__init__.py", line 49, in __getattr__
+    from .thread import ThreadPoolExecutor as te
+  File "/root/miniconda3/lib/python3.10/concurrent/futures/thread.py", line 10, in <module>
+    import queue
+  File "/root/autodl-tmp/fuxian-round3/queue.py", line 3, in <module>
+    from concurrent.futures import ThreadPoolExecutor
+  File "/root/miniconda3/lib/python3.10/concurrent/futures/__init__.py", line 49, in __getattr__
+    from .thread import ThreadPoolExecutor as te
+ImportError: cannot import name 'ThreadPoolExecutor' from partially initialized module 'concurrent.futures.thread' (most likely due to a circular import) (/root/miniconda3/lib/python3.10/concurrent/futures/thread.py)

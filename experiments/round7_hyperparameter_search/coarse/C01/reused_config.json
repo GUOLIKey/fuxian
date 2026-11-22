@@ -1,0 +1,8 @@
+{
+  "id": "C01",
+  "lr": 0.002,
+  "alpha": 0.01,
+  "schedule": "author",
+  "sample": 100,
+  "reused": true
+}

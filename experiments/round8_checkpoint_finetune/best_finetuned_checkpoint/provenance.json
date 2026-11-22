@@ -1,0 +1,10 @@
+{
+  "source": "/root/autodl-tmp/fedvade_project/reproduction_runs/round8_checkpoint_finetune/FT01/epoch_005_server.pt",
+  "copied_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round8_checkpoint_finetune/best_finetuned_checkpoint/server.pt",
+  "sha256": "917adb82d6b7edeb9d28d12fb6e83400f38cd0dc1725a6bfcac30c50f5c7eef5",
+  "group": "FT01",
+  "epoch": 5,
+  "ari_mean": 0.6025720060665141,
+  "purity_mean": 0.8891498356035697,
+  "selection": "exploratory_label_selected"
+}

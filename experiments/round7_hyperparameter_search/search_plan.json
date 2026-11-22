@@ -1,0 +1,138 @@
+{
+  "coarse": [
+    {
+      "id": "C01",
+      "lr": 0.002,
+      "alpha": 0.01,
+      "schedule": "author",
+      "sample": 100,
+      "reused": true
+    },
+    {
+      "id": "C02",
+      "lr": 0.002,
+      "alpha": 0.01,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C03",
+      "lr": 0.0005,
+      "alpha": 0.01,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C04",
+      "lr": 0.0005,
+      "alpha": 0.01,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C05",
+      "lr": 0.001,
+      "alpha": 0.01,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C06",
+      "lr": 0.001,
+      "alpha": 0.01,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C07",
+      "lr": 0.005,
+      "alpha": 0.01,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C08",
+      "lr": 0.005,
+      "alpha": 0.01,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C09",
+      "lr": 0.002,
+      "alpha": 0.001,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C10",
+      "lr": 0.002,
+      "alpha": 0.001,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C11",
+      "lr": 0.002,
+      "alpha": 0.005,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C12",
+      "lr": 0.002,
+      "alpha": 0.005,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C13",
+      "lr": 0.002,
+      "alpha": 0.05,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C14",
+      "lr": 0.002,
+      "alpha": 0.05,
+      "schedule": "epoch",
+      "sample": 100
+    },
+    {
+      "id": "C15",
+      "lr": 0.001,
+      "alpha": 0.005,
+      "schedule": "author",
+      "sample": 100
+    },
+    {
+      "id": "C16",
+      "lr": 0.001,
+      "alpha": 0.005,
+      "schedule": "epoch",
+      "sample": 100
+    }
+  ],
+  "coarse_epochs": 150,
+  "fine_epochs": 300,
+  "fine_rule": "Top 4 coarse configurations by fixed epoch-150 author-protocol ARI mean; all exploratory because evaluation labels select configs. Sample count remains 100.",
+  "checkpoint_rule": "Within each run, minimum trailing-five client training loss among saved epochs; no evaluation labels.",
+  "exploratory_checkpoint_rule": "Maximum fixed-checkpoint inference ARI, labeled exploratory, never independent test.",
+  "inference_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "training_seed": 0,
+  "evaluation_reference": "/root/autodl-tmp/fedvade_project/reproduction_runs/round6_checkpoint_diagnosis/evaluation_protocol.md",
+  "author_source": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+  "no_independent_validation": true
+}

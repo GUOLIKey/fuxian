@@ -1,0 +1,6 @@
+{
+  "CHECKPOINT_SCAN": "143 files strictly loaded",
+  "CHECKPOINT_EVALUATION": "FT00 ten-seed score reproduced",
+  "RESUME_VALIDATION": "exact resume impossible; common weight-initialization bundle validated",
+  "SMOKE_TEST": "2 rounds and saved-checkpoint evaluation passed"
+}

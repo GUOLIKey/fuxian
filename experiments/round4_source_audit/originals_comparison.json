@@ -1,0 +1,131 @@
+{
+  "zip_sha256": "6570430c481c57c0c179147dbb521948270036ed3848b89263fd114fcc950664",
+  "source_delivery_provenance": "user confirms extracted FedVaDE_source as author delivery; ZIP from WeChat received file directory",
+  "file_comparison": {
+    "model.py": {
+      "zip_sha256": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9",
+      "working_sha256": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9",
+      "match": true
+    },
+    "README.md": {
+      "zip_sha256": "b8f6dbfde7ce7111826a2533336d964449f7022fda0985ed06f29dc5a32382c7",
+      "working_sha256": "b8f6dbfde7ce7111826a2533336d964449f7022fda0985ed06f29dc5a32382c7",
+      "match": true
+    },
+    "experiment.py": {
+      "zip_sha256": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+      "working_sha256": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+      "match": true
+    },
+    "dataloader.py": {
+      "zip_sha256": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+      "working_sha256": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+      "match": true
+    },
+    "main.py": {
+      "zip_sha256": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+      "working_sha256": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+      "match": true
+    },
+    "dataset/glass.csv": {
+      "zip_sha256": "6f521bd96a9e9256bdfbfdff2a1e3d7fe580e5df40a55efde39b105e9d2d0160",
+      "working_sha256": "6f521bd96a9e9256bdfbfdff2a1e3d7fe580e5df40a55efde39b105e9d2d0160",
+      "match": true
+    },
+    "dataset/banknote_authentication.csv": {
+      "zip_sha256": "3fa179122c2748d4f07a59ba66415d647f471ad213d89793c4195ff36717003f",
+      "working_sha256": "3fa179122c2748d4f07a59ba66415d647f471ad213d89793c4195ff36717003f",
+      "match": true
+    },
+    "dataset/iranian_churn.csv": {
+      "zip_sha256": "395d04854ce6daa1cdee8ab820df5a90691de9277dbba72096b8b01a60a655d1",
+      "working_sha256": "395d04854ce6daa1cdee8ab820df5a90691de9277dbba72096b8b01a60a655d1",
+      "match": true
+    },
+    "dataset/iris.csv": {
+      "zip_sha256": "818e805222a1735aa6649bdce4430b72d2bc6012900a4850518c38b183f5b179",
+      "working_sha256": "818e805222a1735aa6649bdce4430b72d2bc6012900a4850518c38b183f5b179",
+      "match": true
+    },
+    "dataset/audit.csv": {
+      "zip_sha256": "0605f50cde1477d1f9213883121621ab505eb8830b18ecb1a5ab8ad09f5f7418",
+      "working_sha256": "0605f50cde1477d1f9213883121621ab505eb8830b18ecb1a5ab8ad09f5f7418",
+      "match": true
+    },
+    "dataset/breast_cancer.csv": {
+      "zip_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+      "working_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+      "match": true
+    },
+    "dataset/phishing_websites.csv": {
+      "zip_sha256": "b78c09bba9d0be5339adf35258d6185daec252c059a536d87bc61421b9f6ef90",
+      "working_sha256": "b78c09bba9d0be5339adf35258d6185daec252c059a536d87bc61421b9f6ef90",
+      "match": true
+    },
+    "dataset/yeast.csv": {
+      "zip_sha256": "26e891226f82033e854f8e87df5ac9caec2594d1c6d3725ad29b2e3d37222712",
+      "working_sha256": "26e891226f82033e854f8e87df5ac9caec2594d1c6d3725ad29b2e3d37222712",
+      "match": true
+    },
+    "dataset/parkinson.csv": {
+      "zip_sha256": "da12cd6ddaf61c77eac593ff6ff5ea1c0e6d8f3ea6c64c20d2bd84dbdb79de33",
+      "working_sha256": "da12cd6ddaf61c77eac593ff6ff5ea1c0e6d8f3ea6c64c20d2bd84dbdb79de33",
+      "match": true
+    },
+    "dataset/wine_quality.csv": {
+      "zip_sha256": "dbee8b5d9a5cb280a24628e283f24afcad34f6afc96fa67fb593e43abb4ad74d",
+      "working_sha256": "dbee8b5d9a5cb280a24628e283f24afcad34f6afc96fa67fb593e43abb4ad74d",
+      "match": true
+    },
+    "png/model.png": {
+      "zip_sha256": "0bd2493930e7f0ea71f64a6c461382313dd3a58141505a067ef538b6328a7a62",
+      "working_sha256": null,
+      "match": false
+    },
+    "model/server_model_breast_cancer.pk": {
+      "zip_sha256": "168ad5a4cd619ccee527a4a6c4a6816d35166e3a6bb6bc70b4bbbaa838c2ea85",
+      "working_sha256": "168ad5a4cd619ccee527a4a6c4a6816d35166e3a6bb6bc70b4bbbaa838c2ea85",
+      "match": true
+    }
+  },
+  "third_round": {
+    "author": {
+      "main.py": {
+        "same_as_baseline": false
+      },
+      "model.py": {
+        "same_as_baseline": true
+      },
+      "dataloader.py": {
+        "same_as_baseline": true
+      },
+      "experiment.py": {
+        "same_as_baseline": true
+      },
+      "dataset/breast_cancer.csv": {
+        "same_as_baseline": true
+      }
+    },
+    "epoch": {
+      "main.py": {
+        "same_as_baseline": false
+      },
+      "model.py": {
+        "same_as_baseline": true
+      },
+      "dataloader.py": {
+        "same_as_baseline": true
+      },
+      "experiment.py": {
+        "same_as_baseline": true
+      },
+      "dataset/breast_cancer.csv": {
+        "same_as_baseline": true
+      }
+    }
+  },
+  "paper_sha256": "e89b6c91303c0b09e97d260bef6cbb9cefd01284bfc80408e2f60e44284bcc3e",
+  "paper_pages": 6,
+  "appendix_in_pdf": false,
+  "appendix_in_zip": false
+}

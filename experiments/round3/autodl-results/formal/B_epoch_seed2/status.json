@@ -1,0 +1,20 @@
+{
+  "model": "fedvade",
+  "seed": 2,
+  "command": [
+    "/root/autodl-tmp/fuxian-run/reproduction_runs/env-fedvade/bin/python",
+    "-u",
+    "/root/autodl-tmp/fuxian-round3/runner.py",
+    "fedvade",
+    "--source",
+    "/root/autodl-tmp/fuxian-round2/FedVaDE_source",
+    "--out",
+    "/root/autodl-tmp/fuxian-round3/formal/B_epoch_seed2",
+    "--seed",
+    "2",
+    "--schedule",
+    "epoch"
+  ],
+  "exit_code": 0,
+  "status": "ok"
+}

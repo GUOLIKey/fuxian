@@ -1,0 +1,148 @@
+{
+  "model": "hire",
+  "seed": 4,
+  "device": "cpu",
+  "smoke": false,
+  "rate": 0.05,
+  "schedule": "author",
+  "command": [
+    "/root/autodl-tmp/fuxian-round2/env-hire-mirror/bin/python",
+    "/root/autodl-tmp/fuxian-round3/runner.py",
+    "hire",
+    "--source",
+    "/root/autodl-tmp/fuxian-round2/reproduction_runs/upstream/Fed-HIRE/opensource",
+    "--out",
+    "/root/autodl-tmp/fuxian-round3/formal/A_lr0.05_seed4",
+    "--seed",
+    "4",
+    "--rate",
+    "0.05"
+  ],
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "source_hashes": {
+    "MultiClustering.py": "2d49665775bdc0af91874a48c2533276dcf5a23086c1542f5db3b3578d0bfc49",
+    "federatedClustering.py": "70a0e035d375917de04856b048d71fc0ab08104c5b72565ffbe0c389091e0d7c",
+    "experiment.py": "817cf9a1e64671038eeaaaff1c8df70967150386c41b04bf94208845bda9dce5",
+    "main.py": "eb174746179116f60b7d3d4108673cfa7777640f953a4a9de8b08a615c78a209",
+    "dataset/iris.npz": "d9ffc4a462c7a694860714b77dc6cee688bdd27a40395b7b8b93586bd4f07cc5"
+  },
+  "partition": [
+    {
+      "size": 20,
+      "classes": [
+        0,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "ed2a297f5ba84f16b8467f346c706b2724913d06d04efba7111c2a24e3e9ecbe",
+      "label_sha256": "4836549ca9c4ca22d0c8101847695ace9fb00f33f7a0cfa18cf69115607c5212"
+    },
+    {
+      "size": 25,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "53e04ca96b45cb932372578ced20f4dea00117c959004ce5c4dce05a5406d92e",
+      "label_sha256": "2efb1548c9bdb6185fcd6527e5eca9f6fdddb2fb621d5a13b3032366df43b895"
+    },
+    {
+      "size": 24,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "d9233ad889e85265c887fede455611d0c2d35beec8322f4cb114f50408f96857",
+      "label_sha256": "17c1173d1213532ebde24e148d1088cedc5b0da914e39dc1fad7fc56ea8a8f73"
+    },
+    {
+      "size": 14,
+      "classes": [
+        1,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "8f209a80d2561d0840b9ef31d207fc1ba83e8fc86dd1c08f55cc2ef32e7387b9",
+      "label_sha256": "706924aa8c67b7834f371f50237c618f2a40ce5a3705beb7cf3bb1070f04ef61"
+    },
+    {
+      "size": 13,
+      "classes": [
+        1,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "9beb02f145f532d2769b66fd3533732b940166af757fc1a828b34521b8d743d9",
+      "label_sha256": "8eb17934a082e6a2c8fee8db12fcc36345d632bf37884ffe2a31ded8dd9fb720"
+    },
+    {
+      "size": 10,
+      "classes": [
+        1
+      ],
+      "features": 4,
+      "data_sha256": "2b06e3d10d50d60f4d9794f7d0ee382096a90752b5a64af3ae1192995eebcbfb",
+      "label_sha256": "2a852b73e5f58e0a800b0beba12978687e46397cfa4f71e3d90a6f8cb13d99a0"
+    },
+    {
+      "size": 17,
+      "classes": [
+        0,
+        1,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "ac46caf711e8e18df66060528efdab277ef0e1eddf208b35374995d082677497",
+      "label_sha256": "b178929136c4b1159b9e6c7d92e051fedc7f8d469f25e823b190c0fc3915056b"
+    },
+    {
+      "size": 7,
+      "classes": [
+        0,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "bef6d16beb5b8acd666b742d811a935bdcd60c5d6f96008c0e2caeaded1f9a8c",
+      "label_sha256": "a61888621bf4b80924b032b01a19660a0d27c2df55eead67b337c7d48f97289a"
+    },
+    {
+      "size": 8,
+      "classes": [
+        0,
+        1
+      ],
+      "features": 4,
+      "data_sha256": "b98a9c1be7245a6a86da36d07eba35b1a090b401ca65a53b8281cdc8aab9d92c",
+      "label_sha256": "795e0d8b9bfaead0e9817d0a3376f7a3a171f09654ac56fe2266845136450a39"
+    },
+    {
+      "size": 12,
+      "classes": [
+        0,
+        2
+      ],
+      "features": 4,
+      "data_sha256": "3e879db5ad1c0fcbaa2aa982663c1fb9d3813e7ca0d8d9a92d6ba89a5e986196",
+      "label_sha256": "3c06aae9eaf138c7bbebea749059cb4d3d6110ccd45993268bd4f000ac5cf9fd"
+    }
+  ],
+  "params": {
+    "rate": 0.05,
+    "init_k": 0.5,
+    "clients": 10,
+    "vcc_max": 3,
+    "fixed_author_local_vcc_seed": 42
+  },
+  "purity": 0.8733333333333333,
+  "ari": 0.6897559431278082,
+  "nmi": 0.7151056003701348,
+  "acc": 0.8733333333333333,
+  "status": "ok",
+  "elapsed_seconds": 0.6989101469516754
+}

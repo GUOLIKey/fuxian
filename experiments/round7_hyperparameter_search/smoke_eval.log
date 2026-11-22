@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/evaluate_saved.py", line 87, in <module>
+    main()
+  File "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/evaluate_saved.py", line 81, in main
+    print(json.dumps({'last_epoch': results[-1]['epoch'], 'last_ari': results[-1]['ari_mean'],
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/fedvade_project/.python311/lib/python3.11/json/__init__.py", line 234, in dumps
+    return cls(
+           ^^^^
+TypeError: JSONEncoder.__init__() got an unexpected keyword argument 'flush'

@@ -1,0 +1,559 @@
+{
+  "author": {
+    "sha256": "168ad5a4cd619ccee527a4a6c4a6816d35166e3a6bb6bc70b4bbbaa838c2ea85",
+    "bytes": 10395803,
+    "keys": [
+      "rho_",
+      "mu_c",
+      "log_sigma2_c",
+      "encoder.encoder.0.weight",
+      "encoder.encoder.0.bias",
+      "encoder.encoder.2.weight",
+      "encoder.encoder.2.bias",
+      "encoder.encoder.4.weight",
+      "encoder.encoder.4.bias",
+      "encoder.mu_l.weight",
+      "encoder.mu_l.bias",
+      "encoder.log_sigma2_l.weight",
+      "encoder.log_sigma2_l.bias",
+      "decoder.decoder.0.weight",
+      "decoder.decoder.0.bias",
+      "decoder.decoder.2.weight",
+      "decoder.decoder.2.bias",
+      "decoder.decoder.4.weight",
+      "decoder.decoder.4.bias",
+      "decoder.decoder.6.weight",
+      "decoder.decoder.6.bias"
+    ],
+    "shapes": {
+      "rho_": [
+        2
+      ],
+      "mu_c": [
+        2,
+        10
+      ],
+      "log_sigma2_c": [
+        2,
+        10
+      ],
+      "encoder.encoder.0.weight": [
+        500,
+        31
+      ],
+      "encoder.encoder.0.bias": [
+        500
+      ],
+      "encoder.encoder.2.weight": [
+        500,
+        500
+      ],
+      "encoder.encoder.2.bias": [
+        500
+      ],
+      "encoder.encoder.4.weight": [
+        2000,
+        500
+      ],
+      "encoder.encoder.4.bias": [
+        2000
+      ],
+      "encoder.mu_l.weight": [
+        10,
+        2000
+      ],
+      "encoder.mu_l.bias": [
+        10
+      ],
+      "encoder.log_sigma2_l.weight": [
+        10,
+        2000
+      ],
+      "encoder.log_sigma2_l.bias": [
+        10
+      ],
+      "decoder.decoder.0.weight": [
+        2000,
+        10
+      ],
+      "decoder.decoder.0.bias": [
+        2000
+      ],
+      "decoder.decoder.2.weight": [
+        500,
+        2000
+      ],
+      "decoder.decoder.2.bias": [
+        500
+      ],
+      "decoder.decoder.4.weight": [
+        500,
+        500
+      ],
+      "decoder.decoder.4.bias": [
+        500
+      ],
+      "decoder.decoder.6.weight": [
+        31,
+        500
+      ],
+      "decoder.decoder.6.bias": [
+        31
+      ]
+    },
+    "nonfinite": {
+      "rho_": 0,
+      "mu_c": 0,
+      "log_sigma2_c": 0,
+      "encoder.encoder.0.weight": 0,
+      "encoder.encoder.0.bias": 0,
+      "encoder.encoder.2.weight": 0,
+      "encoder.encoder.2.bias": 0,
+      "encoder.encoder.4.weight": 0,
+      "encoder.encoder.4.bias": 0,
+      "encoder.mu_l.weight": 0,
+      "encoder.mu_l.bias": 0,
+      "encoder.log_sigma2_l.weight": 0,
+      "encoder.log_sigma2_l.bias": 0,
+      "decoder.decoder.0.weight": 0,
+      "decoder.decoder.0.bias": 0,
+      "decoder.decoder.2.weight": 0,
+      "decoder.decoder.2.bias": 0,
+      "decoder.decoder.4.weight": 0,
+      "decoder.decoder.4.bias": 0,
+      "decoder.decoder.6.weight": 0,
+      "decoder.decoder.6.bias": 0
+    },
+    "mixture_weights": [
+      0.29991888999938965,
+      0.7000810503959656
+    ],
+    "mu_c": [
+      [
+        0.0021752973552793264,
+        0.9989467859268188,
+        0.6729297041893005,
+        0.19391882419586182,
+        -0.17694248259067535,
+        -0.599716067314148,
+        0.8421818614006042,
+        -1.3264631032943726,
+        -1.526397943496704,
+        0.6654104590415955
+      ],
+      [
+        0.10235773026943207,
+        -0.2173454761505127,
+        -0.6119459271430969,
+        -0.09717623144388199,
+        -0.20376895368099213,
+        -0.6265457272529602,
+        -0.5121601819992065,
+        0.5884771347045898,
+        0.8033866286277771,
+        -0.8993473052978516
+      ]
+    ],
+    "variance_min_max": [
+      0.38025861978530884,
+      3.4596002101898193
+    ],
+    "checkpoint_metadata": [
+      "rho_",
+      "mu_c",
+      "log_sigma2_c",
+      "encoder.encoder.0.weight",
+      "encoder.encoder.0.bias",
+      "encoder.encoder.2.weight",
+      "encoder.encoder.2.bias",
+      "encoder.encoder.4.weight",
+      "encoder.encoder.4.bias",
+      "encoder.mu_l.weight",
+      "encoder.mu_l.bias",
+      "encoder.log_sigma2_l.weight",
+      "encoder.log_sigma2_l.bias",
+      "decoder.decoder.0.weight",
+      "decoder.decoder.0.bias",
+      "decoder.decoder.2.weight",
+      "decoder.decoder.2.bias",
+      "decoder.decoder.4.weight",
+      "decoder.decoder.4.bias",
+      "decoder.decoder.6.weight",
+      "decoder.decoder.6.bias"
+    ]
+  },
+  "retrained_seed0": {
+    "sha256": "00614179af9931f5de3b243923e2b9c7b02f302636bd4b3ac9ab3c2deb647f47",
+    "bytes": 10394549,
+    "keys": [
+      "rho_",
+      "mu_c",
+      "log_sigma2_c",
+      "encoder.encoder.0.weight",
+      "encoder.encoder.0.bias",
+      "encoder.encoder.2.weight",
+      "encoder.encoder.2.bias",
+      "encoder.encoder.4.weight",
+      "encoder.encoder.4.bias",
+      "encoder.mu_l.weight",
+      "encoder.mu_l.bias",
+      "encoder.log_sigma2_l.weight",
+      "encoder.log_sigma2_l.bias",
+      "decoder.decoder.0.weight",
+      "decoder.decoder.0.bias",
+      "decoder.decoder.2.weight",
+      "decoder.decoder.2.bias",
+      "decoder.decoder.4.weight",
+      "decoder.decoder.4.bias",
+      "decoder.decoder.6.weight",
+      "decoder.decoder.6.bias"
+    ],
+    "shapes": {
+      "rho_": [
+        2
+      ],
+      "mu_c": [
+        2,
+        10
+      ],
+      "log_sigma2_c": [
+        2,
+        10
+      ],
+      "encoder.encoder.0.weight": [
+        500,
+        31
+      ],
+      "encoder.encoder.0.bias": [
+        500
+      ],
+      "encoder.encoder.2.weight": [
+        500,
+        500
+      ],
+      "encoder.encoder.2.bias": [
+        500
+      ],
+      "encoder.encoder.4.weight": [
+        2000,
+        500
+      ],
+      "encoder.encoder.4.bias": [
+        2000
+      ],
+      "encoder.mu_l.weight": [
+        10,
+        2000
+      ],
+      "encoder.mu_l.bias": [
+        10
+      ],
+      "encoder.log_sigma2_l.weight": [
+        10,
+        2000
+      ],
+      "encoder.log_sigma2_l.bias": [
+        10
+      ],
+      "decoder.decoder.0.weight": [
+        2000,
+        10
+      ],
+      "decoder.decoder.0.bias": [
+        2000
+      ],
+      "decoder.decoder.2.weight": [
+        500,
+        2000
+      ],
+      "decoder.decoder.2.bias": [
+        500
+      ],
+      "decoder.decoder.4.weight": [
+        500,
+        500
+      ],
+      "decoder.decoder.4.bias": [
+        500
+      ],
+      "decoder.decoder.6.weight": [
+        31,
+        500
+      ],
+      "decoder.decoder.6.bias": [
+        31
+      ]
+    },
+    "nonfinite": {
+      "rho_": 0,
+      "mu_c": 0,
+      "log_sigma2_c": 0,
+      "encoder.encoder.0.weight": 0,
+      "encoder.encoder.0.bias": 0,
+      "encoder.encoder.2.weight": 0,
+      "encoder.encoder.2.bias": 0,
+      "encoder.encoder.4.weight": 0,
+      "encoder.encoder.4.bias": 0,
+      "encoder.mu_l.weight": 0,
+      "encoder.mu_l.bias": 0,
+      "encoder.log_sigma2_l.weight": 0,
+      "encoder.log_sigma2_l.bias": 0,
+      "decoder.decoder.0.weight": 0,
+      "decoder.decoder.0.bias": 0,
+      "decoder.decoder.2.weight": 0,
+      "decoder.decoder.2.bias": 0,
+      "decoder.decoder.4.weight": 0,
+      "decoder.decoder.4.bias": 0,
+      "decoder.decoder.6.weight": 0,
+      "decoder.decoder.6.bias": 0
+    },
+    "mixture_weights": [
+      0.7216567993164062,
+      0.27834323048591614
+    ],
+    "mu_c": [
+      [
+        0.049931854009628296,
+        -0.23408424854278564,
+        -0.07990091294050217,
+        -0.8382251262664795,
+        -0.04916982352733612,
+        -0.1641499400138855,
+        0.035628218203783035,
+        -0.3597841262817383,
+        -0.5474580526351929,
+        -1.0051451921463013
+      ],
+      [
+        -1.0579646825790405,
+        -0.02772880159318447,
+        -0.6291463971138,
+        1.4236774444580078,
+        -0.5213936567306519,
+        -0.17519702017307281,
+        -0.7234017848968506,
+        1.1369657516479492,
+        1.6004376411437988,
+        0.6834104657173157
+      ]
+    ],
+    "variance_min_max": [
+      0.5343484878540039,
+      4.304073333740234
+    ],
+    "checkpoint_metadata": [
+      "round",
+      "server"
+    ],
+    "parameter_relative_l2_to_author": {
+      "rho_": 1.0409274101257324,
+      "mu_c": 1.2682855129241943,
+      "log_sigma2_c": 1.7354122400283813,
+      "encoder.encoder.0.weight": 1.4177926778793335,
+      "encoder.encoder.0.bias": 1.4082446098327637,
+      "encoder.encoder.2.weight": 1.4148566722869873,
+      "encoder.encoder.2.bias": 1.3303828239440918,
+      "encoder.encoder.4.weight": 1.4105944633483887,
+      "encoder.encoder.4.bias": 1.4079827070236206,
+      "encoder.mu_l.weight": 1.4155904054641724,
+      "encoder.mu_l.bias": 1.3495081663131714,
+      "encoder.log_sigma2_l.weight": 1.3191291093826294,
+      "encoder.log_sigma2_l.bias": 0.8990721106529236,
+      "decoder.decoder.0.weight": 1.4036154747009277,
+      "decoder.decoder.0.bias": 1.448662519454956,
+      "decoder.decoder.2.weight": 1.373307228088379,
+      "decoder.decoder.2.bias": 1.3178373575210571,
+      "decoder.decoder.4.weight": 1.412197232246399,
+      "decoder.decoder.4.bias": 1.4654666185379028,
+      "decoder.decoder.6.weight": 1.4054615497589111,
+      "decoder.decoder.6.bias": 1.3324010372161865
+    }
+  },
+  "retrained_seed1": {
+    "sha256": "58ac327ead0dfc5c1f4a0ed692ffc790e4e450b5f25336de94347f6d3f220d62",
+    "bytes": 10394549,
+    "keys": [
+      "rho_",
+      "mu_c",
+      "log_sigma2_c",
+      "encoder.encoder.0.weight",
+      "encoder.encoder.0.bias",
+      "encoder.encoder.2.weight",
+      "encoder.encoder.2.bias",
+      "encoder.encoder.4.weight",
+      "encoder.encoder.4.bias",
+      "encoder.mu_l.weight",
+      "encoder.mu_l.bias",
+      "encoder.log_sigma2_l.weight",
+      "encoder.log_sigma2_l.bias",
+      "decoder.decoder.0.weight",
+      "decoder.decoder.0.bias",
+      "decoder.decoder.2.weight",
+      "decoder.decoder.2.bias",
+      "decoder.decoder.4.weight",
+      "decoder.decoder.4.bias",
+      "decoder.decoder.6.weight",
+      "decoder.decoder.6.bias"
+    ],
+    "shapes": {
+      "rho_": [
+        2
+      ],
+      "mu_c": [
+        2,
+        10
+      ],
+      "log_sigma2_c": [
+        2,
+        10
+      ],
+      "encoder.encoder.0.weight": [
+        500,
+        31
+      ],
+      "encoder.encoder.0.bias": [
+        500
+      ],
+      "encoder.encoder.2.weight": [
+        500,
+        500
+      ],
+      "encoder.encoder.2.bias": [
+        500
+      ],
+      "encoder.encoder.4.weight": [
+        2000,
+        500
+      ],
+      "encoder.encoder.4.bias": [
+        2000
+      ],
+      "encoder.mu_l.weight": [
+        10,
+        2000
+      ],
+      "encoder.mu_l.bias": [
+        10
+      ],
+      "encoder.log_sigma2_l.weight": [
+        10,
+        2000
+      ],
+      "encoder.log_sigma2_l.bias": [
+        10
+      ],
+      "decoder.decoder.0.weight": [
+        2000,
+        10
+      ],
+      "decoder.decoder.0.bias": [
+        2000
+      ],
+      "decoder.decoder.2.weight": [
+        500,
+        2000
+      ],
+      "decoder.decoder.2.bias": [
+        500
+      ],
+      "decoder.decoder.4.weight": [
+        500,
+        500
+      ],
+      "decoder.decoder.4.bias": [
+        500
+      ],
+      "decoder.decoder.6.weight": [
+        31,
+        500
+      ],
+      "decoder.decoder.6.bias": [
+        31
+      ]
+    },
+    "nonfinite": {
+      "rho_": 0,
+      "mu_c": 0,
+      "log_sigma2_c": 0,
+      "encoder.encoder.0.weight": 0,
+      "encoder.encoder.0.bias": 0,
+      "encoder.encoder.2.weight": 0,
+      "encoder.encoder.2.bias": 0,
+      "encoder.encoder.4.weight": 0,
+      "encoder.encoder.4.bias": 0,
+      "encoder.mu_l.weight": 0,
+      "encoder.mu_l.bias": 0,
+      "encoder.log_sigma2_l.weight": 0,
+      "encoder.log_sigma2_l.bias": 0,
+      "decoder.decoder.0.weight": 0,
+      "decoder.decoder.0.bias": 0,
+      "decoder.decoder.2.weight": 0,
+      "decoder.decoder.2.bias": 0,
+      "decoder.decoder.4.weight": 0,
+      "decoder.decoder.4.bias": 0,
+      "decoder.decoder.6.weight": 0,
+      "decoder.decoder.6.bias": 0
+    },
+    "mixture_weights": [
+      0.6116370558738708,
+      0.38836297392845154
+    ],
+    "mu_c": [
+      [
+        -0.4229791462421417,
+        0.5816206336021423,
+        -0.0833272635936737,
+        -0.06692994385957718,
+        -0.4901948869228363,
+        0.6651190519332886,
+        -0.47851061820983887,
+        0.46065735816955566,
+        -0.8212336301803589,
+        0.40220174193382263
+      ],
+      [
+        -0.4467596709728241,
+        -1.3715349435806274,
+        1.0034162998199463,
+        -0.8721529245376587,
+        1.2407336235046387,
+        -0.656532347202301,
+        1.132869005203247,
+        -0.35286641120910645,
+        0.5217680931091309,
+        0.1705620139837265
+      ]
+    ],
+    "variance_min_max": [
+      0.3075982332229614,
+      5.641005516052246
+    ],
+    "checkpoint_metadata": [
+      "round",
+      "server"
+    ],
+    "parameter_relative_l2_to_author": {
+      "rho_": 0.7547789812088013,
+      "mu_c": 1.4080898761749268,
+      "log_sigma2_c": 1.9024003744125366,
+      "encoder.encoder.0.weight": 1.4155489206314087,
+      "encoder.encoder.0.bias": 1.4321953058242798,
+      "encoder.encoder.2.weight": 1.4162009954452515,
+      "encoder.encoder.2.bias": 1.3869677782058716,
+      "encoder.encoder.4.weight": 1.4115067720413208,
+      "encoder.encoder.4.bias": 1.4092721939086914,
+      "encoder.mu_l.weight": 1.4368551969528198,
+      "encoder.mu_l.bias": 1.861306071281433,
+      "encoder.log_sigma2_l.weight": 1.363537073135376,
+      "encoder.log_sigma2_l.bias": 1.0767902135849,
+      "decoder.decoder.0.weight": 1.406937599182129,
+      "decoder.decoder.0.bias": 1.4050931930541992,
+      "decoder.decoder.2.weight": 1.3808220624923706,
+      "decoder.decoder.2.bias": 1.3857448101043701,
+      "decoder.decoder.4.weight": 1.4131406545639038,
+      "decoder.decoder.4.bias": 1.3988744020462036,
+      "decoder.decoder.6.weight": 1.40526282787323,
+      "decoder.decoder.6.bias": 1.2457526922225952
+    }
+  }
+}

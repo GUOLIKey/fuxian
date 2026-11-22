@@ -1,0 +1,76 @@
+[
+  {
+    "truth": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+    ],
+    "prediction": [
+      2,
+      2,
+      0,
+      0,
+      1,
+      1
+    ],
+    "author_purity": 1.0,
+    "author_acc": 1.0,
+    "independent_purity": 1.0,
+    "independent_acc": 1.0
+  },
+  {
+    "truth": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      2,
+      2,
+      2
+    ],
+    "prediction": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      2,
+      2,
+      2
+    ],
+    "author_purity": 0.8,
+    "author_acc": 0.7,
+    "independent_purity": 0.8,
+    "independent_acc": 0.7
+  },
+  {
+    "truth": [
+      0,
+      0,
+      0,
+      1,
+      1,
+      1
+    ],
+    "prediction": [
+      0,
+      1,
+      2,
+      3,
+      3,
+      3
+    ],
+    "author_purity": 1.0,
+    "author_acc": 0.6666666666666666,
+    "independent_purity": 1.0,
+    "independent_acc": 0.6666666666666666
+  }
+]

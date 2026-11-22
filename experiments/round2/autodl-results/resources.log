@@ -1,0 +1,432 @@
+2026-11-20T11:33:16+08:00
+0 %, 1 MiB
+538415104
+usage_usec 82034734
+user_usec 56649829
+system_usec 25384904
+nr_periods 9299
+nr_throttled 3
+throttled_usec 7782752
+2026-11-20T11:33:36+08:00
+0 %, 1 MiB
+931344384
+usage_usec 95055077
+user_usec 67178843
+system_usec 27876233
+nr_periods 9500
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:33:56+08:00
+0 %, 1 MiB
+1090101248
+usage_usec 100711156
+user_usec 70738568
+system_usec 29972587
+nr_periods 9700
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:34:16+08:00
+0 %, 1 MiB
+1320226816
+usage_usec 106280507
+user_usec 74379626
+system_usec 31900881
+nr_periods 9901
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:34:36+08:00
+0 %, 1 MiB
+1452392448
+usage_usec 110746851
+user_usec 77469191
+system_usec 33277659
+nr_periods 10102
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:34:56+08:00
+0 %, 1 MiB
+1638137856
+usage_usec 115037795
+user_usec 80354886
+system_usec 34682908
+nr_periods 10303
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:35:16+08:00
+0 %, 1 MiB
+1762467840
+usage_usec 118505115
+user_usec 82790892
+system_usec 35714223
+nr_periods 10504
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:35:37+08:00
+0 %, 1 MiB
+1910751232
+usage_usec 123213288
+user_usec 86151431
+system_usec 37061856
+nr_periods 10704
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:35:57+08:00
+0 %, 1 MiB
+2067693568
+usage_usec 127465029
+user_usec 89070086
+system_usec 38394943
+nr_periods 10905
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:36:17+08:00
+0 %, 1 MiB
+2157985792
+usage_usec 130343864
+user_usec 91132081
+system_usec 39211782
+nr_periods 11106
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:36:37+08:00
+0 %, 1 MiB
+2634489856
+usage_usec 148604338
+user_usec 107098579
+system_usec 41505759
+nr_periods 11307
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:36:57+08:00
+0 %, 1 MiB
+2644852736
+usage_usec 157140169
+user_usec 114115313
+system_usec 43024856
+nr_periods 11507
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:37:17+08:00
+0 %, 1 MiB
+2729676800
+usage_usec 159484707
+user_usec 115554024
+system_usec 43930683
+nr_periods 11708
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:37:37+08:00
+0 %, 1 MiB
+2803879936
+usage_usec 161554351
+user_usec 116803855
+system_usec 44750495
+nr_periods 11908
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:37:57+08:00
+0 %, 1 MiB
+2937073664
+usage_usec 164674717
+user_usec 118886822
+system_usec 45787894
+nr_periods 12109
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:38:17+08:00
+0 %, 1 MiB
+3001896960
+usage_usec 166677916
+user_usec 120109589
+system_usec 46568327
+nr_periods 12310
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:38:37+08:00
+0 %, 1 MiB
+3068272640
+usage_usec 168940260
+user_usec 121442311
+system_usec 47497948
+nr_periods 12510
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:38:57+08:00
+0 %, 1 MiB
+3168387072
+usage_usec 171230761
+user_usec 122605056
+system_usec 48625705
+nr_periods 12711
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:39:17+08:00
+0 %, 1 MiB
+3205734400
+usage_usec 172519071
+user_usec 123310011
+system_usec 49209059
+nr_periods 12912
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:39:37+08:00
+0 %, 1 MiB
+3294453760
+usage_usec 174241626
+user_usec 124173515
+system_usec 50068110
+nr_periods 13112
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:39:57+08:00
+0 %, 1 MiB
+3295797248
+usage_usec 175302068
+user_usec 124720569
+system_usec 50581498
+nr_periods 13313
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:40:18+08:00
+0 %, 1 MiB
+5581389824
+usage_usec 178548002
+user_usec 126061662
+system_usec 52486339
+nr_periods 13514
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:40:38+08:00
+0 %, 1 MiB
+6911012864
+usage_usec 199395482
+user_usec 144955699
+system_usec 54439782
+nr_periods 13715
+nr_throttled 4
+throttled_usec 7817599
+2026-11-20T11:40:58+08:00
+0 %, 1 MiB
+9957552128
+usage_usec 223021428
+user_usec 164290181
+system_usec 58731247
+nr_periods 13915
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:41:18+08:00
+0 %, 1 MiB
+10533076992
+usage_usec 243877423
+user_usec 181801209
+system_usec 62076214
+nr_periods 14116
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:41:38+08:00
+0 %, 1 MiB
+10653794304
+usage_usec 264701610
+user_usec 199877834
+system_usec 64823776
+nr_periods 14317
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:41:58+08:00
+0 %, 1 MiB
+10667896832
+usage_usec 285699768
+user_usec 218614832
+system_usec 67084935
+nr_periods 14517
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:42:18+08:00
+9 %, 909 MiB
+11242160128
+usage_usec 310311009
+user_usec 240201816
+system_usec 70109193
+nr_periods 14718
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:42:38+08:00
+0 %, 1 MiB
+10685952000
+usage_usec 335763429
+user_usec 262159647
+system_usec 73603782
+nr_periods 14919
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:42:58+08:00
+0 %, 1 MiB
+10684739584
+usage_usec 356655443
+user_usec 280831546
+system_usec 75823897
+nr_periods 15119
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:43:18+08:00
+0 %, 1 MiB
+10670235648
+usage_usec 377514476
+user_usec 299441041
+system_usec 78073434
+nr_periods 15320
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:43:38+08:00
+0 %, 1 MiB
+10675646464
+usage_usec 398408821
+user_usec 318292795
+system_usec 80116026
+nr_periods 15521
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:43:58+08:00
+0 %, 1 MiB
+10676035584
+usage_usec 419348139
+user_usec 337298901
+system_usec 82049237
+nr_periods 15721
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:44:18+08:00
+0 %, 1 MiB
+10672852992
+usage_usec 440238681
+user_usec 356127637
+system_usec 84111043
+nr_periods 15922
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:44:38+08:00
+0 %, 1 MiB
+10677309440
+usage_usec 461034946
+user_usec 374955870
+system_usec 86079075
+nr_periods 16123
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:44:59+08:00
+0 %, 1 MiB
+9886535680
+usage_usec 481897588
+user_usec 393691598
+system_usec 88205989
+nr_periods 16324
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:45:19+08:00
+0 %, 1 MiB
+10600599552
+usage_usec 502798589
+user_usec 411601370
+system_usec 91197219
+nr_periods 16524
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:45:39+08:00
+0 %, 1 MiB
+10632060928
+usage_usec 523638079
+user_usec 429963447
+system_usec 93674632
+nr_periods 16725
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:45:59+08:00
+0 %, 1 MiB
+10675474432
+usage_usec 544624243
+user_usec 448763137
+system_usec 95861106
+nr_periods 16926
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:46:19+08:00
+0 %, 1 MiB
+10638790656
+usage_usec 565422433
+user_usec 467423079
+system_usec 97999353
+nr_periods 17126
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:46:39+08:00
+0 %, 1 MiB
+10626519040
+usage_usec 586242830
+user_usec 486252213
+system_usec 99990617
+nr_periods 17327
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:46:59+08:00
+0 %, 1 MiB
+10659045376
+usage_usec 607053746
+user_usec 504969746
+system_usec 102084000
+nr_periods 17528
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:47:19+08:00
+0 %, 1 MiB
+10645983232
+usage_usec 627855639
+user_usec 523847947
+system_usec 104007691
+nr_periods 17729
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:47:39+08:00
+0 %, 1 MiB
+10656325632
+usage_usec 648683053
+user_usec 542687329
+system_usec 105995723
+nr_periods 17929
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:47:59+08:00
+0 %, 1 MiB
+10669793280
+usage_usec 669607834
+user_usec 561628014
+system_usec 107979819
+nr_periods 18130
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:48:19+08:00
+0 %, 1 MiB
+10657693696
+usage_usec 690418393
+user_usec 580343126
+system_usec 110075267
+nr_periods 18331
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:48:39+08:00
+0 %, 1 MiB
+10670047232
+usage_usec 711230004
+user_usec 599253063
+system_usec 111976941
+nr_periods 18532
+nr_throttled 6
+throttled_usec 16429631
+2026-11-20T11:48:59+08:00
+0 %, 1 MiB
+10667417600
+usage_usec 732055495
+user_usec 618218569
+system_usec 113836926
+nr_periods 18733
+nr_throttled 6
+throttled_usec 16429631

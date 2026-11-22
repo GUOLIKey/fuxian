@@ -1,0 +1,36 @@
+{
+  "strict_resume_possible": false,
+  "reason": "Epoch-100 checkpoint contains only server state_dict; no client, optimizer, scheduler, RNG state.",
+  "weight_initialization_safe_to_smoke": true,
+  "source_checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/fine/F01/epoch_100_server.pt",
+  "source_checkpoint_sha256": "41f425203990644c6321b68c83b7b5a7343cafe50a56215c7f505775e9912573",
+  "source_epoch": 100,
+  "initial_bundle_sha256": "a99047d1fd0cfbcbee43e5c9e418965f736ac7f2707721ed3f5c15b31089bd26",
+  "client_component_counts": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2
+  ],
+  "client_partition_sizes": [
+    115,
+    209,
+    326,
+    56,
+    218,
+    155,
+    350,
+    239,
+    138,
+    323
+  ],
+  "current_server_lr_at_epoch100": 0.0003937488086814452,
+  "repeated_evaluation_ari": 0.6140076504228672,
+  "repeated_evaluation_purity": 0.8925317050258338
+}

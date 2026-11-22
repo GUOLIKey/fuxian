@@ -1,0 +1,271 @@
+{
+  "sha256": "99a0e014505fdc56bf8f1f97b447b6db1222e647c3c07ebe61fa0c73b6b77839",
+  "client_sizes": [
+    34,
+    43,
+    39,
+    31,
+    73,
+    114,
+    60,
+    39
+  ],
+  "stored_sizes": [
+    34,
+    43,
+    39,
+    31,
+    73,
+    114,
+    60,
+    39
+  ],
+  "client_audits": [
+    {
+      "records": 34,
+      "unique_vectors": 34,
+      "unique_labeled_vectors": 34,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "1": 26,
+        "3": 8
+      }
+    },
+    {
+      "records": 43,
+      "unique_vectors": 43,
+      "unique_labeled_vectors": 43,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "2": 24,
+        "6": 1,
+        "3": 18
+      }
+    },
+    {
+      "records": 39,
+      "unique_vectors": 39,
+      "unique_labeled_vectors": 39,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "0": 29,
+        "1": 5,
+        "5": 4,
+        "7": 1
+      }
+    },
+    {
+      "records": 31,
+      "unique_vectors": 31,
+      "unique_labeled_vectors": 31,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "4": 6,
+        "0": 22,
+        "5": 3
+      }
+    },
+    {
+      "records": 73,
+      "unique_vectors": 73,
+      "unique_labeled_vectors": 73,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "1": 36,
+        "3": 21,
+        "7": 2,
+        "4": 13,
+        "6": 1
+      }
+    },
+    {
+      "records": 114,
+      "unique_vectors": 114,
+      "unique_labeled_vectors": 114,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "0": 44,
+        "1": 25,
+        "3": 21,
+        "2": 10,
+        "4": 9,
+        "6": 2,
+        "5": 3
+      }
+    },
+    {
+      "records": 60,
+      "unique_vectors": 60,
+      "unique_labeled_vectors": 60,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "1": 18,
+        "0": 32,
+        "4": 4,
+        "2": 6
+      }
+    },
+    {
+      "records": 39,
+      "unique_vectors": 39,
+      "unique_labeled_vectors": 39,
+      "duplicate_records_beyond_first": 0,
+      "repeated_vectors": 0,
+      "records_in_repeated_groups": 0,
+      "conflicting_label_vectors": 0,
+      "vectors_repeated_across_clients": 0,
+      "vectors_repeated_within_client": 0,
+      "classes": {
+        "1": 37,
+        "6": 1,
+        "5": 1
+      }
+    }
+  ],
+  "npz": {
+    "records": 433,
+    "unique_vectors": 249,
+    "unique_labeled_vectors": 249,
+    "duplicate_records_beyond_first": 184,
+    "repeated_vectors": 128,
+    "records_in_repeated_groups": 312,
+    "conflicting_label_vectors": 0,
+    "vectors_repeated_across_clients": 128,
+    "vectors_repeated_within_client": 0,
+    "classes": {
+      "1": 147,
+      "3": 68,
+      "2": 40,
+      "6": 5,
+      "0": 127,
+      "5": 11,
+      "7": 3,
+      "4": 32
+    }
+  },
+  "uci": {
+    "records": 336,
+    "unique_vectors": 336,
+    "unique_labeled_vectors": 336,
+    "duplicate_records_beyond_first": 0,
+    "repeated_vectors": 0,
+    "records_in_repeated_groups": 0,
+    "conflicting_label_vectors": 0,
+    "vectors_repeated_across_clients": 0,
+    "vectors_repeated_within_client": 0,
+    "classes": {
+      "cp": 143,
+      "im": 77,
+      "imS": 2,
+      "imL": 2,
+      "imU": 35,
+      "om": 20,
+      "omL": 5,
+      "pp": 52
+    }
+  },
+  "uci_distinct_identifiers": 336,
+  "feature_count": 7,
+  "feature_means": [
+    0.1648729677439725,
+    -0.03855978468962591,
+    0.12385355876712804,
+    0.07255336251898097,
+    0.1726923237583194,
+    0.27854145019844134,
+    0.21820237764873499
+  ],
+  "feature_stds": [
+    1.0032761559652226,
+    0.920785760709681,
+    1.2923341845766854,
+    1.5227332559202478,
+    1.0042687431193775,
+    1.0362471663957262,
+    1.0977785691536477
+  ],
+  "feature_min": [
+    -2.5730621968338454,
+    -2.2982880574925972,
+    -0.17514236102601535,
+    -0.05463583647081511,
+    -4.092114563263072,
+    -2.182511999170402,
+    -2.389934696245209
+  ],
+  "feature_max": [
+    2.006443334300503,
+    2.703868302932468,
+    5.709640969448079,
+    18.303005217723125,
+    3.109578395879986,
+    2.3201105528590786,
+    2.3446723989784592
+  ],
+  "uci_matching": {
+    "uci_raw": {
+      "matching_features": 0,
+      "matching_features_and_labels": 0,
+      "npz_to_uci_label_mapping": {},
+      "unique_UCI_vectors_covered": 0
+    },
+    "uci_global_zscore": {
+      "matching_features": 433,
+      "matching_features_and_labels": 433,
+      "npz_to_uci_label_mapping": {
+        "0": "cp",
+        "1": "im",
+        "2": "pp",
+        "3": "imU",
+        "4": "om",
+        "5": "omL",
+        "6": "imL",
+        "7": "imS"
+      },
+      "unique_UCI_vectors_covered": 249
+    },
+    "uci_global_minmax": {
+      "matching_features": 0,
+      "matching_features_and_labels": 0,
+      "npz_to_uci_label_mapping": {},
+      "unique_UCI_vectors_covered": 0
+    }
+  },
+  "max_abs_zscore_residual": 1.3405943022348765e-14,
+  "raw_vectors_missing_from_npz": 87
+}

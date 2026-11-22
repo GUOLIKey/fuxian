@@ -1,0 +1,62 @@
+[
+  {
+    "id": "FT00",
+    "epochs": 0,
+    "lr": 0,
+    "alpha": 0.05,
+    "schedule": "epoch",
+    "sample": 100,
+    "initialization": "selected_server_checkpoint_no_training"
+  },
+  {
+    "id": "FT01",
+    "epochs": 20,
+    "lr": 0.0003937488086814452,
+    "lr_ratio": 1,
+    "alpha": 0.05,
+    "schedule": "epoch",
+    "sample": 100,
+    "initialization": "same_reconstructed_weight_initialization_bundle"
+  },
+  {
+    "id": "FT02",
+    "epochs": 20,
+    "lr": 0.0001968744043407226,
+    "lr_ratio": 0.5,
+    "alpha": 0.05,
+    "schedule": "epoch",
+    "sample": 100,
+    "initialization": "same_reconstructed_weight_initialization_bundle"
+  },
+  {
+    "id": "FT03",
+    "epochs": 20,
+    "lr": 7.874976173628904e-05,
+    "lr_ratio": 0.2,
+    "alpha": 0.05,
+    "schedule": "epoch",
+    "sample": 100,
+    "initialization": "same_reconstructed_weight_initialization_bundle"
+  },
+  {
+    "id": "FT04",
+    "epochs": 20,
+    "lr": 3.937488086814452e-05,
+    "lr_ratio": 0.1,
+    "alpha": 0.05,
+    "schedule": "epoch",
+    "sample": 100,
+    "initialization": "same_reconstructed_weight_initialization_bundle"
+  },
+  {
+    "id": "FT05",
+    "conditional": true,
+    "epochs": 50,
+    "rule": "Only if a 20-epoch arm improves FT00 ARI by >0.005 without Purity dropping >0.002; 50-round replay from same initial bundle, not exact continuation of FT20."
+  },
+  {
+    "id": "FT06",
+    "conditional": true,
+    "rule": "Only if FT05 further improves by >0.005; one alpha=0.025 20-round arm from common bundle at the chosen LR."
+  }
+]

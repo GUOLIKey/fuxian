@@ -1,0 +1,22 @@
+{
+  "0": {
+    "server_and_all_clients": "45693fc5e3034251149e61e5588f60094f5abffa0b73448f7a9abacdbe9061a2",
+    "torch_cpu_rng_state_before_pretrain": "6a0a615430203747b6dd30a2de0b65ab2bd4206f8a1a7add234adca0e51657b2"
+  },
+  "1": {
+    "server_and_all_clients": "519448201fed365e15bf3489cf6d3e227d08fe399cc33b8d952aa2eb71f844d3",
+    "torch_cpu_rng_state_before_pretrain": "be8d441d12a4010808fc00a83365d4f8a05b168bd2b1957cb8301ce8fc37f268"
+  },
+  "2": {
+    "server_and_all_clients": "b1e64ab5def9ea9d1bd9c04c13434ec194ef271ed8d32f2d9f4c7f0312943142",
+    "torch_cpu_rng_state_before_pretrain": "3aedf529e2eade15594171b18da00f79ce2a50ea84511cfc6ccca91560a7edf5"
+  },
+  "3": {
+    "server_and_all_clients": "26219c4bc3a5392dd71ed7f0f1685b0bb0c3b02cdb347a7b8b0afdaf0f94b96e",
+    "torch_cpu_rng_state_before_pretrain": "9cdc15955f30a51d3379952c28f58acebcb9dcec2eb1dac82c24bde00d188048"
+  },
+  "4": {
+    "server_and_all_clients": "56398a0260ba3530b8aeb52b925a30e52bec1e9f72d3fb6ad0ac01adbb8c0d71",
+    "torch_cpu_rng_state_before_pretrain": "d96d66314bd6df7d2f4c09c1f8e32c862f63ac69419b601b6408fc5611556595"
+  }
+}

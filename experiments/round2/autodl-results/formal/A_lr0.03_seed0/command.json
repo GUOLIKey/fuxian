@@ -1,0 +1,31 @@
+{
+  "model": "hire",
+  "seed": 0,
+  "device": "cpu",
+  "smoke": false,
+  "rate": 0.03,
+  "schedule": "author",
+  "command": [
+    "/root/autodl-tmp/fuxian-round2/env-hire-mirror/bin/python",
+    "runner.py",
+    "hire",
+    "--source",
+    "reproduction_runs/upstream/Fed-HIRE/opensource",
+    "--out",
+    "/root/autodl-tmp/fuxian-round2/formal/A_lr0.03_seed0",
+    "--rate",
+    "0.03",
+    "--seed",
+    "0"
+  ],
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "python": "3.11.18",
+  "numpy": "1.26.4",
+  "source_hashes": {
+    "MultiClustering.py": "2d49665775bdc0af91874a48c2533276dcf5a23086c1542f5db3b3578d0bfc49",
+    "federatedClustering.py": "70a0e035d375917de04856b048d71fc0ab08104c5b72565ffbe0c389091e0d7c",
+    "experiment.py": "817cf9a1e64671038eeaaaff1c8df70967150386c41b04bf94208845bda9dce5",
+    "main.py": "eb174746179116f60b7d3d4108673cfa7777640f953a4a9de8b08a615c78a209",
+    "dataset/iris.npz": "d9ffc4a462c7a694860714b77dc6cee688bdd27a40395b7b8b93586bd4f07cc5"
+  }
+}

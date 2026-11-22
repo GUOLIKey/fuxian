@@ -1,0 +1,102 @@
+{
+  "protocol": "round6 A_author, 10 fixed inference seeds per checkpoint",
+  "training_seed": 0,
+  "inference_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "independent_test": false,
+  "selection_warning": "ARI-selected checkpoint and fine configuration use evaluation labels; exploratory only.",
+  "best_checkpoint_rule": "minimum trailing-five client training loss among saved epochs",
+  "snapshots": [
+    {
+      "epoch": 25,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_025_server.pt",
+      "ari_mean": 0.1530950115281737,
+      "ari_std": 0.0016296426842591057,
+      "purity_mean": 0.6977923907938,
+      "purity_std": 0.0009897279241759197,
+      "client_loss_last5_mean": 8.87602548122406
+    },
+    {
+      "epoch": 50,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_050_server.pt",
+      "ari_mean": 0.030394287849408515,
+      "ari_std": 0.0012491477660547302,
+      "purity_mean": 0.6406763738844529,
+      "purity_std": 1.1102230246251565e-16,
+      "client_loss_last5_mean": 5.269500682353973
+    },
+    {
+      "epoch": 75,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_075_server.pt",
+      "ari_mean": 0.15996536037397635,
+      "ari_std": 0.002328342069560597,
+      "purity_mean": 0.7023485204321277,
+      "purity_std": 0.0013941589553457705,
+      "client_loss_last5_mean": 4.224982330799103
+    },
+    {
+      "epoch": 100,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_100_server.pt",
+      "ari_mean": 0.2414061137528231,
+      "ari_std": 0.004205869177024458,
+      "purity_mean": 0.746359793330202,
+      "purity_std": 0.0021110573089942767,
+      "client_loss_last5_mean": 3.9062894177436833
+    },
+    {
+      "epoch": 125,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_125_server.pt",
+      "ari_mean": 0.24027775657124306,
+      "ari_std": 0.00271858073401829,
+      "purity_mean": 0.7456552372005636,
+      "purity_std": 0.0013653773465240517,
+      "client_loss_last5_mean": 3.781889092922211
+    },
+    {
+      "epoch": 150,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_150_server.pt",
+      "ari_mean": 0.2516993163065381,
+      "ari_std": 0.003143814181680949,
+      "purity_mean": 0.7512916862376702,
+      "purity_std": 0.0015471741749178477,
+      "client_loss_last5_mean": 3.75877064704895
+    }
+  ],
+  "last": {
+    "epoch": 150,
+    "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_150_server.pt",
+    "ari_mean": 0.2516993163065381,
+    "ari_std": 0.003143814181680949,
+    "purity_mean": 0.7512916862376702,
+    "purity_std": 0.0015471741749178477,
+    "client_loss_last5_mean": 3.75877064704895
+  },
+  "best_unlabeled_loss": {
+    "epoch": 150,
+    "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_150_server.pt",
+    "ari_mean": 0.2516993163065381,
+    "ari_std": 0.003143814181680949,
+    "purity_mean": 0.7512916862376702,
+    "purity_std": 0.0015471741749178477,
+    "client_loss_last5_mean": 3.75877064704895
+  },
+  "best_exploratory_ari": {
+    "epoch": 150,
+    "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/coarse/C11/epoch_150_server.pt",
+    "ari_mean": 0.2516993163065381,
+    "ari_std": 0.003143814181680949,
+    "purity_mean": 0.7512916862376702,
+    "purity_std": 0.0015471741749178477,
+    "client_loss_last5_mean": 3.75877064704895
+  }
+}

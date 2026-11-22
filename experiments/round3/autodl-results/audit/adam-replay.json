@@ -1,0 +1,80 @@
+{
+  "torch": "2.0.1+cu118",
+  "device": "NVIDIA GeForce RTX 4090 D",
+  "tensor": "decoder.decoder.2.weight",
+  "elements": 1000000,
+  "steps": {
+    "1": {
+      "absolute_max": 3.775651566684246e-05,
+      "cpu_abs_at_max_error": 0.0019296460086479783,
+      "relative_at_max_abs_error": 0.019566550850868225,
+      "tensor_relative_l2": 4.036594418721506e-06,
+      "relative_l2_to_cpu_change_since_initial": 2.6447773052495904e-05,
+      "outside_original_tolerance_elements": 1,
+      "client_loss_cpu": 42.997802734375,
+      "client_loss_cuda": 42.997802734375,
+      "server_loss_cpu": 0.12502825260162354,
+      "server_loss_cuda": 0.12502823770046234
+    },
+    "2": {
+      "absolute_max": 5.7610683143138885e-05,
+      "cpu_abs_at_max_error": 0.0021129166707396507,
+      "relative_at_max_abs_error": 0.02726595103740692,
+      "tensor_relative_l2": 5.237246568867704e-06,
+      "relative_l2_to_cpu_change_since_initial": 2.4985321942949668e-05,
+      "outside_original_tolerance_elements": 1,
+      "client_loss_cpu": 32.01573944091797,
+      "client_loss_cuda": 32.015743255615234,
+      "server_loss_cpu": 1.980783224105835,
+      "server_loss_cuda": 1.980783224105835
+    },
+    "5": {
+      "absolute_max": 8.775852620601654e-05,
+      "cpu_abs_at_max_error": 0.002382255857810378,
+      "relative_at_max_abs_error": 0.036838412284851074,
+      "tensor_relative_l2": 7.072679636621615e-06,
+      "relative_l2_to_cpu_change_since_initial": 2.01539460249478e-05,
+      "outside_original_tolerance_elements": 1,
+      "client_loss_cpu": 27.078311920166016,
+      "client_loss_cuda": 27.0782527923584,
+      "server_loss_cpu": 0.5296018123626709,
+      "server_loss_cuda": 0.5296017527580261
+    },
+    "10": {
+      "absolute_max": 0.00010881712660193443,
+      "cpu_abs_at_max_error": 0.002565197180956602,
+      "relative_at_max_abs_error": 0.04242056980729103,
+      "tensor_relative_l2": 1.0781301170936786e-05,
+      "relative_l2_to_cpu_change_since_initial": 2.2761421860195696e-05,
+      "outside_original_tolerance_elements": 1,
+      "client_loss_cpu": 30.68365478515625,
+      "client_loss_cuda": 30.682111740112305,
+      "server_loss_cpu": 0.45508232712745667,
+      "server_loss_cuda": 0.45514237880706787
+    },
+    "20": {
+      "absolute_max": 0.0006921645253896713,
+      "cpu_abs_at_max_error": 0.015351671725511551,
+      "relative_at_max_abs_error": 0.045087240636348724,
+      "tensor_relative_l2": 0.0005366089753806591,
+      "relative_l2_to_cpu_change_since_initial": 0.0009275623597204685,
+      "outside_original_tolerance_elements": 4297,
+      "client_loss_cpu": 15.4369535446167,
+      "client_loss_cuda": 15.435290336608887,
+      "server_loss_cpu": 0.933570146560669,
+      "server_loss_cuda": 0.9327545166015625
+    },
+    "50": {
+      "absolute_max": 0.0142278503626585,
+      "cpu_abs_at_max_error": 0.04271524399518967,
+      "relative_at_max_abs_error": 0.3330860137939453,
+      "tensor_relative_l2": 0.015421927906572819,
+      "relative_l2_to_cpu_change_since_initial": 0.023608824238181114,
+      "outside_original_tolerance_elements": 143703,
+      "client_loss_cpu": 10.473998069763184,
+      "client_loss_cuda": 10.522774696350098,
+      "server_loss_cpu": 0.7902286648750305,
+      "server_loss_cuda": 0.8286557197570801
+    }
+  }
+}

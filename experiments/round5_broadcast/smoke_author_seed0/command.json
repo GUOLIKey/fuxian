@@ -1,0 +1,34 @@
+{
+  "model": "fedvade",
+  "seed": 0,
+  "device": "cpu",
+  "smoke": true,
+  "rate": 0.0001,
+  "schedule": "author",
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "runner.py",
+    "fedvade",
+    "--source",
+    "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+    "--out",
+    "smoke_author_seed0",
+    "--seed",
+    "0",
+    "--device",
+    "cpu",
+    "--schedule",
+    "author",
+    "--smoke"
+  ],
+  "platform": "Linux-5.15.0-78-generic-x86_64-with-glibc2.35",
+  "python": "3.11.18",
+  "numpy": "1.25.2",
+  "source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9",
+    "dataset/breast_cancer.csv": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc"
+  }
+}

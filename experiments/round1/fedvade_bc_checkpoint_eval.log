@@ -1,0 +1,19 @@
+/Users/cheeseowl/Desktop/科研/fuxian/federated_clustering_handoff/.venv-fedvade/lib/python3.11/site-packages/torch/_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
+  0%|          | 0/10 [00:00<?, ?it/s]                                      Purity: 0.9018, ARI: 0.6440
+  0%|          | 0/10 [00:00<?, ?it/s] 10%|█         | 1/10 [00:00<00:01,  8.18it/s]                                              Purity: 0.9018, ARI: 0.6440
+ 10%|█         | 1/10 [00:00<00:01,  8.18it/s]                                              Purity: 0.8990, ARI: 0.6348
+ 10%|█         | 1/10 [00:00<00:01,  8.18it/s] 30%|███       | 3/10 [00:00<00:00, 13.93it/s]                                              Purity: 0.8967, ARI: 0.6274
+ 30%|███       | 3/10 [00:00<00:00, 13.93it/s]                                              Purity: 0.8943, ARI: 0.6200
+ 30%|███       | 3/10 [00:00<00:00, 13.93it/s] 50%|█████     | 5/10 [00:00<00:00, 16.06it/s]                                              Purity: 0.8953, ARI: 0.6230
+ 50%|█████     | 5/10 [00:00<00:00, 16.06it/s]                                              Purity: 0.8976, ARI: 0.6304
+ 50%|█████     | 5/10 [00:00<00:00, 16.06it/s] 70%|███████   | 7/10 [00:00<00:00, 16.90it/s]                                              Purity: 0.9000, ARI: 0.6379
+ 70%|███████   | 7/10 [00:00<00:00, 16.90it/s]                                              Purity: 0.8948, ARI: 0.6213
+ 70%|███████   | 7/10 [00:00<00:00, 16.90it/s]                                              Purity: 0.8981, ARI: 0.6318
+ 70%|███████   | 7/10 [00:00<00:00, 16.90it/s]100%|██████████| 10/10 [00:00<00:00, 18.95it/s]100%|██████████| 10/10 [00:00<00:00, 17.12it/s]
+===============Federated Clustering Performance===============
+Data: breast_cancer, Client: 10
+Purity: 0.898±0.00
+ARI: 0.631±0.01
+==============================================================
+Captured 10 observations; final Purity=0.898074, ARI=0.631765

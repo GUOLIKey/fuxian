@@ -1,0 +1,204 @@
+{
+  "sha": "7223c180b67bf718a9985de3bcb9cdb8f3954e61",
+  "url": "https://api.github.com/repos/hongdream/FedHCA/git/trees/7223c180b67bf718a9985de3bcb9cdb8f3954e61",
+  "tree": [
+    {
+      "path": "Appendix.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6604d587dbd89b9c69929f1933eed151907656d2",
+      "size": 250082,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/6604d587dbd89b9c69929f1933eed151907656d2"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "655fa9e270a384fd56063fa3f70a72b9a23e8be8",
+      "size": 4208,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/655fa9e270a384fd56063fa3f70a72b9a23e8be8"
+    },
+    {
+      "path": "algorithm",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecaa093cac3f5e4a1c3db5afe1d31014e4db885a",
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/trees/ecaa093cac3f5e4a1c3db5afe1d31014e4db885a"
+    },
+    {
+      "path": "algorithm/MultiClustering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1dd97aa26cb53cb434fe38b37f0d69f9c21d7c81",
+      "size": 8552,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/1dd97aa26cb53cb434fe38b37f0d69f9c21d7c81"
+    },
+    {
+      "path": "algorithm/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93bd90b24e4f3774f99c6597a70f098e1dd5db08",
+      "size": 32,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/93bd90b24e4f3774f99c6597a70f098e1dd5db08"
+    },
+    {
+      "path": "algorithm/__pycache__",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c6a043ee8175441771e669593454ff0f37516199",
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/trees/c6a043ee8175441771e669593454ff0f37516199"
+    },
+    {
+      "path": "algorithm/__pycache__/MultiClustering.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fc1878a0094f2b274922276b42aae081bc74c73",
+      "size": 6449,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/3fc1878a0094f2b274922276b42aae081bc74c73"
+    },
+    {
+      "path": "algorithm/__pycache__/__init__.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5e88f6bf860273d285cc9670e60cf11670bb59a3",
+      "size": 208,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/5e88f6bf860273d285cc9670e60cf11670bb59a3"
+    },
+    {
+      "path": "algorithm/__pycache__/experiment.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b86d2209130f51f56cb063b8b0113bfa040373b",
+      "size": 2137,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/6b86d2209130f51f56cb063b8b0113bfa040373b"
+    },
+    {
+      "path": "algorithm/__pycache__/federatedClustering.cpython-310.pyc",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc655e72ad52176a7ea4b24f37f2bcd1467c2b59",
+      "size": 2330,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/bc655e72ad52176a7ea4b24f37f2bcd1467c2b59"
+    },
+    {
+      "path": "algorithm/experiment.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4c1fee59ed1c6b5b78cc443761cf9aead20d7f3",
+      "size": 1963,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/c4c1fee59ed1c6b5b78cc443761cf9aead20d7f3"
+    },
+    {
+      "path": "algorithm/federatedClustering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf85d871fc75445ff8b322afd52970d6c93a4b1d",
+      "size": 2627,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/cf85d871fc75445ff8b322afd52970d6c93a4b1d"
+    },
+    {
+      "path": "dataset",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1279765c3858979a9f884a213c09880844941473",
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/trees/1279765c3858979a9f884a213c09880844941473"
+    },
+    {
+      "path": "dataset/CA.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "573aa4302d07c2c4bedc4b922afaf660b73bfb10",
+      "size": 285360,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/573aa4302d07c2c4bedc4b922afaf660b73bfb10"
+    },
+    {
+      "path": "dataset/EC.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30a61022af33dd35535b8110c03699c0d5040363",
+      "size": 30784,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/30a61022af33dd35535b8110c03699c0d5040363"
+    },
+    {
+      "path": "dataset/EP.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4a7c63ba3ef7e0398f6a14cb1cf891b9b0e7e6d",
+      "size": 354349,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/f4a7c63ba3ef7e0398f6a14cb1cf891b9b0e7e6d"
+    },
+    {
+      "path": "dataset/LA.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89355e9ce9affe562712039af877a1449512a536",
+      "size": 1704280,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/89355e9ce9affe562712039af877a1449512a536"
+    },
+    {
+      "path": "dataset/LE.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6c23cd7e903244c3d84ab8d0ecdce5cfd9e775b",
+      "size": 1507138,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/a6c23cd7e903244c3d84ab8d0ecdce5cfd9e775b"
+    },
+    {
+      "path": "dataset/PE.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a94cd660c4917c20c94d62115698a50a201d7fc",
+      "size": 826807,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/2a94cd660c4917c20c94d62115698a50a201d7fc"
+    },
+    {
+      "path": "dataset/US.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59e89736836f08a4959e81e8d75476da90012f83",
+      "size": 25179,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/59e89736836f08a4959e81e8d75476da90012f83"
+    },
+    {
+      "path": "dataset/VE.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9faa8c2cc2d69ba053a463947e006a9f304cbca0",
+      "size": 173098,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/9faa8c2cc2d69ba053a463947e006a9f304cbca0"
+    },
+    {
+      "path": "dataset/WI.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2156a65cdf471e37edc2909ff0d6e950ccb94c05",
+      "size": 576163,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/2156a65cdf471e37edc2909ff0d6e950ccb94c05"
+    },
+    {
+      "path": "dataset/YE.npz",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "291b07df23b76099106649ddec8a79fe13c46512",
+      "size": 98254,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/291b07df23b76099106649ddec8a79fe13c46512"
+    },
+    {
+      "path": "main.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc028724466f010644dbaa3ad9c686d1f1e53adc",
+      "size": 2382,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/bc028724466f010644dbaa3ad9c686d1f1e53adc"
+    },
+    {
+      "path": "model.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03e445d16d20dd104cb6a4cd84381ab684a3851a",
+      "size": 133893,
+      "url": "https://api.github.com/repos/hongdream/FedHCA/git/blobs/03e445d16d20dd104cb6a4cd84381ab684a3851a"
+    }
+  ],
+  "truncated": false
+}

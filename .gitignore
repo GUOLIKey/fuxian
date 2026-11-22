@@ -1,0 +1,17 @@
+# Private author materials, source archives, data, and model weights stay on the research server.
+*.pt
+*.pth
+*.pk
+*.pkl
+*.npz
+*.npy
+*.pdf
+*.zip
+*.tar.gz
+*.whl
+*.diff
+__pycache__/
+.DS_Store
+FedVaDE_source/
+**/source/
+**/pdf_reader/

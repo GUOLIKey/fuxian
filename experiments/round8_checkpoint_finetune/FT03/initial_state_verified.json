@@ -1,0 +1,17 @@
+{
+  "initial_bundle_sha256": "a99047d1fd0cfbcbee43e5c9e418965f736ac7f2707721ed3f5c15b31089bd26",
+  "client_gmm_components": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2
+  ],
+  "partition_verified": true,
+  "optimizer_recreated_after_initial_load": true
+}

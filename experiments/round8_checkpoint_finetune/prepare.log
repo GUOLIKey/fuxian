@@ -1,0 +1,1 @@
+{"candidate_count": 143, "best": "R7_fine_F01", "epoch": 100, "ari": 0.6140076504228672, "purity": 0.8925317050258338, "current_lr": 0.0003937488086814452, "strict_resume": false, "bundle": "/root/autodl-tmp/fedvade_project/reproduction_runs/round8_checkpoint_finetune/initial_bundle.pt"}

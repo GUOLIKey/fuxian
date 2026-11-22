@@ -1,0 +1,49 @@
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple
+Collecting cloudpickle==3.1.3 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 1))
+  Downloading https://mirrors.aliyun.com/pypi/packages/a4/42/3b121b42b114919ffc6195a81c1c7065a465f62f46477fbdb87a07699e51/cloudpickle-3.1.3-py3-none-any.whl (22 kB)
+Collecting joblib==1.6.0 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 2))
+  Downloading https://mirrors.aliyun.com/pypi/packages/18/53/84099323c2ec4be98d935f63c033ac4151ee83836ca1050ede3b3aadf155/joblib-1.6.0-py3-none-any.whl (306 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 306.1/306.1 kB 492.5 kB/s eta 0:00:00
+Collecting munkres==1.1.4 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 3))
+  Downloading https://mirrors.aliyun.com/pypi/packages/90/ab/0301c945a704218bc9435f0e3c88884f6b19ef234d8899fb47ce1ccfd0c9/munkres-1.1.4-py2.py3-none-any.whl (7.0 kB)
+Collecting numpy==1.26.4 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 4))
+  Downloading https://mirrors.aliyun.com/pypi/packages/3a/d0/edc009c27b406c4f9cbc79274d6e46d634d139075492ad055e3d68445925/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (18.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 18.3/18.3 MB 503.1 kB/s eta 0:00:00
+Collecting pandas==2.2.3 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 5))
+  Downloading https://mirrors.aliyun.com/pypi/packages/cd/5f/4dba1d39bb9c38d574a9a22548c540177f78ea47b32f99c0ff2ec499fac5/pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.1/13.1 MB 529.5 kB/s eta 0:00:00
+Collecting progressbar2==4.5.0 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 6))
+  Downloading https://mirrors.aliyun.com/pypi/packages/ee/94/448f037fb0ffd0e8a63b625cf9f5b13494b88d15573a987be8aaa735579d/progressbar2-4.5.0-py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.1/57.1 kB 256.7 kB/s eta 0:00:00
+Collecting python-dateutil==4.0.0 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 7))
+  Downloading https://mirrors.aliyun.com/pypi/packages/2f/a9/52b89563d154433d79b51ed1eb4842bf7334cb2696891a7fe135618853d7/python_dateutil-4.0.0-py3-none-any.whl (92 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.9/92.9 kB 6.7 MB/s eta 0:00:00
+Collecting python-utils==4.2.2 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 8))
+  Downloading https://mirrors.aliyun.com/pypi/packages/ac/f7/653d9774d62d17efe8a9ceb6982387aa02bf2641e3112fb8a2a8557f34ec/python_utils-4.2.2-py3-none-any.whl (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.2/52.2 kB 7.4 MB/s eta 0:00:00
+Collecting pytz==2026.6 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 9))
+  Downloading https://mirrors.aliyun.com/pypi/packages/b6/25/564f3fc5b70c1398d706c51f2b1470d0ea0b1b2f96fee67877b6f5bdf3b6/pytz-2026.6-py2.py3-none-any.whl (506 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 506.3/506.3 kB 492.0 kB/s eta 0:00:00
+Collecting scikit-learn==1.5.2 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 10))
+  Downloading https://mirrors.aliyun.com/pypi/packages/49/21/3723de321531c9745e40f1badafd821e029d346155b6c79704e0b7197552/scikit_learn-1.5.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 13.3/13.3 MB 493.8 kB/s eta 0:00:00
+Collecting scipy==1.14.1 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 11))
+  Downloading https://mirrors.aliyun.com/pypi/packages/93/6b/701776d4bd6bdd9b629c387b5140f006185bd8ddea16788a44434376b98f/scipy-1.14.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (41.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.2/41.2 MB 533.0 kB/s eta 0:00:00
+Collecting threadpoolctl==3.8.0 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 12))
+  Downloading https://mirrors.aliyun.com/pypi/packages/54/1b/831f2de4840a25db1dd7b1afea433ccafe6bb10aca07e13264f2079462d0/threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Collecting tqdm==4.70.1 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 13))
+  Downloading https://mirrors.aliyun.com/pypi/packages/a7/03/921a3d3c75785aca9ebfbfcabfbc3a1be12e2ab5265deb026d55a5a3f83e/tqdm-4.70.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 14.2 MB/s eta 0:00:00
+Collecting typing_extensions==4.16.0 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 14))
+  Downloading https://mirrors.aliyun.com/pypi/packages/49/d3/b8441a820a491ddfc024b0b0cf0393375b75ea13866d9c66727e54c2fc80/typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 45.6/45.6 kB 11.5 MB/s eta 0:00:00
+Collecting tzdata==2026.6 (from -r reproduction_runs/new_runs/2026-11-19/hire-freeze.txt (line 15))
+  Downloading https://mirrors.aliyun.com/pypi/packages/0a/66/9a06c2227fedfd4919f0eaaa8b94377d9730882a7e4f95823c9a331ab5e1/tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 348.2/348.2 kB 834.2 kB/s eta 0:00:00
+Installing collected packages: pytz, munkres, tzdata, typing_extensions, tqdm, threadpoolctl, numpy, cloudpickle, scipy, python-utils, python-dateutil, joblib, scikit-learn, progressbar2, pandas
+Successfully installed cloudpickle-3.1.3 joblib-1.6.0 munkres-1.1.4 numpy-1.26.4 pandas-2.2.3 progressbar2-4.5.0 python-dateutil-4.0.0 python-utils-4.2.2 pytz-2026.6 scikit-learn-1.5.2 scipy-1.14.1 threadpoolctl-3.8.0 tqdm-4.70.1 typing_extensions-4.16.0 tzdata-2026.6
+
+[notice] A new release of pip is available: 24.0 -> 26.3
+[notice] To update, run: /root/autodl-tmp/fuxian-round2/env-hire-mirror/bin/python -m pip install --upgrade pip
+No broken requirements found.

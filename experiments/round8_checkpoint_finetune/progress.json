@@ -1,0 +1,14 @@
+{
+  "stage": "FINISHED",
+  "checkpoint_current": null,
+  "checkpoint_total": null,
+  "best_checkpoint": "F01_epoch100",
+  "best_ari_so_far": 0.6140076504228672,
+  "current_group": "all",
+  "epoch": null,
+  "budget": null,
+  "latest_ari": null,
+  "latest_purity": null,
+  "status": "FINISHED",
+  "updated_at": 1795354728.8374639
+}

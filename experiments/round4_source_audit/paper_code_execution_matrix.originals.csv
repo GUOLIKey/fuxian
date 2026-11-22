@@ -1,0 +1,13 @@
+item,paper_evidence,author_code_evidence,historical_execution,status
+learning rate,p4 IV-A 0.002; ×0.85 every 10 epochs,"main.py:42-44,123-128,147 client per mini-batch","author and epoch modes, five seeds each",MISMATCH
+VAE structure,"p4 IV-A 500,500,2000 encoder; 2000,500,500 decoder; z=10",model.py:205-235,same source hash,MATCH
+client number,p4 IV-A ten,main.py:39,ten,MATCH
+pretraining epochs,not specified in six-page PDF or available appendix,main.py:120 pre_epoch=50,50,UNDOCUMENTED
+pretraining loss,not specified in six-page PDF,model.py:125 MSE,same,UNDOCUMENTED
+local GMM,p3 Eq9-10 MoG; fitting details absent,"model.py:166-183 GMM on encoded means, true-label class count, seed42",same,UNDOCUMENTED
+global GMM,p3 Eq11-13 all local components weighted by sample count; p4 server samples M=100,model.py:48-101 sampling; 192-200 global GMM fit,same,UNKNOWN
+aggregation,p3 Eq12 sample-size weighted VAE,model.py:30-45 exclude GMM; main.py:153-155,same,MATCH
+broadcast,p4 end III-C updated global encoder and decoder to clients,main.py:212-213 sends pre-server-update average,same,MISMATCH
+reconstruction,p3 Eq5-8 Gaussian observation log-likelihood,model.py:284 and 328 MSE with deterministic decoder,same,MISMATCH
+alignment,p4 Eq15 local-global decoder discrepancy,model.py:316-317 MSE,same,MATCH
+Table II ARI,"p5 Table II BC 0.635, ten-run mean per p4",main.py:46 300 rounds; no save; loads provided weight if present,five seed retrain; saved final by wrapper,UNKNOWN

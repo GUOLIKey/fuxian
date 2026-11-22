@@ -1,0 +1,29 @@
+{
+  "model": "hca",
+  "seed": 0,
+  "device": "cpu",
+  "smoke": true,
+  "rate": 0.0001,
+  "schedule": "author",
+  "command": [
+    "/root/autodl-tmp/fuxian-smoke/py312-hca/bin/python",
+    "runner.py",
+    "hca",
+    "--source",
+    "reproduction_runs/upstream/FedHCA",
+    "--out",
+    "preflight/hca",
+    "--smoke"
+  ],
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "python": "3.12.16",
+  "numpy": "2.3.5",
+  "source_hashes": {
+    "main.py": "9c4a0c9567087fd882470808dd3815e2c691fb4bbb25029e7f9646945d18fb31",
+    "algorithm/MultiClustering.py": "c22caada781144524b592c9c4d257f60b4a7573d80c1633a7b2ab85c0f94e539",
+    "algorithm/federatedClustering.py": "76bccbff02ab40746fd89c8e3f8e56fac4aff6a4c7e28cc208b4f4c30b24c72b",
+    "algorithm/__init__.py": "3a6cd0b1deca7ab526674526b0a8eb687e188de87e7112ea53a9cb0b18258ff9",
+    "algorithm/experiment.py": "555a78659c645708ac43aa976c26a7ccb7638d0147e905c7eed875bcb8367443",
+    "dataset/EC.npz": "99a0e014505fdc56bf8f1f97b447b6db1222e647c3c07ebe61fa0c73b6b77839"
+  }
+}

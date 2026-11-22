@@ -1,0 +1,65 @@
+Start A_lr0.0001_seed2Start A_lr0.03_seed2
+
+Start A_lr0.05_seed2
+Start A_lr0.0001_seed3
+A_lr0.0001_seed3: ok
+Start A_lr0.03_seed3
+A_lr0.0001_seed2: ok
+Start A_lr0.05_seed3
+A_lr0.05_seed2: ok
+Start A_lr0.0001_seed4
+A_lr0.03_seed2: ok
+Start A_lr0.03_seed4
+A_lr0.0001_seed4: ok
+Start A_lr0.05_seed4
+A_lr0.05_seed3: ok
+Start A_lr0.0001_seed5
+A_lr0.03_seed4: ok
+A_lr0.03_seed3: ok
+Start A_lr0.03_seed5
+Start A_lr0.05_seed5
+A_lr0.03_seed5: ok
+Start A_lr0.0001_seed6
+A_lr0.05_seed5: okA_lr0.0001_seed5: ok
+
+Start A_lr0.03_seed6
+Start A_lr0.05_seed6
+A_lr0.05_seed4: ok
+Start A_lr0.0001_seed7
+A_lr0.0001_seed7: ok
+Start A_lr0.03_seed7
+A_lr0.0001_seed6: ok
+Start A_lr0.05_seed7
+A_lr0.03_seed6: ok
+Start A_lr0.0001_seed8
+A_lr0.05_seed6: ok
+Start A_lr0.03_seed8
+A_lr0.0001_seed8: ok
+Start A_lr0.05_seed8
+A_lr0.03_seed7: ok
+Start A_lr0.0001_seed9
+A_lr0.05_seed7: ok
+Start A_lr0.03_seed9
+A_lr0.03_seed8: ok
+Start A_lr0.05_seed9
+A_lr0.05_seed8: ok
+Start B_author_seed1
+A_lr0.0001_seed9: ok
+Start B_epoch_seed1
+A_lr0.03_seed9: ok
+Start B_author_seed2
+A_lr0.05_seed9: ok
+Start B_epoch_seed2
+B_author_seed1: ok
+Start B_author_seed3
+B_epoch_seed1: ok
+Start B_epoch_seed3
+B_epoch_seed2: ok
+Start B_author_seed4
+B_author_seed2: ok
+Start B_epoch_seed4
+B_author_seed3: ok
+B_epoch_seed3: ok
+B_epoch_seed4: ok
+B_author_seed4: ok
+Round 3 queue finished.

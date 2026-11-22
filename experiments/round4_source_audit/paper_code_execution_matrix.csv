@@ -1,0 +1,22 @@
+item,paper,author_source,historical_execution,status
+initial_lr,0.002 IV-A,main.py:42 0.002,0.002,MATCH
+latent_dim,10 IV-A,main.py:37 10,10,MATCH
+client_count,10 IV-A,main.py:39 10,10,MATCH
+training_rounds,Table II unspecified; Fig5 150,main.py:46 300,300,UNKNOWN
+pretrain,undocumented,main.py:120 50 MSE,50,UNDOCUMENTED
+batch_size,undocumented,main.py:33 200,200,UNDOCUMENTED
+scheduler,factor .85 each 10 epochs IV-A,"main.py:124,128,147 client per batch",author and epoch variants,MISMATCH
+server_sample,100 IV-A,main.py:49 100,100,MATCH
+alpha,0.01 IV-A,main.py:48 0.01,0.01,MATCH
+client_partition,class-informed IV-A,"dataloader.py:9-44 class subset, seed42, overlap",partition hash recorded,MATCH
+global_broadcast,updated server model III-C,main.py:212-213 pre-server-update average,same,MISMATCH
+input_dim,31 Table I,dataloader.py:14 all 31 CSV columns,31,MATCH
+dataset_source,UCI IV-A,dataset/breast_cancer.csv,same hash,MATCH
+preprocessing,undocumented,dataloader.py:16 StandardScaler full data,same,UNDOCUMENTED
+GMM_components,target 2 Table I,model.py:176 true-label local k,same,MISMATCH
+GMM_init,undocumented,"model.py:177,194 sklearn GMM seed42",same,UNDOCUMENTED
+ELBO_reconstruction,Gaussian log likelihood Eq5-8,model.py:284 MSE,same,MISMATCH
+alignment,decoder MSE Eq15,model.py:317 MSE,same,MATCH
+checkpoint_selection,Table II unspecified,main.py:84 loads existing file; no save,300-round checkpoint by wrapper,UNKNOWN
+evaluation,Purity and ARI IV-A,main.py:220-230 concatenated client predictions,same,MATCH
+prediction,mixture responsibility Eq9,model.py:260-271 samples z,same,MATCH

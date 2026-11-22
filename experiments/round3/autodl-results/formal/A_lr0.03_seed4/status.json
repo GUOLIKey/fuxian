@@ -1,0 +1,20 @@
+{
+  "model": "hire",
+  "seed": 4,
+  "command": [
+    "/root/autodl-tmp/fuxian-round2/env-hire-mirror/bin/python",
+    "-u",
+    "/root/autodl-tmp/fuxian-round3/runner.py",
+    "hire",
+    "--source",
+    "/root/autodl-tmp/fuxian-round2/reproduction_runs/upstream/Fed-HIRE/opensource",
+    "--out",
+    "/root/autodl-tmp/fuxian-round3/formal/A_lr0.03_seed4",
+    "--seed",
+    "4",
+    "--rate",
+    "0.03"
+  ],
+  "exit_code": 0,
+  "status": "ok"
+}

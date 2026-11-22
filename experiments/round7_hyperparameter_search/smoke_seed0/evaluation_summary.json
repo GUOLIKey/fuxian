@@ -1,0 +1,66 @@
+{
+  "protocol": "round6 A_author, 10 fixed inference seeds per checkpoint",
+  "training_seed": 0,
+  "inference_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "independent_test": false,
+  "selection_warning": "ARI-selected checkpoint and fine configuration use evaluation labels; exploratory only.",
+  "best_checkpoint_rule": "minimum trailing-five client training loss among saved epochs",
+  "snapshots": [
+    {
+      "epoch": 1,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/smoke_seed0/epoch_001_server.pt",
+      "ari_mean": -0.0325271455128179,
+      "ari_std": 0.001891672333983938,
+      "purity_mean": 0.6406763738844529,
+      "purity_std": 1.1102230246251565e-16,
+      "client_loss_last5_mean": 75.97180795669556
+    },
+    {
+      "epoch": 2,
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/smoke_seed0/epoch_002_server.pt",
+      "ari_mean": -0.010158632879866538,
+      "ari_std": 0.002441239614036233,
+      "purity_mean": 0.6406763738844529,
+      "purity_std": 1.1102230246251565e-16,
+      "client_loss_last5_mean": 61.81269898414612
+    }
+  ],
+  "last": {
+    "epoch": 2,
+    "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/smoke_seed0/epoch_002_server.pt",
+    "ari_mean": -0.010158632879866538,
+    "ari_std": 0.002441239614036233,
+    "purity_mean": 0.6406763738844529,
+    "purity_std": 1.1102230246251565e-16,
+    "client_loss_last5_mean": 61.81269898414612
+  },
+  "best_unlabeled_loss": {
+    "epoch": 2,
+    "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/smoke_seed0/epoch_002_server.pt",
+    "ari_mean": -0.010158632879866538,
+    "ari_std": 0.002441239614036233,
+    "purity_mean": 0.6406763738844529,
+    "purity_std": 1.1102230246251565e-16,
+    "client_loss_last5_mean": 61.81269898414612
+  },
+  "best_exploratory_ari": {
+    "epoch": 2,
+    "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/smoke_seed0/epoch_002_server.pt",
+    "ari_mean": -0.010158632879866538,
+    "ari_std": 0.002441239614036233,
+    "purity_mean": 0.6406763738844529,
+    "purity_std": 1.1102230246251565e-16,
+    "client_loss_last5_mean": 61.81269898414612
+  }
+}

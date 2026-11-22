@@ -1,0 +1,24 @@
+First differing client update: round 6; estimated FedVaDE CPU per run 239.8s.
+Waiting for the pinned Fed-HIRE environment.
+Start hire-local-smoke
+hire-local-smoke: ok
+Start A_lr0.0001_seed0Start A_lr0.0001_seed1
+
+A_lr0.0001_seed0: ok
+A_lr0.0001_seed1: ok
+Start A_lr0.03_seed0Start A_lr0.03_seed1
+
+A_lr0.03_seed0: ok
+A_lr0.03_seed1: ok
+Start A_lr0.05_seed0
+Start A_lr0.05_seed1
+A_lr0.05_seed0: ok
+A_lr0.05_seed1: ok
+Waiting for the isolated CUDA build; formal FedVaDE remains unstarted.
+Start C_ecoli_default_seed0
+Start B_author_seed0
+C_ecoli_default_seed0: ok
+B_author_seed0: ok
+Start B_epoch_seed0
+B_epoch_seed0: ok
+Round 2 queue finished.

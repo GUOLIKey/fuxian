@@ -1,0 +1,6 @@
+{
+  "gpu_passed": false,
+  "reason": "Fixed-input numerical comparison failed.",
+  "device": "cpu",
+  "first_schedule_divergence_round": 6
+}
