@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "author_argv": [
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round9_fedvade_optimization/smoke/seed0/source/main.py",
+    "--dataset",
+    "breast_cancer",
+    "--epoch",
+    "2",
+    "--lr",
+    "0.002",
+    "--alpha",
+    "0.05",
+    "--sample",
+    "100",
+    "--gamma",
+    "0.85",
+    "--stepsize",
+    "10"
+  ],
+  "seed": 0,
+  "error": "RuntimeError(\"Can't call numpy() on Tensor that requires grad. Use tensor.detach().numpy() instead.\")",
+  "elapsed_seconds": 1.9452316192910075
+}

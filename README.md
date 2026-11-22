@@ -47,3 +47,9 @@ REPORT_READY /root/autodl-tmp/fedvade_project/reproduction_runs/round8_checkpoin
 ## 当前判断
 
 Round 7 的标签选择结果接近作者权重，但其第 300 轮固定终点下降明显；Round 8 的短程权重初始化续训进一步下降。这支持“训练终点与模型选择会显著影响记录的 ARI”，但**尚未确认**作者权重较高 ARI 的根本原因，也没有验证生成质量是否随聚类指标改善。下一步若要建立可用于算法改进的基线，应预先划分验证与测试集合，并以多个独立训练种子评价固定配置和固定选择规则。
+
+## Round 9：初始化与训练稳定性搜索
+
+本轮在服务器运行 9 组初始化/预训练配置（其中 1 组复用旧结果）和 8 组超参数配置；已完整记录的新增训练 16 次。最佳 seed=0 探索性 checkpoint：ARI 0.6013 ± 0.0058，Purity 0.8889 ± 0.0018，H03 第 80 轮。
+
+Round 7 F01 第 100 轮参考 ARI 为 0.6140；作者权重参考约 0.6295。所有按评价标签挑选的配置或 checkpoint 均为探索性结果，10 个推断种子不是 10 个独立训练种子。完整配置、逐轮记录、原始日志和失败情况见 [Round 9 报告](experiments/round9/ROUND9_REPORT.md)、[实验计划](experiments/round9/experiment_plan.json)、[Checkpoint 排名](experiments/round9/best_checkpoint_ranking.csv) 和 [任务日志](experiments/round9/task.log)。权重、数据、作者源码和密钥仅留在服务器。

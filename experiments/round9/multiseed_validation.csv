@@ -1,0 +1,1 @@
+id,category,stage,seed,epochs,lr,alpha,pretrain,gmm_seed,gmm_n_init,gmm_init,gamma,sample,fixed_ari,fixed_purity,best_ari,best_epoch,best_checkpoint,unlabeled_epoch,unlabeled_ari,init_reconstruction_mse,init_gmm_loglik,init_gmm_bic,source,status

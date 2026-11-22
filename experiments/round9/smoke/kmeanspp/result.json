@@ -1,0 +1,51 @@
+{
+  "status": "ok",
+  "author_argv": [
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round9_fedvade_optimization/smoke/kmeanspp/source/main.py",
+    "--dataset",
+    "breast_cancer",
+    "--epoch",
+    "1",
+    "--lr",
+    "0.002",
+    "--alpha",
+    "0.05",
+    "--sample",
+    "100",
+    "--gamma",
+    "0.85",
+    "--stepsize",
+    "10"
+  ],
+  "seed": 0,
+  "last": {
+    "round": 1,
+    "client_loss": 66.95019073486328,
+    "server_loss": 20.78093719482422,
+    "ari": -0.016580452764677057,
+    "purity": 0.6406763738844528,
+    "client_lr": [
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002,
+      0.002
+    ],
+    "server_lr": 0.002,
+    "alpha": 0.05,
+    "gmm_weights": [
+      0.649063766002655,
+      0.35093626379966736
+    ],
+    "elapsed_seconds": 2.6690608793869615
+  },
+  "saved_epochs": [
+    1
+  ],
+  "elapsed_seconds": 2.9475179770961404
+}

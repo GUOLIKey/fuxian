@@ -1,0 +1,156 @@
+{
+  "clients": [
+    {
+      "client": 0,
+      "n": 115,
+      "k": 1,
+      "reconstruction_mse": 0.04186230152845383,
+      "latent_mean": 0.20487643778324127,
+      "latent_std": 2.086623430252075,
+      "latent_logvar_mean": 0.20487642288208008,
+      "gmm_loglik_per_sample": -19.569896697998047,
+      "gmm_bic": 4595.974814442265,
+      "posterior_occupancy": [
+        1.0
+      ]
+    },
+    {
+      "client": 1,
+      "n": 209,
+      "k": 1,
+      "reconstruction_mse": 0.030060160905122757,
+      "latent_mean": -0.21454378962516785,
+      "latent_std": 1.303670883178711,
+      "latent_logvar_mean": -0.21454377472400665,
+      "gmm_loglik_per_sample": -15.84054946899414,
+      "gmm_bic": 6728.196294414296,
+      "posterior_occupancy": [
+        1.0
+      ]
+    },
+    {
+      "client": 2,
+      "n": 326,
+      "k": 2,
+      "reconstruction_mse": 0.035250257700681686,
+      "latent_mean": -0.03765592724084854,
+      "latent_std": 1.7538845539093018,
+      "latent_logvar_mean": -0.03765592351555824,
+      "gmm_loglik_per_sample": -19.07668113708496,
+      "gmm_bic": 12675.258886386035,
+      "posterior_occupancy": [
+        0.9938650131225586,
+        0.0061349691823124886
+      ]
+    },
+    {
+      "client": 3,
+      "n": 56,
+      "k": 1,
+      "reconstruction_mse": 0.054163604974746704,
+      "latent_mean": 0.26273858547210693,
+      "latent_std": 2.146077871322632,
+      "latent_logvar_mean": 0.26273858547210693,
+      "gmm_loglik_per_sample": -19.189525604248047,
+      "gmm_bic": 2229.733840455328,
+      "posterior_occupancy": [
+        1.0
+      ]
+    },
+    {
+      "client": 4,
+      "n": 218,
+      "k": 2,
+      "reconstruction_mse": 0.03610442951321602,
+      "latent_mean": 0.03282512351870537,
+      "latent_std": 1.768048882484436,
+      "latent_logvar_mean": 0.032825127243995667,
+      "gmm_loglik_per_sample": -17.356063842773438,
+      "gmm_bic": 7788.008438199353,
+      "posterior_occupancy": [
+        0.4444712996482849,
+        0.5555288791656494
+      ]
+    },
+    {
+      "client": 5,
+      "n": 155,
+      "k": 1,
+      "reconstruction_mse": 0.048886608332395554,
+      "latent_mean": 0.18047906458377838,
+      "latent_std": 2.0936553478240967,
+      "latent_logvar_mean": 0.18047910928726196,
+      "gmm_loglik_per_sample": -19.680044174194336,
+      "gmm_bic": 6201.681978900885,
+      "posterior_occupancy": [
+        1.0
+      ]
+    },
+    {
+      "client": 6,
+      "n": 350,
+      "k": 2,
+      "reconstruction_mse": 0.030585268512368202,
+      "latent_mean": -0.1007528230547905,
+      "latent_std": 1.5260916948318481,
+      "latent_logvar_mean": -0.1007528230547905,
+      "gmm_loglik_per_sample": -16.081621170043945,
+      "gmm_bic": 11497.310024958822,
+      "posterior_occupancy": [
+        0.7086958289146423,
+        0.2913040220737457
+      ]
+    },
+    {
+      "client": 7,
+      "n": 239,
+      "k": 1,
+      "reconstruction_mse": 0.027808144688606262,
+      "latent_mean": -0.2343153953552246,
+      "latent_std": 1.2028529644012451,
+      "latent_logvar_mean": -0.23431536555290222,
+      "gmm_loglik_per_sample": -15.062758445739746,
+      "gmm_bic": 7309.52780619488,
+      "posterior_occupancy": [
+        1.0
+      ]
+    },
+    {
+      "client": 8,
+      "n": 138,
+      "k": 1,
+      "reconstruction_mse": 0.029197799041867256,
+      "latent_mean": -0.23537275195121765,
+      "latent_std": 1.2741715908050537,
+      "latent_logvar_mean": -0.23537272214889526,
+      "gmm_loglik_per_sample": -15.521233558654785,
+      "gmm_bic": 4382.405425265644,
+      "posterior_occupancy": [
+        1.0
+      ]
+    },
+    {
+      "client": 9,
+      "n": 323,
+      "k": 2,
+      "reconstruction_mse": 0.03309117257595062,
+      "latent_mean": -0.07660110294818878,
+      "latent_std": 1.7020057439804077,
+      "latent_logvar_mean": -0.07660110294818878,
+      "gmm_loglik_per_sample": -16.807538986206055,
+      "gmm_bic": 11094.55366712713,
+      "posterior_occupancy": [
+        0.6504320502281189,
+        0.34956789016723633
+      ]
+    }
+  ],
+  "reconstruction_mse_weighted": 0.034353409905621794,
+  "gmm_loglik_weighted": -17.13864969949646,
+  "gmm_bic_total": 74502.65117634463,
+  "server_mixture_weights": [
+    0.425295889377594,
+    0.574704110622406
+  ],
+  "component_counts_determined_by_unique_client_labels": true
+}

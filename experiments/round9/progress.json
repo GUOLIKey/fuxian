@@ -1,0 +1,15 @@
+{
+  "epoch": null,
+  "epoch_total": null,
+  "latest_ari": 0.5060859167564271,
+  "latest_purity": 0.8572099577266322,
+  "updated_at": 1795359388.0971022,
+  "stage": "GITHUB_PUBLISH",
+  "current_config": "none",
+  "config_current": 17,
+  "config_total": 17,
+  "best_ari_so_far": 0.6140076504228672,
+  "best_checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/fine/F01/epoch_100_server.pt",
+  "github": "PUSHING",
+  "status": "RUNNING"
+}

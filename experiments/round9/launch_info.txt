@@ -1,0 +1,2 @@
+started_at=2026-11-22T22:20:25+08:00
+command=/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python /root/autodl-tmp/fedvade_project/reproduction_runs/round9_fedvade_optimization/task_round9.py

@@ -1,0 +1,5 @@
+{
+  "selected": [],
+  "rule": "top two new seed0 groups by max checkpoint ARI among epoch <=150 with fixed-150 Purity >=.88, if ARI >=.58; explicitly exploratory label selection",
+  "label_selected": true
+}
