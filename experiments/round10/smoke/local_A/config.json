@@ -1,0 +1,31 @@
+{
+  "kind": "local_A",
+  "seed": 0,
+  "pretrain": 2,
+  "epochs": 2,
+  "training_records": 417,
+  "global_K_max": 3,
+  "selected_K": 3,
+  "local_K_rule": "unlabeled BIC on encoder means",
+  "lr": 0.002,
+  "alpha": 0.01,
+  "batch_size": 200,
+  "network": "author VaDE, original encoder/decoder/ELBO",
+  "selected_epoch": 2,
+  "selected_validation_mse": 0.8069827556610107,
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "train_reference.py",
+    "--kind",
+    "local_A",
+    "--out",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/smoke/local_A",
+    "--seed",
+    "0",
+    "--pretrain",
+    "2",
+    "--epochs",
+    "2"
+  ],
+  "elapsed_seconds": 0.4659852981567383
+}

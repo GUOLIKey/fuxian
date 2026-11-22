@@ -1,0 +1,8 @@
+EVALUATED fedvade_iid_seed0 {'ari_test': 0.10241523552524386, 'purity_test': 0.7798594847775175, 'reconstruction_mse_test': 0.0584167018532753}
+EVALUATED fedvade_medium_seed0 {'ari_test': 0.056636243707051524, 'purity_test': 0.7798594847775175, 'reconstruction_mse_test': 0.06302628666162491}
+EVALUATED fedvade_severe_seed0 {'ari_test': 0.04521205040935582, 'purity_test': 0.7798594847775175, 'reconstruction_mse_test': 0.07243017107248306}
+EVALUATED fedvade_severe_seed1 {'ari_test': -0.016193956563991974, 'purity_test': 0.7798594847775175, 'reconstruction_mse_test': 0.07096805423498154}
+EVALUATED fedvade_severe_seed2 {'ari_test': 0.0860023145221888, 'purity_test': 0.8032786885245902, 'reconstruction_mse_test': 0.06563329696655273}
+EVALUATED local_A {'ari_test': -0.008456179306162524, 'purity_test': 0.7798594847775175, 'reconstruction_mse_test': 0.10006186366081238}
+EVALUATED centralized {'ari_test': 0.12025302732015983, 'purity_test': 0.7798594847775175, 'reconstruction_mse_test': 0.03631842881441116}
+REFERENCE_RELIABLE True SIMPLE_BASELINE True

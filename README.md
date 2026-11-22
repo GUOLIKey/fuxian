@@ -61,3 +61,7 @@ Average L_c: 5.2172, L_s: 2.2133, Purity: 0.8671, ARI: 0.5334
 ```
 
 查看 [H03 逐轮记录](experiments/round9/phase1/H03/rounds.jsonl)、[H03 重复推断](experiments/round9/phase1/H03/inference.csv)、[初始化对照](experiments/round9/initialization_comparison.csv)、[超参数对照](experiments/round9/hyperparameter_comparison.csv)、[Round 9 报告](experiments/round9/ROUND9_REPORT.md)、[实验计划](experiments/round9/experiment_plan.json) 和 [Checkpoint 排名](experiments/round9/best_checkpoint_ranking.csv)。所有按评价标签挑选的配置或 checkpoint 均为探索性结果，10 个推断种子不是 10 个独立训练种子。权重、数据、作者源码和密钥仅留在服务器。
+
+## Round 10：Non-IID 生成与稀有模式诊断
+
+本轮在 UCI Cardiotocography 三分类数据上固定训练、验证、测试划分，检查 IID、中度及稀有类缺失的严重 Non-IID 场景。正式 FedVaDE 训练 5 次，本地与集中式参考训练 2 次。严重场景 seed=0 的固定 checkpoint 测试 ARI 0.0452、Purity 0.7799；稀有类生成覆盖代理均值 0.0014。生成样本没有真实类别标签，覆盖结果依赖独立参考分类器和距离门槛，不能视为真实临床类别生成率。测试集聚类与重构指标使用预先封存的测试记录。详见 [Round 10 报告](experiments/round10/ROUND10_REPORT.md)、[原始训练日志](experiments/round10/severe_seed0.log)、[逐类别生成指标](experiments/round10/classwise_generation_metrics.csv)、[稀有类覆盖](experiments/round10/rare_mode_coverage.csv)、[数据清单](experiments/round10/dataset_manifest.json)。原始医疗数据、作者源码/权重、完整 checkpoint 和密钥仅保存在服务器。

@@ -1,0 +1,15 @@
+{
+  "epoch": null,
+  "epoch_total": null,
+  "latest_ari": null,
+  "latest_purity": null,
+  "updated_at": 1795363173.1258872,
+  "stage": "GITHUB_PUBLISH",
+  "current_dataset": "Cardiotocography",
+  "current_scenario": "severe",
+  "current_run": "centralized",
+  "rare_mode_coverage": 0.0032,
+  "generation_mmd": 0.053526401166936986,
+  "github": "PUSHING",
+  "status": "RUNNING"
+}

@@ -1,0 +1,2 @@
+{"epoch": 1, "loss": 86.81607246398926, "lr": 0.002}
+{"epoch": 2, "loss": 50.30361557006836, "lr": 0.002, "validation_reconstruction_mse": 0.8069827556610107}

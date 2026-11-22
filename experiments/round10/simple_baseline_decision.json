@@ -1,0 +1,7 @@
+{
+  "run": true,
+  "rule": "run only if reference rare precision and recall >=0.8 and severe global recovery proxy < half test rare fraction",
+  "reference_rare_reliable": true,
+  "rare_proxy": 0.0014,
+  "test_rare_fraction": 0.08430913348946135
+}

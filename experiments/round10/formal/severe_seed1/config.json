@@ -1,0 +1,48 @@
+{
+  "kind": "label_blind_fedvade_baseline",
+  "scenario": "severe",
+  "seed": 1,
+  "rounds": 150,
+  "pretrain": 50,
+  "batch_size": 200,
+  "clients": 3,
+  "latent_dim": 10,
+  "global_K": 3,
+  "local_K": "unlabeled BIC over 1,2,3 encoder-mean GMM fits",
+  "lr": 0.002,
+  "alpha": 0.01,
+  "sample": 100,
+  "scheduler": "author client per mini-batch/server per round",
+  "partition_sha256": "1e694a7d3a3277cb6318ea1c8271a9de002f42ada8d4dc97ea8da94b87cfc04c",
+  "data_sha256": "ad73dc9a3ffdbae7e7e1d91f5caac9b98c62b38c63697bd8de3beb896edaef48",
+  "source_sha256": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+  },
+  "executed_sha256": {
+    "dataloader.py": "94a2fdfe2cd3c17d0b0a66dd97b0f668401decd2cbef4c2fadda0b79404a6b51",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "8715e60fa2cb4fa761367f2679376ccca6452aefdbbcbb11f7a7504509f0b6e6",
+    "model.py": "61bd0c50094174aea7d0173f25d213c2dda51091ce81214f3925982cbcdf83a1"
+  },
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/train_fedvade.py",
+    "--out",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed1",
+    "--scenario",
+    "severe",
+    "--seed",
+    "1",
+    "--rounds",
+    "150",
+    "--pretrain",
+    "50",
+    "--save-every",
+    "25"
+  ],
+  "device": "cpu",
+  "selection": "minimum deterministic validation reconstruction MSE among saved checkpoints; no labels"
+}

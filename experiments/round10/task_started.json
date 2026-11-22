@@ -1,0 +1,15 @@
+{
+  "started_at": 1795362745.9647954,
+  "formal_runs": [
+    "iid_seed0",
+    "medium_seed0",
+    "severe_seed0",
+    "severe_seed1",
+    "severe_seed2"
+  ],
+  "references": [
+    "local_A",
+    "centralized"
+  ],
+  "training_budget": "50+150 per run"
+}

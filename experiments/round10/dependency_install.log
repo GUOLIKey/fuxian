@@ -1,0 +1,10 @@
+Collecting xlrd==2.0.1
+  Downloading xlrd-2.0.1-py2.py3-none-any.whl.metadata (3.4 kB)
+Collecting pypdf==5.1.0
+  Downloading pypdf-5.1.0-py3-none-any.whl.metadata (7.2 kB)
+Downloading xlrd-2.0.1-py2.py3-none-any.whl (96 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 96.5/96.5 kB 31.4 kB/s eta 0:00:00
+Downloading pypdf-5.1.0-py3-none-any.whl (297 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 298.0/298.0 kB 7.4 kB/s eta 0:00:00
+Installing collected packages: xlrd, pypdf
+Successfully installed pypdf-5.1.0 xlrd-2.0.1

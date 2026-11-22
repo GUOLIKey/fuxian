@@ -1,0 +1,11 @@
+model,K,inference_seed,rare_mode_recovery_proxy,assigned_rare_fraction,mmd_rbf,privacy_note
+centralized_latent_refit_K3,3,0,0.004,0.0435,0.012988560058300624,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K3,3,1,0.0055,0.0445,0.017416908248664487,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K3,3,2,0.004,0.0415,0.012467709558345863,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K3,3,3,0.003,0.043,0.013455895714367117,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K3,3,4,0.003,0.049,0.012514220811730703,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K6,6,0,0.0055,0.0545,0.011741221651159539,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K6,6,1,0.0075,0.064,0.01590057287312785,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K6,6,2,0.005,0.056,0.012958912436361603,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K6,6,3,0.008,0.0625,0.015253917603390454,"centralized latent fit is a diagnostic upper bound, not federated deployable"
+centralized_latent_refit_K6,6,4,0.0075,0.0545,0.011269048442875906,"centralized latent fit is a diagnostic upper bound, not federated deployable"

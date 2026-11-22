@@ -1,0 +1,188 @@
+{
+  "dataset": "UCI Cardiotocography",
+  "doi": "10.24432/C51S4N",
+  "url": "https://archive.ics.uci.edu/static/public/193/cardiotocography.zip",
+  "license": "CC BY 4.0",
+  "archive_sha256": "ba2853564e282779907242b7bd8a83265d9fc4e79bb008573967daa16677bb6c",
+  "workbook_sha256": "d6aa62e82625e59f9d5b05bc8fc52af9ea67bdf2a23f1faca8511d5618fcb421",
+  "feature_columns": [
+    "LB",
+    "AC",
+    "FM",
+    "UC",
+    "DL",
+    "DS",
+    "DP",
+    "ASTV",
+    "MSTV",
+    "ALTV",
+    "MLTV",
+    "Width",
+    "Min",
+    "Max",
+    "Nmax",
+    "Nzeros",
+    "Mode",
+    "Mean",
+    "Median",
+    "Variance",
+    "Tendency"
+  ],
+  "excluded_columns": [
+    "FileName",
+    "Date",
+    "SegFile",
+    "b",
+    "e",
+    "LBE",
+    "DR",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "AD",
+    "DE",
+    "LD",
+    "FS",
+    "SUSP",
+    "CLASS",
+    "NSP"
+  ],
+  "raw_rows": 2126,
+  "raw_class_counts": [
+    1655,
+    295,
+    176
+  ],
+  "feature_duplicate_rows": 16,
+  "duplicate_groups_with_conflicting_labels": 2,
+  "split_seed": [
+    42,
+    43
+  ],
+  "partition_seed": 42,
+  "split_counts": {
+    "train": {
+      "n": 1360,
+      "class_counts": [
+        1057,
+        191,
+        112
+      ]
+    },
+    "validation": {
+      "n": 339,
+      "class_counts": [
+        265,
+        46,
+        28
+      ]
+    },
+    "test": {
+      "n": 427,
+      "class_counts": [
+        333,
+        58,
+        36
+      ]
+    }
+  },
+  "scaler_fit": "train only",
+  "group_key": "SHA256 exact 21-feature float64 row",
+  "data_npz_sha256": "ad73dc9a3ffdbae7e7e1d91f5caac9b98c62b38c63697bd8de3beb896edaef48",
+  "partition_npz_sha256": {
+    "iid": "67ab84f489069b3639847edbbaa25781dcf57148464e1b9d31f96725a840ed73",
+    "medium": "65ae0f85ce0bca72b1a4c4f3e041cf170727edb1f4516ee70c407781fb754789",
+    "severe": "1e694a7d3a3277cb6318ea1c8271a9de002f42ada8d4dc97ea8da94b87cfc04c"
+  },
+  "scenarios": {
+    "iid": [
+      {
+        "scenario": "iid",
+        "client": 0,
+        "n": 455,
+        "class_0": 353,
+        "class_1": 64,
+        "class_2": 38,
+        "original_index_sha256": "591a286376804552925981b367550c9077bd6d71377bfff703530c41ce14f1f8"
+      },
+      {
+        "scenario": "iid",
+        "client": 1,
+        "n": 453,
+        "class_0": 352,
+        "class_1": 64,
+        "class_2": 37,
+        "original_index_sha256": "c0063cc77d9bd0bf3a0afe792d8bc021fe36e68338c71d82dd1c94a1f2000fd1"
+      },
+      {
+        "scenario": "iid",
+        "client": 2,
+        "n": 452,
+        "class_0": 352,
+        "class_1": 63,
+        "class_2": 37,
+        "original_index_sha256": "0aa40653099c882662b1c1da9d7b879219d7d14a10d5812be5a15efbc298375e"
+      }
+    ],
+    "medium": [
+      {
+        "scenario": "medium",
+        "client": 0,
+        "n": 434,
+        "class_0": 353,
+        "class_1": 64,
+        "class_2": 17,
+        "original_index_sha256": "b8368ce28d0fa43390ff36cd233aa948246bd00978a0563e0e3ee8ab96036593"
+      },
+      {
+        "scenario": "medium",
+        "client": 1,
+        "n": 433,
+        "class_0": 352,
+        "class_1": 64,
+        "class_2": 17,
+        "original_index_sha256": "f91fe930710b4cf38b42b2bfdff337365f5da91fb4d4ff097cf9a6c6de948540"
+      },
+      {
+        "scenario": "medium",
+        "client": 2,
+        "n": 493,
+        "class_0": 352,
+        "class_1": 63,
+        "class_2": 78,
+        "original_index_sha256": "8f47e74da9aa7d882c83aba305beb4af1d042e0716a6dcba209c63a59b1cbdf1"
+      }
+    ],
+    "severe": [
+      {
+        "scenario": "severe",
+        "client": 0,
+        "n": 417,
+        "class_0": 353,
+        "class_1": 64,
+        "class_2": 0,
+        "original_index_sha256": "6eacaf453a72d747dd90bac5c322743405948258c7a2644885e5b5f2a18c6fae"
+      },
+      {
+        "scenario": "severe",
+        "client": 1,
+        "n": 416,
+        "class_0": 352,
+        "class_1": 64,
+        "class_2": 0,
+        "original_index_sha256": "b31dc103d0c52ff83da5b44b432b3b533eeff8fc1f09f04fdd94c19f55989f18"
+      },
+      {
+        "scenario": "severe",
+        "client": 2,
+        "n": 527,
+        "class_0": 352,
+        "class_1": 63,
+        "class_2": 112,
+        "original_index_sha256": "773c2ebb1a6652efa49a166a3cbb0d21bcdada76b61bf558aa9f99870d951f40"
+      }
+    ]
+  }
+}

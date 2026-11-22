@@ -1,0 +1,38 @@
+{
+  "training_source": "model-training split only",
+  "test_source": "sealed grouped test split",
+  "model": "RandomForestClassifier(n_estimators=300,class_weight=balanced_subsample,random_state=42)",
+  "metrics": {
+    "0": {
+      "precision": 0.9673590504451038,
+      "recall": 0.978978978978979,
+      "f1-score": 0.9731343283582089,
+      "support": 333.0
+    },
+    "1": {
+      "precision": 0.7966101694915254,
+      "recall": 0.8103448275862069,
+      "f1-score": 0.8034188034188035,
+      "support": 58.0
+    },
+    "2": {
+      "precision": 1.0,
+      "recall": 0.8611111111111112,
+      "f1-score": 0.9253731343283582,
+      "support": 36.0
+    },
+    "accuracy": 0.9461358313817331,
+    "macro avg": {
+      "precision": 0.9213230733122098,
+      "recall": 0.883478305892099,
+      "f1-score": 0.9006420887017902,
+      "support": 427.0
+    },
+    "weighted avg": {
+      "precision": 0.9469179241890586,
+      "recall": 0.9461358313817331,
+      "f1-score": 0.9460549292210657,
+      "support": 427.0
+    }
+  }
+}
