@@ -1,0 +1,4 @@
+started_at=2026-11-23T01:09:44+08:00
+command=/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python /root/autodl-tmp/fedvade_project/reproduction_runs/round11a_frozen_diagnostics/task_round11a.py
+pid=97320
+launcher_exit_code=0

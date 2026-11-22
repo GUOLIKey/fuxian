@@ -1,0 +1,14 @@
+{
+  "stage": "GITHUB_PUBLISH",
+  "status": "RUNNING",
+  "current_model": "all",
+  "current_experiment": "report",
+  "progress_current": 12,
+  "progress_total": 12,
+  "rare_mode_proxy": 0.076,
+  "updated_at": 1795367536.1955845,
+  "best_result": "\u4f18\u5148\u6539\u5584\u670d\u52a1\u5668\u6982\u7387\u805a\u5408 / Multi-CA",
+  "github": "PUSHING",
+  "error": null,
+  "current_dataset": "Cardiotocography"
+}

@@ -1,0 +1,13 @@
+START audit.py
+DONE audit.py 1.8s
+START run_e1_evaluator.py
+DONE run_e1_evaluator.py 8.2s
+START run_e2_reconstruction.py
+DONE run_e2_reconstruction.py 12.1s
+START run_e2_global_vs_union.py
+DONE run_e2_global_vs_union.py 46.7s
+START run_e3_gmm_capacity.py
+DONE run_e3_gmm_capacity.py 80.1s
+START report.py
+DONE report.py 1.7s
+START publish_round11a.py

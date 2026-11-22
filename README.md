@@ -65,3 +65,7 @@ Average L_c: 5.2172, L_s: 2.2133, Purity: 0.8671, ARI: 0.5334
 ## Round 10：Non-IID 生成与稀有模式诊断
 
 本轮在 UCI Cardiotocography 三分类数据上固定训练、验证、测试划分，检查 IID、中度及稀有类缺失的严重 Non-IID 场景。正式 FedVaDE 训练 5 次，本地与集中式参考训练 2 次。严重场景 seed=0 的固定 checkpoint 测试 ARI 0.0452、Purity 0.7799；稀有类生成覆盖代理均值 0.0014。生成样本没有真实类别标签，覆盖结果依赖独立参考分类器和距离门槛，不能视为真实临床类别生成率。测试集聚类与重构指标使用预先封存的测试记录。详见 [Round 10 报告](experiments/round10/ROUND10_REPORT.md)、[原始训练日志](experiments/round10/severe_seed0.log)、[逐类别生成指标](experiments/round10/classwise_generation_metrics.csv)、[稀有类覆盖](experiments/round10/rare_mode_coverage.csv)、[数据清单](experiments/round10/dataset_manifest.json)。原始医疗数据、作者源码/权重、完整 checkpoint 和密钥仅保存在服务器。
+
+## Round 11A：冻结模型生成瓶颈诊断
+
+本轮不训练新的 VaDE/FedVaDE，只复用 Round 10 冻结权重，审计稀有评价器，并比较真实重建、全局 GMM 与客户端并集 MoG、以及 K=3/6/10 的冻结 latent GMM 容量。评价器主规则 tau=0.50、radius=5.1853；验证稀有正对照 0.7857142857142857，常见负对照 0.003215434083601286。探索性结论：优先改善服务器概率聚合 / Multi-CA。测试集比较仅为探索性，不构成新的独立测试成绩。详见 [Round 11A 报告](experiments/round11a/ROUND11A_REPORT.md)、[评价协议](experiments/round11a/evaluation_protocol.md)、[评价器校准](experiments/round11a/evaluator_calibration.csv)、[全局 vs 并集](experiments/round11a/global_vs_union_mog.csv)、[GMM 容量](experiments/round11a/gmm_k_comparison.csv)。

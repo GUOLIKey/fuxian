@@ -1,0 +1,18 @@
+{
+  "started_at": 1795367385.506618,
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round11a_frozen_diagnostics/task_round11a.py"
+  ],
+  "stages": [
+    "SOURCE_AND_CHECKPOINT_AUDIT",
+    "EVALUATOR_CALIBRATION",
+    "ORACLE_LATENT_DIAGNOSIS",
+    "GLOBAL_VS_UNION_MOG",
+    "FROZEN_GMM_K_COMPARISON",
+    "FINAL_ANALYSIS",
+    "GITHUB_PUBLISH"
+  ],
+  "training_budget": "0 new VaDE/FedVaDE training; frozen checkpoints only",
+  "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]"
+}

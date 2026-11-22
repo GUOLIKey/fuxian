@@ -1,0 +1,145 @@
+{
+  "data_hashes_ok": {
+    "data.npz": true,
+    "iid_partitions.npz": true,
+    "medium_partitions.npz": true,
+    "severe_partitions.npz": true
+  },
+  "train_shape": [
+    1360,
+    21
+  ],
+  "val_shape": [
+    339,
+    21
+  ],
+  "test_shape": [
+    427,
+    21
+  ],
+  "class_counts": {
+    "train": [
+      1057,
+      191,
+      112
+    ],
+    "val": [
+      265,
+      46,
+      28
+    ],
+    "test": [
+      333,
+      58,
+      36
+    ]
+  },
+  "models": [
+    {
+      "model": "fedvade_iid_seed0",
+      "scenario": "iid",
+      "training_seed": 0,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/iid_seed0/selected_server.pt",
+      "checkpoint_sha256": "4f4719a866c1924c87ea083f5a7ba1ff2623dc1507813eb195a861d91356eca0",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/iid_seed0/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    },
+    {
+      "model": "fedvade_medium_seed0",
+      "scenario": "medium",
+      "training_seed": 0,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/medium_seed0/selected_server.pt",
+      "checkpoint_sha256": "0684c33367a572a617cc5f8ade8664548c1c307bb0304c22f34e7b3e03de85f9",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/medium_seed0/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    },
+    {
+      "model": "fedvade_severe_seed0",
+      "scenario": "severe",
+      "training_seed": 0,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed0/selected_server.pt",
+      "checkpoint_sha256": "f74c3c0305aa64bd0164d69ea3d4718a80e65bec81135a9827aa20cd7676c49a",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed0/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    },
+    {
+      "model": "fedvade_severe_seed1",
+      "scenario": "severe",
+      "training_seed": 1,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed1/selected_server.pt",
+      "checkpoint_sha256": "7abb61c424de8a9883c624c4ce219f3594470dcd0be967d61b662605696778d7",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed1/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    },
+    {
+      "model": "fedvade_severe_seed2",
+      "scenario": "severe",
+      "training_seed": 2,
+      "kind": "fedvade",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed2/selected_server.pt",
+      "checkpoint_sha256": "dfe443457e398626c86290f4de3fbdf2b944bddf0064a008e92e2c2d450620f1",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 3,
+      "local_Ks": "3;3;3",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/formal/severe_seed2/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    },
+    {
+      "model": "local_A",
+      "scenario": "severe",
+      "training_seed": 0,
+      "kind": "reference",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/references/local_A/selected_server.pt",
+      "checkpoint_sha256": "a2b7e7d6d5562aa8a1c89723674090323591aec50156aeb17ec9322ee5e378ae",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 0,
+      "local_Ks": "",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/references/local_A/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    },
+    {
+      "model": "centralized",
+      "scenario": "severe",
+      "training_seed": 0,
+      "kind": "reference",
+      "checkpoint_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/references/centralized/selected_server.pt",
+      "checkpoint_sha256": "32e12da255a207531ba59bc28fb559f5e9e7ac639d880aa474f10bd5777ed7d8",
+      "selected_epoch": 150,
+      "global_K": 3,
+      "client_count": 0,
+      "local_Ks": "",
+      "last_full_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round10_non_iid_generation/references/centralized/last_full.pt",
+      "state_source": "server state (selected_server.pt)",
+      "data_hashes_ok": true
+    }
+  ],
+  "round10_report_sha256": "f714e86f1aa7ddafe66b8eba43d19360b491bed308660bd1e00a166928eb662c"
+}

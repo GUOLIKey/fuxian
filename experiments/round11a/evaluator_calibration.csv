@@ -1,0 +1,165 @@
+section,classifier,split,class,threshold,group,metric,value,precision,recall,f1,support,n,bootstrap_low,bootstrap_high,note
+classifier_metrics,uncalibrated,val,0,,,precision_recall_f1,,0.9359430604982206,0.9924528301886792,0.9633699633699634,265.0,339,,,
+classifier_metrics,uncalibrated,val,1,,,precision_recall_f1,,0.8823529411764706,0.6521739130434783,0.75,46.0,339,,,
+classifier_metrics,uncalibrated,val,2,,,precision_recall_f1,,0.9583333333333334,0.8214285714285714,0.8846153846153846,28.0,339,,,
+classifier_metrics,uncalibrated,test,0,,,precision_recall_f1,,0.9673590504451038,0.978978978978979,0.9731343283582089,333.0,427,,,
+classifier_metrics,uncalibrated,test,1,,,precision_recall_f1,,0.7966101694915254,0.8103448275862069,0.8034188034188035,58.0,427,,,
+classifier_metrics,uncalibrated,test,2,,,precision_recall_f1,,1.0,0.8611111111111112,0.9253731343283582,36.0,427,,,
+threshold_sensitivity,uncalibrated,val,,0.5,positive,classifier_pass,0.7142857142857143,,,,28,28,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.5,positive,joint_pass,0.7142857142857143,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.6,positive,classifier_pass,0.6785714285714286,,,,28,28,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.6,positive,joint_pass,0.6785714285714286,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.7,positive,classifier_pass,0.6428571428571429,,,,28,28,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.7,positive,joint_pass,0.6428571428571429,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.8,positive,classifier_pass,0.5357142857142857,,,,28,28,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.8,positive,joint_pass,0.5357142857142857,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.9,positive,classifier_pass,0.39285714285714285,,,,28,28,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.9,positive,joint_pass,0.39285714285714285,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.5,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.5,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.6,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.6,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.7,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.7,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.8,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.8,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,val,,0.9,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,uncalibrated,val,,0.9,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.5,positive,classifier_pass,0.8333333333333334,,,,36,36,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.5,positive,joint_pass,0.8333333333333334,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.6,positive,classifier_pass,0.75,,,,36,36,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.6,positive,joint_pass,0.75,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.7,positive,classifier_pass,0.7222222222222222,,,,36,36,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.7,positive,joint_pass,0.7222222222222222,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.8,positive,classifier_pass,0.6666666666666666,,,,36,36,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.8,positive,joint_pass,0.6666666666666666,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.9,positive,classifier_pass,0.25,,,,36,36,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.9,positive,joint_pass,0.25,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.5,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.5,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.6,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.6,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.7,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.7,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.8,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.8,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,uncalibrated,test,,0.9,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,uncalibrated,test,,0.9,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+classifier_metrics,calibrated_sigmoid,val,0,,,precision_recall_f1,,0.942652329749104,0.9924528301886792,0.9669117647058824,265.0,339,,,
+classifier_metrics,calibrated_sigmoid,val,1,,,precision_recall_f1,,0.8918918918918919,0.717391304347826,0.7951807228915663,46.0,339,,,
+classifier_metrics,calibrated_sigmoid,val,2,,,precision_recall_f1,,0.9565217391304348,0.7857142857142857,0.8627450980392157,28.0,339,,,
+classifier_metrics,calibrated_sigmoid,test,0,,,precision_recall_f1,,0.9672619047619048,0.975975975975976,0.9715994020926756,333.0,427,,,
+classifier_metrics,calibrated_sigmoid,test,1,,,precision_recall_f1,,0.7966101694915254,0.8103448275862069,0.8034188034188035,58.0,427,,,
+classifier_metrics,calibrated_sigmoid,test,2,,,precision_recall_f1,,0.96875,0.8611111111111112,0.9117647058823529,36.0,427,,,
+threshold_sensitivity,calibrated_sigmoid,val,,0.5,positive,classifier_pass,0.75,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.5,positive,joint_pass,0.75,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.6,positive,classifier_pass,0.6785714285714286,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.6,positive,joint_pass,0.6785714285714286,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.7,positive,classifier_pass,0.6071428571428571,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.7,positive,joint_pass,0.6071428571428571,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.8,positive,classifier_pass,0.5357142857142857,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.8,positive,joint_pass,0.5357142857142857,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.9,positive,classifier_pass,0.0,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.9,positive,joint_pass,0.0,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.5,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.5,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.6,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.6,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.7,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.7,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.8,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.8,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,val,,0.9,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,val,,0.9,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.5,positive,classifier_pass,0.8333333333333334,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.5,positive,joint_pass,0.8333333333333334,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.6,positive,classifier_pass,0.75,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.6,positive,joint_pass,0.75,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.7,positive,classifier_pass,0.7222222222222222,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.7,positive,joint_pass,0.7222222222222222,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.8,positive,classifier_pass,0.6388888888888888,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.8,positive,joint_pass,0.6388888888888888,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.9,positive,classifier_pass,0.0,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.9,positive,joint_pass,0.0,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.5,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.5,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.6,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.6,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.7,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.7,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.8,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.8,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_sigmoid,test,,0.9,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_sigmoid,test,,0.9,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+classifier_metrics,calibrated_isotonic,val,0,,,precision_recall_f1,,0.9460431654676259,0.9924528301886792,0.9686924493554327,265.0,339,,,
+classifier_metrics,calibrated_isotonic,val,1,,,precision_recall_f1,,0.8947368421052632,0.7391304347826086,0.8095238095238095,46.0,339,,,
+classifier_metrics,calibrated_isotonic,val,2,,,precision_recall_f1,,0.9565217391304348,0.7857142857142857,0.8627450980392157,28.0,339,,,
+classifier_metrics,calibrated_isotonic,test,0,,,precision_recall_f1,,0.9701492537313433,0.975975975975976,0.9730538922155688,333.0,427,,,
+classifier_metrics,calibrated_isotonic,test,1,,,precision_recall_f1,,0.7868852459016393,0.8275862068965517,0.8067226890756303,58.0,427,,,
+classifier_metrics,calibrated_isotonic,test,2,,,precision_recall_f1,,1.0,0.8611111111111112,0.9253731343283582,36.0,427,,,
+threshold_sensitivity,calibrated_isotonic,val,,0.5,positive,classifier_pass,0.7857142857142857,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.5,positive,joint_pass,0.7857142857142857,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.6,positive,classifier_pass,0.6785714285714286,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.6,positive,joint_pass,0.6785714285714286,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.7,positive,classifier_pass,0.6428571428571429,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.7,positive,joint_pass,0.6428571428571429,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.8,positive,classifier_pass,0.5357142857142857,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.8,positive,joint_pass,0.5357142857142857,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.9,positive,classifier_pass,0.4642857142857143,,,,28,28,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.9,positive,joint_pass,0.4642857142857143,,,,28,28,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.5,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.5,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.6,negative,classifier_pass,0.003215434083601286,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.6,negative,joint_pass,0.003215434083601286,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.7,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.7,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.8,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.8,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,val,,0.9,negative,classifier_pass,0.0,,,,311,311,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,val,,0.9,negative,joint_pass,0.0,,,,311,311,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.5,positive,classifier_pass,0.8333333333333334,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.5,positive,joint_pass,0.8333333333333334,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.6,positive,classifier_pass,0.75,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.6,positive,joint_pass,0.75,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.7,positive,classifier_pass,0.7222222222222222,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.7,positive,joint_pass,0.7222222222222222,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.8,positive,classifier_pass,0.6666666666666666,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.8,positive,joint_pass,0.6666666666666666,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.9,positive,classifier_pass,0.5833333333333334,,,,36,36,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.9,positive,joint_pass,0.5833333333333334,,,,36,36,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.5,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.5,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.6,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.6,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.7,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.7,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.8,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.8,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+threshold_sensitivity,calibrated_isotonic,test,,0.9,negative,classifier_pass,0.0,,,,391,391,,,distance independent of tau
+threshold_sensitivity,calibrated_isotonic,test,,0.9,negative,joint_pass,0.0,,,,391,391,,,radius_q95=5.185265
+distance_sensitivity,none,val,,q90,positive,distance_pass,0.9642857142857143,,,,28,28,,,radius=3.899399
+distance_sensitivity,none,val,,q90,negative,distance_pass,0.41479099678456594,,,,311,311,,,radius=3.899399
+distance_sensitivity,none,val,,q95,positive,distance_pass,1.0,,,,28,28,,,radius=5.185265
+distance_sensitivity,none,val,,q95,negative,distance_pass,0.8135048231511254,,,,311,311,,,radius=5.185265
+distance_sensitivity,none,val,,q99,positive,distance_pass,1.0,,,,28,28,,,radius=7.111690
+distance_sensitivity,none,val,,q99,negative,distance_pass,0.9967845659163987,,,,311,311,,,radius=7.111690
+distance_sensitivity,none,test,,q90,positive,distance_pass,0.9166666666666666,,,,36,36,,,radius=3.899399
+distance_sensitivity,none,test,,q90,negative,distance_pass,0.42455242966751916,,,,391,391,,,radius=3.899399
+distance_sensitivity,none,test,,q95,positive,distance_pass,1.0,,,,36,36,,,radius=5.185265
+distance_sensitivity,none,test,,q95,negative,distance_pass,0.8414322250639387,,,,391,391,,,radius=5.185265
+distance_sensitivity,none,test,,q99,positive,distance_pass,1.0,,,,36,36,,,radius=7.111690
+distance_sensitivity,none,test,,q99,negative,distance_pass,0.9872122762148338,,,,391,391,,,radius=7.111690
+primary_control,calibrated_isotonic,val,,0.5,positive,classifier_pass,0.7857142857142857,,,,28,28,0.6428571428571429,0.9285714285714286,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,val,,0.5,positive,distance_pass,1.0,,,,28,28,1.0,1.0,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,val,,0.5,positive,joint_pass,0.7857142857142857,,,,28,28,0.6071428571428571,0.9285714285714286,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,val,,0.5,negative,classifier_pass,0.003215434083601286,,,,311,311,0.0,0.00964630225080386,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,val,,0.5,negative,distance_pass,0.8135048231511254,,,,311,311,0.7684887459807074,0.8553054662379421,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,val,,0.5,negative,joint_pass,0.003215434083601286,,,,311,311,0.0,0.00964630225080386,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,test,,0.5,positive,classifier_pass,0.8333333333333334,,,,36,36,0.7222222222222222,0.9444444444444444,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,test,,0.5,positive,distance_pass,1.0,,,,36,36,1.0,1.0,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,test,,0.5,positive,joint_pass,0.8333333333333334,,,,36,36,0.7215277777777778,0.9444444444444444,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,test,,0.5,negative,classifier_pass,0.0,,,,391,391,0.0,0.0,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,test,,0.5,negative,distance_pass,0.8414322250639387,,,,391,391,0.8056265984654731,0.8772378516624041,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+primary_control,calibrated_isotonic,test,,0.5,negative,joint_pass,0.0,,,,391,391,0.0,0.0,"radius=5.185265; tau_rule=validation Youden-best tau=0.50 for calibrated_isotonic; no test labels used; radius_rule=fallback train-rare q95 (no quantile met val positive>=0.90, negative<=0.05)"
+round10_reproduction,uncalibrated,test,,0.8,positive,joint_pass,0.6666666666666666,,,,36,36,,,Round10 radius test_rare_q95=4.618951
+round10_reproduction,uncalibrated,test,,0.8,negative,joint_pass,0.0,,,,391,391,,,Round10 radius test_rare_q95=4.618951
