@@ -10,6 +10,12 @@
 *.tar.gz
 *.whl
 *.diff
+*.xls
+*.xlsx
+*.key
+id_ed25519*
+**/raw/
+**/private_data/
 __pycache__/
 .DS_Store
 FedVaDE_source/
