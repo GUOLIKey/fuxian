@@ -1,0 +1,19 @@
+{
+  "status": "PUSHED",
+  "repository": "https://github.com/GUOLIKey/fuxian",
+  "branch": "research/multica-factorial-v1",
+  "artifact_commit": "ff1d1e837495e957f3a5f6567aa07ff2ac7406fc",
+  "commit_url": "https://github.com/GUOLIKey/fuxian/commit/ff1d1e837495e957f3a5f6567aa07ff2ac7406fc",
+  "branch_url": "https://github.com/GUOLIKey/fuxian/tree/research/multica-factorial-v1",
+  "stage": "STAGE_A_BC",
+  "runs_completed": 12,
+  "runs_expected": 12,
+  "tests": "ALL_TESTS_PASS 8",
+  "integrity": "12/12 ok, 300 rounds, full checkpoints at 100/200/300",
+  "pushed_at": "2026-11-24T01:28:00Z",
+  "notes": [
+    "Only docs, scripts, tests, configs, summary CSVs, figures, frozen PoC CSV/JSON, and monitor scripts were pushed.",
+    "No raw data, model weights, checkpoints, keys, environment variables, or large logs were pushed.",
+    "Stage B/C were not started."
+  ]
+}

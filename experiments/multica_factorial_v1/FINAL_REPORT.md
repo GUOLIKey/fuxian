@@ -173,7 +173,14 @@ Flat-GMM control and a controlled rare-client partition.
 
 ## 12. GitHub
 
-Stage A artifacts are prepared for branch `research/multica-factorial-v1` at
-`https://github.com/GUOLIKey/fuxian`. Push status is recorded in
-`experiment_manifest.json` after the branch is created. No data, weights,
-checkpoints, keys, or large logs are included.
+Pushed to:
+
+- Branch: `research/multica-factorial-v1`
+- Branch URL: https://github.com/GUOLIKey/fuxian/tree/research/multica-factorial-v1
+- Artifact commit: `ff1d1e837495e957f3a5f6567aa07ff2ac7406fc`
+- Commit URL: https://github.com/GUOLIKey/fuxian/commit/ff1d1e837495e957f3a5f6567aa07ff2ac7406fc
+
+Only documentation, source, tests, configs, summary CSVs, figures, frozen-PoC
+CSV/JSON, and monitor scripts were pushed. No raw data, model weights,
+checkpoints, keys, environment variables, or large logs were included.
+`github_publish_status.json` records the same status.
