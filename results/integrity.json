@@ -1,0 +1,114 @@
+{
+  "runs_expected": 12,
+  "runs_seen": 12,
+  "runs_done": 12,
+  "rounds_ok": 12,
+  "eval_ok": 12,
+  "errors": [],
+  "checkpoint_300": 12,
+  "same_client_hashes": true,
+  "same_encoder_hashes": true,
+  "run_details": {
+    "AUTHOR_seed0_off": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.41147148014473894,
+      "nll": 17.277804207550272,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "AUTHOR_seed0_on": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.31973045001486283,
+      "nll": 17.165722981697595,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "AUTHOR_seed1_off": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.4298101456318574,
+      "nll": 17.349625940049087,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "AUTHOR_seed1_on": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.2968489982677289,
+      "nll": 17.236390102742686,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "AUTHOR_seed2_off": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.4980043135741454,
+      "nll": 17.225660784134988,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "AUTHOR_seed2_on": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.49113298538451877,
+      "nll": 17.005987074787804,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "F01_seed0_off": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.40184230798814563,
+      "nll": 16.18874816250828,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "F01_seed0_on": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.4367311310797839,
+      "nll": 15.909951950711836,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "F01_seed1_off": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.3985169725437731,
+      "nll": 16.044399171894785,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "F01_seed1_on": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.4276373649389762,
+      "nll": 15.75456853199847,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "F01_seed2_off": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.39521194482627847,
+      "nll": 16.1131025370802,
+      "checkpoint_300": true,
+      "error": null
+    },
+    "F01_seed2_on": {
+      "status": "DONE",
+      "rounds": 300,
+      "final_ari": 0.42648425083366365,
+      "nll": 15.814439371122301,
+      "checkpoint_300": true,
+      "error": null
+    }
+  },
+  "all_done": true,
+  "all_rounds_300": true,
+  "all_eval_ok": true,
+  "all_checkpoints_300": true,
+  "no_nan_ari_nll": true
+}

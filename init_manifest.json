@@ -1,0 +1,451 @@
+{
+  "models": {
+    "AUTHOR": {
+      "source_path": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/model/server_model_breast_cancer.pk",
+      "source_sha256": "168ad5a4cd619ccee527a4a6c4a6816d35166e3a6bb6bc70b4bbbaa838c2ea85",
+      "source_round": null,
+      "historical_ari_reference": 0.6395,
+      "source_initial_metrics": {
+        "ari": {
+          "mean": 0.6317113652452266,
+          "sd": 0.007541082505416356
+        },
+        "purity": {
+          "mean": 0.8980272428370126,
+          "sd": 0.0023584155614834227
+        },
+        "nmi": {
+          "mean": 0.5064624585257503,
+          "sd": 0.0076257591786698916
+        },
+        "acc": {
+          "mean": 0.8980272428370126,
+          "sd": 0.0023584155614834227
+        }
+      },
+      "server_K": 2,
+      "K_micro": 10,
+      "alpha": 0.01,
+      "schedule": "author",
+      "seeds": {
+        "0": {
+          "base": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/AUTHOR_seed0_base.pt",
+          "on": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/AUTHOR_seed0_on.pt",
+          "base_sha256": "73b8de97fb7e0cc3d2a5659f1ebf34c609190f55025ece0b262aa00c9a681ad6",
+          "on_sha256": "d4d49830c448ee26f89d2d50863cc01f9e081de18224734473dad6b1dd2dc3a9",
+          "client_hash": "6f66063bd6be7b6da1eb0aefc851ecff3a7d32a11434ec4297d070cc0d828a45",
+          "server_encoder_hash_off": "75084a06ad7b6d58867aa06835378f44bc26fcfb004a7c44ad5b3fb393250032",
+          "server_encoder_hash_on": "75084a06ad7b6d58867aa06835378f44bc26fcfb004a7c44ad5b3fb393250032",
+          "initial_metrics_off": {
+            "ari": {
+              "mean": 0.6317113652452266,
+              "sd": 0.007541082505416356
+            },
+            "purity": {
+              "mean": 0.8980272428370126,
+              "sd": 0.0023584155614834227
+            },
+            "nmi": {
+              "mean": 0.5064624585257503,
+              "sd": 0.0076257591786698916
+            },
+            "acc": {
+              "mean": 0.8980272428370126,
+              "sd": 0.0023584155614834227
+            }
+          },
+          "initial_metrics_on": {
+            "ari": {
+              "mean": 0.5893483361822772,
+              "sd": 0.011388439825642934
+            },
+            "purity": {
+              "mean": 0.8842179426961014,
+              "sd": 0.0037133368484833108
+            },
+            "nmi": {
+              "mean": 0.48267381121143904,
+              "sd": 0.010567252082697053
+            },
+            "acc": {
+              "mean": 0.8842179426961014,
+              "sd": 0.0037133368484833108
+            }
+          },
+          "macro_allocation": [
+            3,
+            7
+          ],
+          "macro_sizes": [
+            7,
+            7
+          ],
+          "macro_masses": [
+            0.3245661486934174,
+            0.6754338513065827
+          ],
+          "n_unsafe_merges": 0
+        },
+        "1": {
+          "base": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/AUTHOR_seed1_base.pt",
+          "on": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/AUTHOR_seed1_on.pt",
+          "base_sha256": "5e18600684863c3cd91d4794f625f71f128c38f9803b277496c845c3ea3ffb46",
+          "on_sha256": "9f06d9d4ab99d19eecc9ba265de061f6e81b822c3053b246971db3101bff47f5",
+          "client_hash": "6f66063bd6be7b6da1eb0aefc851ecff3a7d32a11434ec4297d070cc0d828a45",
+          "server_encoder_hash_off": "75084a06ad7b6d58867aa06835378f44bc26fcfb004a7c44ad5b3fb393250032",
+          "server_encoder_hash_on": "75084a06ad7b6d58867aa06835378f44bc26fcfb004a7c44ad5b3fb393250032",
+          "initial_metrics_off": {
+            "ari": {
+              "mean": 0.6317113652452266,
+              "sd": 0.007541082505416356
+            },
+            "purity": {
+              "mean": 0.8980272428370126,
+              "sd": 0.0023584155614834227
+            },
+            "nmi": {
+              "mean": 0.5064624585257503,
+              "sd": 0.0076257591786698916
+            },
+            "acc": {
+              "mean": 0.8980272428370126,
+              "sd": 0.0023584155614834227
+            }
+          },
+          "initial_metrics_on": {
+            "ari": {
+              "mean": 0.5893483361822772,
+              "sd": 0.011388439825642934
+            },
+            "purity": {
+              "mean": 0.8842179426961014,
+              "sd": 0.0037133368484833108
+            },
+            "nmi": {
+              "mean": 0.48267381121143904,
+              "sd": 0.010567252082697053
+            },
+            "acc": {
+              "mean": 0.8842179426961014,
+              "sd": 0.0037133368484833108
+            }
+          },
+          "macro_allocation": [
+            3,
+            7
+          ],
+          "macro_sizes": [
+            7,
+            7
+          ],
+          "macro_masses": [
+            0.3245661486934174,
+            0.6754338513065827
+          ],
+          "n_unsafe_merges": 0
+        },
+        "2": {
+          "base": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/AUTHOR_seed2_base.pt",
+          "on": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/AUTHOR_seed2_on.pt",
+          "base_sha256": "77e6a50d05a982d838669ff682b0bec940c674d1ed4ab745530eadb3a42407a3",
+          "on_sha256": "b8cb285c427345a2b2a3229f822dfe647c7c1b852cd7c7b1d61a7d243e66d440",
+          "client_hash": "6f66063bd6be7b6da1eb0aefc851ecff3a7d32a11434ec4297d070cc0d828a45",
+          "server_encoder_hash_off": "75084a06ad7b6d58867aa06835378f44bc26fcfb004a7c44ad5b3fb393250032",
+          "server_encoder_hash_on": "75084a06ad7b6d58867aa06835378f44bc26fcfb004a7c44ad5b3fb393250032",
+          "initial_metrics_off": {
+            "ari": {
+              "mean": 0.6317113652452266,
+              "sd": 0.007541082505416356
+            },
+            "purity": {
+              "mean": 0.8980272428370126,
+              "sd": 0.0023584155614834227
+            },
+            "nmi": {
+              "mean": 0.5064624585257503,
+              "sd": 0.0076257591786698916
+            },
+            "acc": {
+              "mean": 0.8980272428370126,
+              "sd": 0.0023584155614834227
+            }
+          },
+          "initial_metrics_on": {
+            "ari": {
+              "mean": 0.5893483361822772,
+              "sd": 0.011388439825642934
+            },
+            "purity": {
+              "mean": 0.8842179426961014,
+              "sd": 0.0037133368484833108
+            },
+            "nmi": {
+              "mean": 0.48267381121143904,
+              "sd": 0.010567252082697053
+            },
+            "acc": {
+              "mean": 0.8842179426961014,
+              "sd": 0.0037133368484833108
+            }
+          },
+          "macro_allocation": [
+            3,
+            7
+          ],
+          "macro_sizes": [
+            7,
+            7
+          ],
+          "macro_masses": [
+            0.3245661486934174,
+            0.6754338513065827
+          ],
+          "n_unsafe_merges": 0
+        }
+      },
+      "client_hashes_all_seeds": [
+        "6f66063bd6be7b6da1eb0aefc851ecff3a7d32a11434ec4297d070cc0d828a45",
+        "6f66063bd6be7b6da1eb0aefc851ecff3a7d32a11434ec4297d070cc0d828a45",
+        "6f66063bd6be7b6da1eb0aefc851ecff3a7d32a11434ec4297d070cc0d828a45"
+      ]
+    },
+    "F01": {
+      "source_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/fine/F01/epoch_100_server.pt",
+      "source_sha256": "41f425203990644c6321b68c83b7b5a7343cafe50a56215c7f505775e9912573",
+      "source_round": 100,
+      "historical_ari_reference": 0.614,
+      "source_initial_metrics": {
+        "ari": {
+          "mean": 0.6090344610348442,
+          "sd": 0.006550629682106652
+        },
+        "purity": {
+          "mean": 0.8909816815406295,
+          "sd": 0.002070608481366713
+        },
+        "nmi": {
+          "mean": 0.48124632559075364,
+          "sd": 0.0066340223547255465
+        },
+        "acc": {
+          "mean": 0.8909816815406295,
+          "sd": 0.002070608481366713
+        }
+      },
+      "server_K": 2,
+      "K_micro": 10,
+      "alpha": 0.05,
+      "schedule": "epoch",
+      "seeds": {
+        "0": {
+          "base": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/F01_seed0_base.pt",
+          "on": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/F01_seed0_on.pt",
+          "base_sha256": "ec852a4cc5dbaccceb12c166ef2bbf84f4a1c464d5eb9ffa2507ccff4c01e0b9",
+          "on_sha256": "a72a839e574e36eee39474831b88789f8e9c4eb15fc67728ea92be4ff9ee2e3c",
+          "client_hash": "f21aa0cc44863c1f31bc1c5b800a5a166f15cc5943cbd953bc660ef6b106b3a3",
+          "server_encoder_hash_off": "655e815b050ab72b412d6b34e40fead16a20ac02969c93374d664f8097345df3",
+          "server_encoder_hash_on": "655e815b050ab72b412d6b34e40fead16a20ac02969c93374d664f8097345df3",
+          "initial_metrics_off": {
+            "ari": {
+              "mean": 0.6090344610348442,
+              "sd": 0.006550629682106652
+            },
+            "purity": {
+              "mean": 0.8909816815406295,
+              "sd": 0.002070608481366713
+            },
+            "nmi": {
+              "mean": 0.48124632559075364,
+              "sd": 0.0066340223547255465
+            },
+            "acc": {
+              "mean": 0.8909816815406295,
+              "sd": 0.002070608481366713
+            }
+          },
+          "initial_metrics_on": {
+            "ari": {
+              "mean": 0.6199362292749139,
+              "sd": 0.006364222582396388
+            },
+            "purity": {
+              "mean": 0.8941286989196804,
+              "sd": 0.0020074927727978258
+            },
+            "nmi": {
+              "mean": 0.5049720881542263,
+              "sd": 0.006976638017916671
+            },
+            "acc": {
+              "mean": 0.8941286989196804,
+              "sd": 0.0020074927727978258
+            }
+          },
+          "macro_allocation": [
+            3,
+            7
+          ],
+          "macro_sizes": [
+            7,
+            7
+          ],
+          "macro_masses": [
+            0.3189707266306734,
+            0.6810292733693267
+          ],
+          "n_unsafe_merges": 0
+        },
+        "1": {
+          "base": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/F01_seed1_base.pt",
+          "on": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/F01_seed1_on.pt",
+          "base_sha256": "8e407c547703a5e588edb79711343c1793edea291eb87578e67079d056675fef",
+          "on_sha256": "b89692dcaad333b3631f59f19113283cd93166c55785d9f8376ec13c8f4e8567",
+          "client_hash": "f21aa0cc44863c1f31bc1c5b800a5a166f15cc5943cbd953bc660ef6b106b3a3",
+          "server_encoder_hash_off": "655e815b050ab72b412d6b34e40fead16a20ac02969c93374d664f8097345df3",
+          "server_encoder_hash_on": "655e815b050ab72b412d6b34e40fead16a20ac02969c93374d664f8097345df3",
+          "initial_metrics_off": {
+            "ari": {
+              "mean": 0.6090344610348442,
+              "sd": 0.006550629682106652
+            },
+            "purity": {
+              "mean": 0.8909816815406295,
+              "sd": 0.002070608481366713
+            },
+            "nmi": {
+              "mean": 0.48124632559075364,
+              "sd": 0.0066340223547255465
+            },
+            "acc": {
+              "mean": 0.8909816815406295,
+              "sd": 0.002070608481366713
+            }
+          },
+          "initial_metrics_on": {
+            "ari": {
+              "mean": 0.6199362292749139,
+              "sd": 0.006364222582396388
+            },
+            "purity": {
+              "mean": 0.8941286989196804,
+              "sd": 0.0020074927727978258
+            },
+            "nmi": {
+              "mean": 0.5049720881542263,
+              "sd": 0.006976638017916671
+            },
+            "acc": {
+              "mean": 0.8941286989196804,
+              "sd": 0.0020074927727978258
+            }
+          },
+          "macro_allocation": [
+            3,
+            7
+          ],
+          "macro_sizes": [
+            7,
+            7
+          ],
+          "macro_masses": [
+            0.3189707266306734,
+            0.6810292733693267
+          ],
+          "n_unsafe_merges": 0
+        },
+        "2": {
+          "base": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/F01_seed2_base.pt",
+          "on": "/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1/init/F01_seed2_on.pt",
+          "base_sha256": "d4dc4eb59829ffa71b68eca42e81c8a2e915400fc9f67a29ed52ac2ebecc7038",
+          "on_sha256": "1b5545f18de37d064f99f5c081653875a7dac8b3caf708d78431a3d7deac3e61",
+          "client_hash": "f21aa0cc44863c1f31bc1c5b800a5a166f15cc5943cbd953bc660ef6b106b3a3",
+          "server_encoder_hash_off": "655e815b050ab72b412d6b34e40fead16a20ac02969c93374d664f8097345df3",
+          "server_encoder_hash_on": "655e815b050ab72b412d6b34e40fead16a20ac02969c93374d664f8097345df3",
+          "initial_metrics_off": {
+            "ari": {
+              "mean": 0.6090344610348442,
+              "sd": 0.006550629682106652
+            },
+            "purity": {
+              "mean": 0.8909816815406295,
+              "sd": 0.002070608481366713
+            },
+            "nmi": {
+              "mean": 0.48124632559075364,
+              "sd": 0.0066340223547255465
+            },
+            "acc": {
+              "mean": 0.8909816815406295,
+              "sd": 0.002070608481366713
+            }
+          },
+          "initial_metrics_on": {
+            "ari": {
+              "mean": 0.6199362292749139,
+              "sd": 0.006364222582396388
+            },
+            "purity": {
+              "mean": 0.8941286989196804,
+              "sd": 0.0020074927727978258
+            },
+            "nmi": {
+              "mean": 0.5049720881542263,
+              "sd": 0.006976638017916671
+            },
+            "acc": {
+              "mean": 0.8941286989196804,
+              "sd": 0.0020074927727978258
+            }
+          },
+          "macro_allocation": [
+            3,
+            7
+          ],
+          "macro_sizes": [
+            7,
+            7
+          ],
+          "macro_masses": [
+            0.3189707266306734,
+            0.6810292733693267
+          ],
+          "n_unsafe_merges": 0
+        }
+      },
+      "client_hashes_all_seeds": [
+        "f21aa0cc44863c1f31bc1c5b800a5a166f15cc5943cbd953bc660ef6b106b3a3",
+        "f21aa0cc44863c1f31bc1c5b800a5a166f15cc5943cbd953bc660ef6b106b3a3",
+        "f21aa0cc44863c1f31bc1c5b800a5a166f15cc5943cbd953bc660ef6b106b3a3"
+      ]
+    }
+  },
+  "partition_hash": "cb0fbe1873c5c906aec3a4fd8786ea42dc824a2d0086437fb8f1430db71cb655",
+  "partition_seed": 42,
+  "client_sizes": [
+    115,
+    209,
+    326,
+    56,
+    218,
+    155,
+    350,
+    239,
+    138,
+    323
+  ],
+  "local_K": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2
+  ],
+  "n_local_components": 14,
+  "data_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+  "protocol": "warm-start only"
+}

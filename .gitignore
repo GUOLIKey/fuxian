@@ -1,0 +1,9 @@
+runs/
+runs_archive_collapsed_on/
+init/
+logs/
+__pycache__/
+*.pyc
+*.pt
+*.pk
+.DS_Store
