@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620" role="img" aria-labelledby="title desc">
+<title id="title">Paired effects, same training seed</title>
+<desc id="desc">Stage A paired differences with error bars (SD across three same-seed paired contrasts).</desc>
+<rect width="1000" height="620" fill="#fcfcfb"/>
+<text x="80" y="34" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="600" fill="#0b0b0b">Paired effects, same training seed</text>
+<text x="80" y="55" font-family="Inter, Arial, sans-serif" font-size="12" fill="#52514e">Mean ± SD across seeds 0/1/2. Positive ARI = better; negative NLL = better.</text>
+<text x="80.0" y="54" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#0b0b0b">Unique-row ARI</text>
+<line x1="80.0" y1="193.3" x2="490.0" y2="193.3" stroke="#52514e" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="80.0" y1="554.0" x2="490.0" y2="554.0" stroke="#deddd8" stroke-width="1"/>
+<text x="72.0" y="558.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="10" fill="#52514e">-0.012</text>
+<line x1="80.0" y1="313.0" x2="490.0" y2="313.0" stroke="#deddd8" stroke-width="1"/>
+<text x="72.0" y="317.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="10" fill="#52514e">-0.004</text>
+<line x1="80.0" y1="72.0" x2="490.0" y2="72.0" stroke="#deddd8" stroke-width="1"/>
+<text x="72.0" y="76.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="10" fill="#52514e">0.004</text>
+<line x1="80.0" y1="120.2" x2="490.0" y2="120.2" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="285.0" y="91.8" width="26.9" height="56.7" rx="4" fill="#2a78d6" fill-opacity="0.9"><title>B − A: 0.0021973408938031256</title></rect>
+<line x1="265.3" y1="120.2" x2="358.5" y2="120.2" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="265.3" y1="116.2" x2="265.3" y2="124.2" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="358.5" y1="116.2" x2="358.5" y2="124.2" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="86.0" y="124.2" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">B − A</text>
+<text x="486.0" y="124.2" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">0.002</text>
+<line x1="80.0" y1="216.6" x2="490.0" y2="216.6" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="285.0" y="188.2" width="15.4" height="56.7" rx="4" fill="#2a78d6" fill-opacity="0.9"><title>D − C: 0.0012560011072770734</title></rect>
+<line x1="273.7" y1="216.6" x2="327.0" y2="216.6" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="273.7" y1="212.6" x2="273.7" y2="220.6" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="327.0" y1="212.6" x2="327.0" y2="220.6" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="86.0" y="220.6" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">D − C</text>
+<text x="486.0" y="220.6" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">0.001</text>
+<line x1="80.0" y1="313.0" x2="490.0" y2="313.0" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="171.7" y="284.6" width="113.3" height="56.7" rx="4" fill="#eb6834" fill-opacity="0.9"><title>C − A: -0.00925646398392708</title></rect>
+<line x1="-615.5" y1="313.0" x2="958.8" y2="313.0" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="-615.5" y1="309.0" x2="-615.5" y2="317.0" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="958.8" y1="309.0" x2="958.8" y2="317.0" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="86.0" y="317.0" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">C − A</text>
+<text x="486.0" y="317.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">-0.009</text>
+<line x1="80.0" y1="409.4" x2="490.0" y2="409.4" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="160.2" y="381.0" width="124.8" height="56.7" rx="4" fill="#eb6834" fill-opacity="0.9"><title>D − B: -0.010197803770453132</title></rect>
+<line x1="-620.2" y1="409.4" x2="940.5" y2="409.4" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="-620.2" y1="405.4" x2="-620.2" y2="413.4" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="940.5" y1="405.4" x2="940.5" y2="413.4" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="86.0" y="413.4" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">D − B</text>
+<text x="486.0" y="413.4" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">-0.010</text>
+<line x1="80.0" y1="505.8" x2="490.0" y2="505.8" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="273.5" y="477.4" width="11.5" height="56.7" rx="4" fill="#eb6834" fill-opacity="0.9"><title>Interaction: -0.000941339786526052</title></rect>
+<line x1="253.5" y1="505.8" x2="293.4" y2="505.8" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="253.5" y1="501.8" x2="253.5" y2="509.8" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="293.4" y1="501.8" x2="293.4" y2="509.8" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="86.0" y="509.8" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">Interaction</text>
+<text x="486.0" y="509.8" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">-0.001</text>
+<text x="550.0" y="54" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#0b0b0b">Server GMM NLL</text>
+<line x1="550.0" y1="128.2" x2="960.0" y2="128.2" stroke="#52514e" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="550.0" y1="554.0" x2="960.0" y2="554.0" stroke="#deddd8" stroke-width="1"/>
+<text x="542.0" y="558.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="10" fill="#52514e">-5.763</text>
+<line x1="550.0" y1="313.0" x2="960.0" y2="313.0" stroke="#deddd8" stroke-width="1"/>
+<text x="542.0" y="317.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="10" fill="#52514e">-2.501</text>
+<line x1="550.0" y1="72.0" x2="960.0" y2="72.0" stroke="#deddd8" stroke-width="1"/>
+<text x="542.0" y="76.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="10" fill="#52514e">0.761</text>
+<line x1="550.0" y1="120.2" x2="960.0" y2="120.2" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="755.0" y="91.8" width="0.2" height="56.7" rx="4" fill="#2a78d6" fill-opacity="0.9"><title>B − A: 0.008525375167728555</title></rect>
+<line x1="754.1" y1="120.2" x2="756.3" y2="120.2" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="754.1" y1="116.2" x2="754.1" y2="124.2" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="756.3" y1="116.2" x2="756.3" y2="124.2" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="556.0" y="124.2" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">B − A</text>
+<text x="956.0" y="124.2" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">0.009</text>
+<line x1="550.0" y1="216.6" x2="960.0" y2="216.6" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="755.0" y="188.2" width="0.1" height="56.7" rx="4" fill="#2a78d6" fill-opacity="0.9"><title>D − C: 0.003119691534405907</title></rect>
+<line x1="754.8" y1="216.6" x2="755.4" y2="216.6" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="754.8" y1="212.6" x2="754.8" y2="220.6" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="755.4" y1="212.6" x2="755.4" y2="220.6" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="556.0" y="220.6" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">D − C</text>
+<text x="956.0" y="220.6" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">0.003</text>
+<line x1="550.0" y1="313.0" x2="960.0" y2="313.0" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="626.8" y="284.6" width="128.2" height="56.7" rx="4" fill="#eb6834" fill-opacity="0.9"><title>C − A: -5.004500897792922</title></rect>
+<line x1="615.9" y1="313.0" x2="637.8" y2="313.0" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="615.9" y1="309.0" x2="615.9" y2="317.0" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="637.8" y1="309.0" x2="637.8" y2="317.0" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="556.0" y="317.0" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">C − A</text>
+<text x="956.0" y="317.0" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">-5.005</text>
+<line x1="550.0" y1="409.4" x2="960.0" y2="409.4" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="626.7" y="381.0" width="128.3" height="56.7" rx="4" fill="#eb6834" fill-opacity="0.9"><title>D − B: -5.009906581426245</title></rect>
+<line x1="615.5" y1="409.4" x2="637.9" y2="409.4" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="615.5" y1="405.4" x2="615.5" y2="413.4" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="637.9" y1="405.4" x2="637.9" y2="413.4" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="556.0" y="413.4" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">D − B</text>
+<text x="956.0" y="413.4" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">-5.010</text>
+<line x1="550.0" y1="505.8" x2="960.0" y2="505.8" stroke="#deddd8" stroke-width="1" stroke-opacity="0.45"/>
+<rect x="754.9" y="477.4" width="0.1" height="56.7" rx="4" fill="#eb6834" fill-opacity="0.9"><title>Interaction: -0.005405683633322648</title></rect>
+<line x1="754.0" y1="505.8" x2="755.7" y2="505.8" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="754.0" y1="501.8" x2="754.0" y2="509.8" stroke="#0b0b0b" stroke-width="1.2"/>
+<line x1="755.7" y1="501.8" x2="755.7" y2="509.8" stroke="#0b0b0b" stroke-width="1.2"/>
+<text x="556.0" y="509.8" font-family="Inter, Arial, sans-serif" font-size="11" fill="#0b0b0b">Interaction</text>
+<text x="956.0" y="509.8" text-anchor="end" font-family="Inter, Arial, sans-serif" font-size="11" fill="#52514e">-0.005</text>
+</svg>

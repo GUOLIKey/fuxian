@@ -1,0 +1,233 @@
+{
+  "runs": [
+    {
+      "run": "A_seed0",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "A",
+      "seed": 0,
+      "pretrain": "7cb1143f745f6c405fcbbb399c1421c3d3a0f6ba1a3048a33fe1c0c06852e3de",
+      "aggregation": "original",
+      "schedule": "author",
+      "alpha": 0.01,
+      "source_diff_sha": "c36a33208ce9c9b5ac2c66e5245970ce8ebafbc88c30f9a9c9e08fab6bdae9f2"
+    },
+    {
+      "run": "A_seed1",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "A",
+      "seed": 1,
+      "pretrain": "d90619435b4047340e62863174e1c3dd488f8f8d8e15625099edbbf704bbbfb6",
+      "aggregation": "original",
+      "schedule": "author",
+      "alpha": 0.01,
+      "source_diff_sha": "c36a33208ce9c9b5ac2c66e5245970ce8ebafbc88c30f9a9c9e08fab6bdae9f2"
+    },
+    {
+      "run": "A_seed2",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "A",
+      "seed": 2,
+      "pretrain": "324734bad9adbd728f7f286be76b8f8f77f862c30d2f13e1ea3af9be1324f58e",
+      "aggregation": "original",
+      "schedule": "author",
+      "alpha": 0.01,
+      "source_diff_sha": "c36a33208ce9c9b5ac2c66e5245970ce8ebafbc88c30f9a9c9e08fab6bdae9f2"
+    },
+    {
+      "run": "B_seed0",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "B",
+      "seed": 0,
+      "pretrain": "7cb1143f745f6c405fcbbb399c1421c3d3a0f6ba1a3048a33fe1c0c06852e3de",
+      "aggregation": "multi_ca",
+      "schedule": "author",
+      "alpha": 0.01,
+      "source_diff_sha": "0654845d4ceb1127b328fa72f1a53f019c367b6a0e2c93a7656aeefb3d4860a4"
+    },
+    {
+      "run": "B_seed1",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "B",
+      "seed": 1,
+      "pretrain": "d90619435b4047340e62863174e1c3dd488f8f8d8e15625099edbbf704bbbfb6",
+      "aggregation": "multi_ca",
+      "schedule": "author",
+      "alpha": 0.01,
+      "source_diff_sha": "0654845d4ceb1127b328fa72f1a53f019c367b6a0e2c93a7656aeefb3d4860a4"
+    },
+    {
+      "run": "B_seed2",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "B",
+      "seed": 2,
+      "pretrain": "324734bad9adbd728f7f286be76b8f8f77f862c30d2f13e1ea3af9be1324f58e",
+      "aggregation": "multi_ca",
+      "schedule": "author",
+      "alpha": 0.01,
+      "source_diff_sha": "0654845d4ceb1127b328fa72f1a53f019c367b6a0e2c93a7656aeefb3d4860a4"
+    },
+    {
+      "run": "C_seed0",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "C",
+      "seed": 0,
+      "pretrain": "7cb1143f745f6c405fcbbb399c1421c3d3a0f6ba1a3048a33fe1c0c06852e3de",
+      "aggregation": "original",
+      "schedule": "epoch",
+      "alpha": 0.05,
+      "source_diff_sha": "fd2bf5aaafb1fafa4acfbb4dfd37c6314f28e448bede64be78e7191d1511bbc2"
+    },
+    {
+      "run": "C_seed1",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "C",
+      "seed": 1,
+      "pretrain": "d90619435b4047340e62863174e1c3dd488f8f8d8e15625099edbbf704bbbfb6",
+      "aggregation": "original",
+      "schedule": "epoch",
+      "alpha": 0.05,
+      "source_diff_sha": "fd2bf5aaafb1fafa4acfbb4dfd37c6314f28e448bede64be78e7191d1511bbc2"
+    },
+    {
+      "run": "C_seed2",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "C",
+      "seed": 2,
+      "pretrain": "324734bad9adbd728f7f286be76b8f8f77f862c30d2f13e1ea3af9be1324f58e",
+      "aggregation": "original",
+      "schedule": "epoch",
+      "alpha": 0.05,
+      "source_diff_sha": "fd2bf5aaafb1fafa4acfbb4dfd37c6314f28e448bede64be78e7191d1511bbc2"
+    },
+    {
+      "run": "D_seed0",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "D",
+      "seed": 0,
+      "pretrain": "7cb1143f745f6c405fcbbb399c1421c3d3a0f6ba1a3048a33fe1c0c06852e3de",
+      "aggregation": "multi_ca",
+      "schedule": "epoch",
+      "alpha": 0.05,
+      "source_diff_sha": "6915dcb4873ed5a48c9fe505ee1308031dfadb9897004d1560948bfd5cd8f5ae"
+    },
+    {
+      "run": "D_seed1",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "D",
+      "seed": 1,
+      "pretrain": "d90619435b4047340e62863174e1c3dd488f8f8d8e15625099edbbf704bbbfb6",
+      "aggregation": "multi_ca",
+      "schedule": "epoch",
+      "alpha": 0.05,
+      "source_diff_sha": "6915dcb4873ed5a48c9fe505ee1308031dfadb9897004d1560948bfd5cd8f5ae"
+    },
+    {
+      "run": "D_seed2",
+      "status": "ok",
+      "rounds": 300,
+      "rounds300": 300,
+      "full": [
+        true,
+        true,
+        true
+      ],
+      "clients": 10,
+      "group": "D",
+      "seed": 2,
+      "pretrain": "324734bad9adbd728f7f286be76b8f8f77f862c30d2f13e1ea3af9be1324f58e",
+      "aggregation": "multi_ca",
+      "schedule": "epoch",
+      "alpha": 0.05,
+      "source_diff_sha": "6915dcb4873ed5a48c9fe505ee1308031dfadb9897004d1560948bfd5cd8f5ae"
+    }
+  ],
+  "errors": []
+}

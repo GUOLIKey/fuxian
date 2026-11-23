@@ -1,0 +1,118 @@
+{
+  "experiment": "multica_factorial_v1_stage_a_bc",
+  "groups": {
+    "A": {
+      "alpha": 0.01,
+      "schedule": "author",
+      "aggregation": "original"
+    },
+    "B": {
+      "alpha": 0.01,
+      "schedule": "author",
+      "aggregation": "multi_ca"
+    },
+    "C": {
+      "alpha": 0.05,
+      "schedule": "epoch",
+      "aggregation": "original"
+    },
+    "D": {
+      "alpha": 0.05,
+      "schedule": "epoch",
+      "aggregation": "multi_ca"
+    }
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "rounds": 300,
+  "pretrain_rounds": 50,
+  "partition_seed": 42,
+  "gmm_seed": 42,
+  "multi_ca": {
+    "target_components": 2,
+    "max_components": 2,
+    "min_components": 2,
+    "linkage": "complete",
+    "merge_threshold": 1.0,
+    "allow_early_stop": false
+  },
+  "pretrain": {
+    "seed0": {
+      "seed": 0,
+      "pretrain_epochs": 50,
+      "clients": 10,
+      "batch_size": 200,
+      "global_K": 2,
+      "local_K": "author label-assisted len(unique(local_y))",
+      "lr_pretrain": 0.001,
+      "sample_M": 100,
+      "partition_seed": 42,
+      "gmm_seed": 42,
+      "device": "cuda",
+      "source": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+      "source_sha256": {
+        "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+        "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+        "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+        "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+      },
+      "data_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+      "checkpoint_sha256": "7cb1143f745f6c405fcbbb399c1421c3d3a0f6ba1a3048a33fe1c0c06852e3de",
+      "note": "Shared pretrain for A/B/C/D of this seed; pretrain is independent of alpha and post-pretrain scheduler."
+    },
+    "seed1": {
+      "seed": 1,
+      "pretrain_epochs": 50,
+      "clients": 10,
+      "batch_size": 200,
+      "global_K": 2,
+      "local_K": "author label-assisted len(unique(local_y))",
+      "lr_pretrain": 0.001,
+      "sample_M": 100,
+      "partition_seed": 42,
+      "gmm_seed": 42,
+      "device": "cuda",
+      "source": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+      "source_sha256": {
+        "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+        "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+        "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+        "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+      },
+      "data_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+      "checkpoint_sha256": "d90619435b4047340e62863174e1c3dd488f8f8d8e15625099edbbf704bbbfb6",
+      "note": "Shared pretrain for A/B/C/D of this seed; pretrain is independent of alpha and post-pretrain scheduler."
+    },
+    "seed2": {
+      "seed": 2,
+      "pretrain_epochs": 50,
+      "clients": 10,
+      "batch_size": 200,
+      "global_K": 2,
+      "local_K": "author label-assisted len(unique(local_y))",
+      "lr_pretrain": 0.001,
+      "sample_M": 100,
+      "partition_seed": 42,
+      "gmm_seed": 42,
+      "device": "cuda",
+      "source": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+      "source_sha256": {
+        "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+        "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+        "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+        "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+      },
+      "data_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+      "checkpoint_sha256": "324734bad9adbd728f7f286be76b8f8f77f862c30d2f13e1ea3af9be1324f58e",
+      "note": "Shared pretrain for A/B/C/D of this seed; pretrain is independent of alpha and post-pretrain scheduler."
+    }
+  },
+  "notes": [
+    "BC no independent test split",
+    "capacity-matched K=2",
+    "Stage B/C not started"
+  ]
+}
