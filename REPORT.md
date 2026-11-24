@@ -78,9 +78,9 @@ B 与 C 在 K=7 时：
 
 **原因**：Macro 划分与 Macro 内 Micro 合并使用的是**同一棵 complete-linkage normalized-Bures 树**。Macro 层只是这棵树在 K=2 处的一个切分；在 K=7 处，两个 Macro 内的合并集合恰好等于全局 Flat 合并的前 7 个叶。因此层次结构只是同一组叶的**重新标注**，没有产生不同的 GMM。
 
-**因此：Multi-CA 没有优于同容量 Flat GMM；B 与 C 是同一个模型。** 之前 elbow 停止规则（K=4）下 B 与 C 也完全相同，说明这一等价性不依赖于具体的自适应阈值。K=2→7 的指标改善来自**容量增加**（B 单独就实现了同样的改善），不是 Macro–Micro 层次带来的。
+**因此：Multi-CA 没有优于同容量 Flat GMM；B 与 C 是同一个模型。** 之前 elbow 停止规则（K=4）下 B 与 C 也完全相同，说明这一等价性不依赖于具体的自适应阈值。B 单独就实现了 B/C 相对 A 的全部差异；层次结构没有额外贡献。
 
-A 与 B/C 的横向差异（ARI +0.0158、NLL −0.4347、MMD −0.0273）只能作为描述性参考：A 在 server 空间，B/C 在 client 空间；且 B=C，不能把差异归因于 Multi-CA。
+A 与 B/C 的横向差异（ARI +0.0158、NLL −0.4347、MMD −0.0273）只能作为描述性参考：A 在 server 空间，B/C 在 client 空间；且 B=C。因此既不能把差异归因于 Multi-CA，也不能把它当作干净的容量效应估计。
 
 ## 6. Union 诊断
 

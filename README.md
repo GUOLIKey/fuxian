@@ -14,8 +14,9 @@ A reproduces the historical F01 per-seed ARI exactly (0.6053 over seeds 0–9).
 **B and C are the same model**: identical leaf partitions, weights, means,
 log-variances, macro map and all metrics. Multi-CA does not beat a
 same-capacity flat GMM here; the macro layer is a relabeling of the same
-complete-linkage Wasserstein tree. The improvement over A is a capacity effect
-(K 2→7), and the A-vs-B/C comparison is also cross-latent-space.
+complete-linkage Wasserstein tree. B alone accounts for the difference from A,
+and because A is in the server space while B/C are in the client space, the
+A-vs-B/C magnitude is descriptive, not a clean capacity estimate.
 
 ## Latent-space check
 
