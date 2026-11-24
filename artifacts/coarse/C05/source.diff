@@ -1,0 +1,43 @@
+--- author/main.py
++++ copy/main.py
+@@ -230,21 +230,22 @@
+             purity, ari = validation(tru, pre)
+             tqdm.write(f"Average L_c: {L_c:.4f}, L_s: {L_s:.4f}, Purity: {purity:.4f}, ARI: {ari:.4f}")
+             Result.append([L_c, L_s, purity, ari])
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
++            _observe(epoch + 1, server, clients, DL, L_c, L_s, purity, ari)
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++

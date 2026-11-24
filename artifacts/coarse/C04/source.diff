@@ -1,0 +1,54 @@
+--- author/main.py
++++ copy/main.py
+@@ -144,8 +144,8 @@
+ 
+                     loss.backward()
+                     c['optimizer'].step()
+-                    c['lr_s'].step()
+-
++
++                c['lr_s'].step()
+                 clients_vae_param.append(c['vade'].state_dict())
+ 
+             L_c /= args.client_num
+@@ -230,21 +230,22 @@
+             purity, ari = validation(tru, pre)
+             tqdm.write(f"Average L_c: {L_c:.4f}, L_s: {L_s:.4f}, Purity: {purity:.4f}, ARI: {ari:.4f}")
+             Result.append([L_c, L_s, purity, ari])
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
++            _observe(epoch + 1, server, clients, DL, L_c, L_s, purity, ari)
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++

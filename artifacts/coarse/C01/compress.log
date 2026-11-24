@@ -1,0 +1,8 @@
+
+$ /root/autodl-tmp/fedvade_project/.venv-cpu/bin/python /root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/scripts/compress_full_checkpoints.py --run-dir /root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/coarse/C01
+{"file": "epoch_025_full.pt", "kept": false, "raw_mb": 343.4, "gz_mb": 274.0}
+{"file": "epoch_050_full.pt", "kept": false, "raw_mb": 343.4, "gz_mb": 274.5}
+{"file": "epoch_075_full.pt", "kept": false, "raw_mb": 343.4, "gz_mb": 274.8}
+{"file": "epoch_100_full.pt", "kept": false, "raw_mb": 343.4, "gz_mb": 274.9}
+{"file": "epoch_125_full.pt", "kept": false, "raw_mb": 343.4, "gz_mb": 69.7}
+{"file": "epoch_150_full.pt", "kept": false, "raw_mb": 343.4, "gz_mb": 275.0}

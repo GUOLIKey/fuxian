@@ -1,0 +1,52 @@
+{
+  "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/fine/F01/epoch_100_full.pt",
+  "round": 100,
+  "next_round": 101,
+  "got": {
+    "client_loss": 4.866437602043152,
+    "server_loss": 2.112144947052002,
+    "purity": 0.8830436824800376,
+    "ari": 0.5831924944280963
+  },
+  "expected": {
+    "client_loss": 4.866437554359436,
+    "server_loss": 2.112144947052002,
+    "purity": 0.8830436824800376,
+    "ari": 0.5831924944280963
+  },
+  "delta": {
+    "client_loss": 4.7683715642676816e-08,
+    "server_loss": 0.0,
+    "purity": 0.0,
+    "ari": 0.0
+  },
+  "exact_1e-6": true,
+  "n_clients": 10,
+  "client_K": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    2
+  ],
+  "optimizer_states": 10,
+  "scheduler_states": 10,
+  "partition_records": [
+    115,
+    209,
+    326,
+    56,
+    218,
+    155,
+    350,
+    239,
+    138,
+    323
+  ],
+  "schedule": "epoch"
+}

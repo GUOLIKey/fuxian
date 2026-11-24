@@ -1,0 +1,30 @@
+[
+  {
+    "id": "C04",
+    "lr": 0.0005,
+    "alpha": 0.01,
+    "schedule": "epoch",
+    "sample": 100
+  },
+  {
+    "id": "C13",
+    "lr": 0.002,
+    "alpha": 0.05,
+    "schedule": "author",
+    "sample": 100
+  },
+  {
+    "id": "C14",
+    "lr": 0.002,
+    "alpha": 0.05,
+    "schedule": "epoch",
+    "sample": 100
+  },
+  {
+    "id": "C06",
+    "lr": 0.001,
+    "alpha": 0.01,
+    "schedule": "epoch",
+    "sample": 100
+  }
+]

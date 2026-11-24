@@ -1,0 +1,143 @@
+{
+  "seed": 0,
+  "lr": 0.0005,
+  "alpha": 0.01,
+  "schedule": "epoch",
+  "sample": 100,
+  "pretrain": 50,
+  "rounds": 150,
+  "save_every": 25,
+  "batch_size": 200,
+  "clients": 10,
+  "latent_dim": 10,
+  "clusters": 2,
+  "partition_seed": 42,
+  "gmm_seed": 42,
+  "gamma": 0.85,
+  "step_size": 10,
+  "device": "cpu",
+  "source_dir": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+  "author_source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9",
+    "dataset/breast_cancer.csv": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc"
+  },
+  "executed_source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "6fc11a8faff6ba86c88822fdee8aa0978e983633e781a3d3aab2cf3a353b75e7",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9",
+    "dataset/breast_cancer.csv": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc"
+  },
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/scripts/round7_runner_full.py",
+    "--source",
+    "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source",
+    "--out",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/coarse/C04",
+    "--lr",
+    "0.0005",
+    "--alpha",
+    "0.01",
+    "--schedule",
+    "epoch",
+    "--sample",
+    "100",
+    "--rounds",
+    "150",
+    "--pretrain",
+    "50",
+    "--save-every",
+    "25",
+    "--seed",
+    "0"
+  ],
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "torch": "2.0.1+cpu",
+  "numpy": "1.25.2",
+  "partition": [
+    {
+      "size": 115,
+      "batches": 1,
+      "tensor_sha256": [
+        "2a67db1617cff4012aee096167ebe0658f09032994ce92b44cd23d51141a2874",
+        "2211e3d7915507b94bf14efafa3a951cc9a82a3ea4ed0a6f4dc612f640af1ae9"
+      ]
+    },
+    {
+      "size": 209,
+      "batches": 2,
+      "tensor_sha256": [
+        "9dd8fd1e3eddb8109e5329dfef57092f69382598da07ac2d1c22e6fe42841cf6",
+        "f2df0eacb36e9df2d92eb3cbf17e5b21948fd87aa7fbaec0dae2c65aa536463c"
+      ]
+    },
+    {
+      "size": 326,
+      "batches": 2,
+      "tensor_sha256": [
+        "f2cd462a0e20ccf24dae55b61986a81b525fbe32030f0df08c3c9b92c333ce7f",
+        "8e55477a48b6bc3ad8bcb99f1451fd1a7fdddf992d68348d4b040994c547498c"
+      ]
+    },
+    {
+      "size": 56,
+      "batches": 1,
+      "tensor_sha256": [
+        "1f5eefa47fadf37d325e8b3a24aa4b22578b6725ec30bf59409023ad53a23242",
+        "5c55c8f4db4010ba9203d83536d0609856af8c847ac039e37e7dde8fbd574b61"
+      ]
+    },
+    {
+      "size": 218,
+      "batches": 2,
+      "tensor_sha256": [
+        "68debafa2134e1c10944acd5a63cdbbc4dc43c5e7b3d3b9eeec0038d51ba79dd",
+        "a3358e5022fb650fe417906dc23b870c80f799edad08e7057ae1ec97bade3201"
+      ]
+    },
+    {
+      "size": 155,
+      "batches": 1,
+      "tensor_sha256": [
+        "ea134ce37e469899b743865e89377c47c17090a8a2477bbe754af2ebe1b573e4",
+        "be35dae855452c2ddbc5fb9264fd7325e2d0fa3392fdf5ef30ac94b9439e7532"
+      ]
+    },
+    {
+      "size": 350,
+      "batches": 2,
+      "tensor_sha256": [
+        "8d6ab635d11994e3f7b103fed4f23b58fda951cf68323b02b216fa2c7080f96c",
+        "e9d124ee3326a07377bcb47984318b4b8f8bac4be10f22c668bb79724c6a266d"
+      ]
+    },
+    {
+      "size": 239,
+      "batches": 2,
+      "tensor_sha256": [
+        "ed8b2f2fb95d2e810cc67fcf047878d62b5199c23bfa332e6d133d5ae365e193",
+        "c60d74cd912a6feb6ca310a2e2b1909ae911e8c1bea5ee1a0ec0c7cdb6dc3300"
+      ]
+    },
+    {
+      "size": 138,
+      "batches": 1,
+      "tensor_sha256": [
+        "b58e7de7f95dcd5429dab99f0859b5985488127355a5fd3c623beffeb9370b64",
+        "fb1339accb621aabc6e6b988f089020c323a12586367dc790489692e42e0984f"
+      ]
+    },
+    {
+      "size": 323,
+      "batches": 2,
+      "tensor_sha256": [
+        "9bd9b247bdb107fbb9a81c718784bb3809549a10214c7bfc6a23a55181308cc2",
+        "f31ea0bbf2995d2862682bcfb27361b63654c98420775ecc7f3767828e6e2505"
+      ]
+    }
+  ]
+}
