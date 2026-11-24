@@ -1,12 +1,14 @@
 """Aggregate the 12 warm-start runs and write the report tables. No training."""
 from __future__ import annotations
 
+import hashlib
 import json
 import math
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import torch
 
 EXP = Path('/root/autodl-tmp/fedvade_project/experiments/multica_pretrained_2x2_v1')
 RUNS = EXP / 'runs'
@@ -25,6 +27,16 @@ def f(x, nd=4):
 
 def load_manifest():
     return json.loads((EXP / 'init_manifest.json').read_text())
+
+
+def state_hash(state, exclude_gmm=False):
+    h = hashlib.sha256()
+    for k in sorted(state):
+        if exclude_gmm and k in ('rho_', 'mu_c', 'log_sigma2_c'):
+            continue
+        h.update(k.encode())
+        h.update(state[k].detach().cpu().numpy().tobytes())
+    return h.hexdigest()
 
 
 def main():
@@ -145,6 +157,38 @@ def main():
     ps = pd.DataFrame(psum)
     ps.to_csv(RES / 'paired_effects.csv', index=False)
 
+    # Cross-model (vertical) contrasts, paired by seed:
+    # C-A compares the two OFF baselines; D-B compares the two Multi-CA runs.
+    vertical = []
+    for (ga, ma), (gb, mb) in ((('A', 'AUTHOR'), ('C', 'F01')),
+                               (('B', 'AUTHOR'), ('D', 'F01'))):
+        for seed in (0, 1, 2):
+            a = df[(df.group == ga) & (df.seed == seed)]
+            b = df[(df.group == gb) & (df.seed == seed)]
+            if len(a) != 1 or len(b) != 1:
+                continue
+            a = a.iloc[0]; b = b.iloc[0]
+            for metric in keys:
+                va, vb = a[metric], b[metric]
+                vertical.append({
+                    'contrast': f'{gb}-{ga}', 'seed': seed, 'metric': metric,
+                    'delta': None if pd.isna(va) or pd.isna(vb)
+                    else float(vb) - float(va)})
+    vdf = pd.DataFrame(vertical)
+    vdf.to_csv(RES / 'vertical_effects_raw.csv', index=False)
+    vsum = []
+    for contrast in ('C-A', 'D-B'):
+        for metric in keys:
+            vals = vdf[(vdf.contrast == contrast) & (vdf.metric == metric)][
+                'delta'].dropna().to_numpy()
+            if len(vals):
+                vsum.append({'contrast': contrast, 'metric': metric,
+                             'n': len(vals), 'mean_delta': float(vals.mean()),
+                             'sd_delta': float(vals.std(ddof=1)) if len(vals) > 1 else None,
+                             'values': json.dumps([float(x) for x in vals])})
+    vs = pd.DataFrame(vsum)
+    vs.to_csv(RES / 'vertical_effects.csv', index=False)
+
     # Training curves at selected rounds.
     curve_rows = []
     for model, off_group, on_group in MODELS:
@@ -182,7 +226,12 @@ def main():
         m = manifest['models'][model]
         for seed in ('0', '1', '2'):
             s = m['seeds'][seed]
-            if s['client_hash'] != s['client_hash']:
+            base = torch.load(s['base'], map_location='cpu')
+            on = torch.load(s['on'], map_location='cpu')
+            if (base.get('client_hash') != on.get('client_hash')
+                    or base.get('client_hash') != s.get('client_hash')
+                    or any(state_hash(base['clients'][i]) != state_hash(on['clients'][i])
+                           for i in range(len(base['clients'])))):
                 integrity['same_client_hashes'] = False
             if s['server_encoder_hash_off'] != s['server_encoder_hash_on']:
                 integrity['same_encoder_hashes'] = False
@@ -194,6 +243,9 @@ def main():
         return (r['mean'].iloc[0], r['sd'].iloc[0]) if len(r) else (None, None)
     def pmean(model, metric):
         r = ps[(ps.model == model) & (ps.metric == metric)]
+        return (r['mean_delta'].iloc[0], r['sd_delta'].iloc[0]) if len(r) else (None, None)
+    def vmean(contrast, metric):
+        r = vs[(vs.contrast == contrast) & (vs.metric == metric)]
         return (r['mean_delta'].iloc[0], r['sd_delta'].iloc[0]) if len(r) else (None, None)
 
     lines = ['# FedVaDE + Multi-CA 2×2 Warm-Start Report', '',
@@ -231,7 +283,9 @@ def main():
               'replaces the server GMM with that aggregation. The ON server optimizer trains',
               'encoder/decoder only; the GMM is supplied by Multi-CA, so it cannot collapse',
               'back to a K=2 gradient solution. OFF and ON share identical client states,',
-              'encoder/decoder initialization, data order, and seed.', '',
+              'encoder/decoder initialization, data order, and seed. The ON server GMM at',
+              'round 0 is the Multi-CA aggregation of those same client GMMs; that GMM',
+              'replacement is the treatment itself, not a difference in client setup.', '',
               '`K_micro=10` was selected label-free by BIC on the initial real latents',
               '(both models selected 10). No test labels were used for capacity or merging.', '',
               '## 4. Final results (mean ± SD over seeds 0,1,2)', '',
@@ -272,6 +326,24 @@ def main():
                      f"{f(vals['n_supported_20'][0],1)} | {f(vals['n_ghost'][0],1)} |")
     lines += ['', 'Negative ΔNLL/ΔMMD/ΔSWD is better. These are three paired seeds; no',
               'significance test is claimed.', '',
+              '### Cross-model (vertical) contrasts', '',
+              'C−A compares the two OFF baselines; D−B compares the two Multi-CA',
+              'runs, paired by seed. Positive Δ means the later group is larger.', '',
+              '| Contrast | ΔARI | ΔPurity | ΔNMI | ΔNLL | ΔGen MMD | ΔGen SWD |',
+              '|---|---:|---:|---:|---:|---:|---:|']
+    for contrast in ('C-A', 'D-B'):
+        vals = {k: vmean(contrast, k) for k in
+                ('final_ari', 'final_purity', 'final_nmi', 'nll', 'gen_mmd', 'gen_swd')}
+        lines.append(f"| {contrast} | {f(vals['final_ari'][0])} ± {f(vals['final_ari'][1])} | "
+                     f"{f(vals['final_purity'][0])} ± {f(vals['final_purity'][1])} | "
+                     f"{f(vals['final_nmi'][0])} ± {f(vals['final_nmi'][1])} | "
+                     f"{f(vals['nll'][0])} ± {f(vals['nll'][1])} | "
+                     f"{f(vals['gen_mmd'][0],5)} ± {f(vals['gen_mmd'][1],5)} | "
+                     f"{f(vals['gen_swd'][0],5)} ± {f(vals['gen_swd'][1],5)} |")
+    lines += ['', 'Negative ΔNLL/MMD/SWD is better here too. C−A is not a controlled',
+              'comparison: the two baselines differ in alpha, scheduler placement, and',
+              'source checkpoint. D−B inherits the same difference. These rows are',
+              'descriptive, not causal.', '',
               '## 6. Initial-to-final degradation', '',
               '| Group | Initial ARI | Final ARI | Δ (final−initial) |', '|---|---:|---:|---:|']
     for group in ['A', 'B', 'C', 'D']:
@@ -333,10 +405,24 @@ def main():
               '  by the server ELBO; this is the explicit micro-preservation design.',
               '- No true client-specific rare-mode labels exist in BC; rare/ghost evidence',
               '  is preliminary.',
+              '- **Client trajectories are identical between OFF and ON by construction.**',
+              '  The author loop broadcasts the client average `server_vade_param`, not the',
+              '  server-trained model. Verified: all 300 per-round client losses are',
+              '  bit-identical for all six OFF/ON seed pairs. Multi-CA therefore affects',
+              '  the server encoder/decoder after each round and the server GMM used for',
+              '  evaluation; it does not change client optimization or the broadcast',
+              '  model. This is faithful to the author code but limits causal scope to',
+              '  the server side.',
+              '- The F01 source is `epoch_100_server.pt`, the checkpoint whose historical',
+              '  ARI is 0.6140 (the fine run\'s best exploratory ARI), not the epoch-300',
+              '  checkpoint (historical ARI 0.5138).',
+              '- The shared initial state is the server encoder/decoder and all client',
+              '  states; the ON server GMM at round 0 is the Multi-CA aggregation of the',
+              '  same client GMMs. That GMM replacement is the treatment itself.',
               '',
               '## 10. Artifacts', '',
               '- `results/per_seed.csv`, `group_mean_std.csv`, `paired_effects.csv`,',
-              '  `training_curve_mean.csv`, `integrity.json`',
+              '  `vertical_effects.csv`, `training_curve_mean.csv`, `integrity.json`',
               '- `runs/*/rounds.jsonl`, `evaluation.json`, `config.json`; checkpoints remain',
               '  on the server and are not uploaded.',
               '- Monitor: `monitoring/remote_status.sh` and the Mac `.command`.',

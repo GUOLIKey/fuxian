@@ -41,7 +41,9 @@ current client local GMMs every round, samples it for server training, and
 replaces the server GMM with that aggregation. The ON server optimizer trains
 encoder/decoder only; the GMM is supplied by Multi-CA, so it cannot collapse
 back to a K=2 gradient solution. OFF and ON share identical client states,
-encoder/decoder initialization, data order, and seed.
+encoder/decoder initialization, data order, and seed. The ON server GMM at
+round 0 is the Multi-CA aggregation of those same client GMMs; that GMM
+replacement is the treatment itself, not a difference in client setup.
 
 `K_micro=10` was selected label-free by BIC on the initial real latents
 (both models selected 10). No test labels were used for capacity or merging.
@@ -84,6 +86,21 @@ encoder/decoder initialization, data order, and seed.
 
 Negative ΔNLL/ΔMMD/ΔSWD is better. These are three paired seeds; no
 significance test is claimed.
+
+### Cross-model (vertical) contrasts
+
+C−A compares the two OFF baselines; D−B compares the two Multi-CA
+runs, paired by seed. Positive Δ means the later group is larger.
+
+| Contrast | ΔARI | ΔPurity | ΔNMI | ΔNLL | ΔGen MMD | ΔGen SWD |
+|---|---:|---:|---:|---:|---:|---:|
+| C-A | -0.0479 ± 0.0488 | -0.0149 ± 0.0181 | -0.0978 ± 0.0382 | -1.1689 ± 0.1186 | -0.04177 ± 0.01261 | -0.06085 ± 0.00728 |
+| D-B | 0.0610 ± 0.1091 | 0.0286 ± 0.0433 | -0.0375 ± 0.0712 | -1.3097 ± 0.1525 | -0.04584 ± 0.01255 | -0.06441 ± 0.00545 |
+
+Negative ΔNLL/MMD/SWD is better here too. C−A is not a controlled
+comparison: the two baselines differ in alpha, scheduler placement, and
+source checkpoint. D−B inherits the same difference. These rows are
+descriptive, not causal.
 
 ## 6. Initial-to-final degradation
 
@@ -150,11 +167,25 @@ micro-retention result, not evidence of broad meaningful micro retention.
   by the server ELBO; this is the explicit micro-preservation design.
 - No true client-specific rare-mode labels exist in BC; rare/ghost evidence
   is preliminary.
+- **Client trajectories are identical between OFF and ON by construction.**
+  The author loop broadcasts the client average `server_vade_param`, not the
+  server-trained model. Verified: all 300 per-round client losses are
+  bit-identical for all six OFF/ON seed pairs. Multi-CA therefore affects
+  the server encoder/decoder after each round and the server GMM used for
+  evaluation; it does not change client optimization or the broadcast
+  model. This is faithful to the author code but limits causal scope to
+  the server side.
+- The F01 source is `epoch_100_server.pt`, the checkpoint whose historical
+  ARI is 0.6140 (the fine run's best exploratory ARI), not the epoch-300
+  checkpoint (historical ARI 0.5138).
+- The shared initial state is the server encoder/decoder and all client
+  states; the ON server GMM at round 0 is the Multi-CA aggregation of the
+  same client GMMs. That GMM replacement is the treatment itself.
 
 ## 10. Artifacts
 
 - `results/per_seed.csv`, `group_mean_std.csv`, `paired_effects.csv`,
-  `training_curve_mean.csv`, `integrity.json`
+  `vertical_effects.csv`, `training_curve_mean.csv`, `integrity.json`
 - `runs/*/rounds.jsonl`, `evaluation.json`, `config.json`; checkpoints remain
   on the server and are not uploaded.
 - Monitor: `monitoring/remote_status.sh` and the Mac `.command`.

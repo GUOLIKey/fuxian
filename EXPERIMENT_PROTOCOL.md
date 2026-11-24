@@ -56,7 +56,9 @@ the author loop with `gmm_sampling` and K=2.
 - Partition: author `make_noniid_clients(..., seed=42)`, 10 clients.
 - Client local K: 1 or 2 by local labels; 14 total components.
 - OFF/ON share client states, encoder/decoder hashes, data-loader seeds, and
-  RNG state. Round-1 client loss is checked identical.
+  RNG state. All 300 per-round client losses are verified identical for every
+  OFF/ON seed pair (the author loop broadcasts the client average, not the
+  server-trained model).
 - Training seed 0/1/2 changes data-loader/RNG seed; it is paired across OFF/ON.
 - A/B alpha=0.01, author per-minibatch client scheduler.
 - C/D alpha=0.05, F01 per-epoch client scheduler.

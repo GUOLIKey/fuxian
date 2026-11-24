@@ -25,5 +25,11 @@ model-dependent (B−A negative; D−C positive). Micro retention is partial:
 roughly half of the ON mass sits on <20-support micros. The warm start drops
 all groups below their initial ARI before partial recovery.
 
+Because the author loop broadcasts the client-average model rather than the
+server-trained model, OFF and ON client trajectories are bit-identical in all
+300 rounds; the ON/OFF difference is confined to the server model/GMM and the
+server-side metrics. See `REPORT.md` §9 for the full caveat list and
+[`audit/VERIFICATION.md`](audit/VERIFICATION.md) for the checks.
+
 Artifacts: `results/`, `figures/`, `configs/`, `scripts/`, `tests/`,
 `monitoring/`. Data, weights, and checkpoints are not in this repository.

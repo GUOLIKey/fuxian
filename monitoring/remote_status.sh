@@ -35,11 +35,21 @@ for _, _, _, o in runs:
     counts[st] = counts.get(st, 0) + 1
 print(f"Runs: {len(runs)} | RUNNING {counts.get('RUNNING',0)} | DONE {counts.get('DONE',0)} | ERROR {counts.get('ERROR',0)} | PENDING {counts.get('PENDING',0)}")
 print()
-print("Model  Seed Agg  Round   ARI     NLL     K    GenMMD   GenSWD   Status")
-print("-----  ---- ---  -----  ------  ------  ---  -------  -------  ------")
+print("Model  Seed Agg  Round    Loss_c   Loss_s      ARI      NLL    K   GenMMD   GenSWD   Status")
+print("-----  ---- ---  -----  -------  -------  -------  -------  ---  -------  -------  ------")
 for model, seed, agg, o in runs:
     st = o.get('status', 'PENDING')
     latest = o.get('latest') or {}
+    last_round = {}
+    d = exp / 'runs' / f'{model}_seed{seed}_{agg}'
+    rp = d / 'rounds.jsonl'
+    if rp.exists():
+        try:
+            rlines = [x for x in rp.read_text().splitlines() if x.strip()]
+            if rlines:
+                last_round = json.loads(rlines[-1])
+        except Exception:
+            last_round = {}
     if st == 'DONE' and isinstance(latest.get('client_record_metrics_10seed'), dict):
         ari = latest['client_record_metrics_10seed']['ari']['mean']
         nll = latest.get('nll_unique')
@@ -54,9 +64,13 @@ for model, seed, agg, o in runs:
         mmd = None
         swd = None
         rnd = o.get('round', 0)
-    def f(x, w=6, p=4):
+    def f(x, w=7, p=4):
         return '—'.rjust(w) if x is None else f'{float(x):.{p}f}'.rjust(w)
-    print(f"{model:5}  {seed:4} {agg:3}  {str(rnd):>5}  {f(ari)}  {f(nll)}  {str(k if k is not None else '—'):>3}  {f(mmd,7)}  {f(swd,7)}  {st}")
+    lc = last_round.get('client_loss')
+    ls = last_round.get('server_loss')
+    print(f"{model:5}  {seed:4} {agg:3}  {str(rnd):>5}  {f(lc,7,3)}  {f(ls,7,3)}  "
+          f"{f(ari,7,4)}  {f(nll,7,4)}  {str(k if k is not None else '—'):>3}  "
+          f"{f(mmd,7,5)}  {f(swd,7,5)}  {st}")
 print()
 errors = []
 for model, seed, agg, o in runs:
