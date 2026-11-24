@@ -57,6 +57,12 @@ changed. The previous report's "initial ARI 0.6317" came from a one-shot
 prediction over concatenated records, not the author batch loop; it is
 superseded by 0.6295 here.
 
+Alternative protocols were checked and rejected as explanations of the gap:
+deterministic encoder-mean prediction gives 0.6544 (A) and 0.5987 (C), and
+one-shot prediction over concatenated records gives 0.6317 (A) and 0.6090 (C)
+in the earlier audit. Only the author's per-batch loop reproduces C's recorded
+per-seed values exactly.
+
 ## 3. B/D (Multi-CA): blocked
 
 Multi-CA aggregates the 10 client local GMMs into a global Macro–Micro mixture
