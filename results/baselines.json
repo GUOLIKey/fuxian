@@ -1,0 +1,622 @@
+{
+  "experiment": "multica_pretrained_corrected_v1",
+  "mode": "A/C direct inference only; no training; no warm start; no client reconstruction; B/D blocked (no client states)",
+  "created_utc": "2026-11-24",
+  "models": [
+    {
+      "model": "AUTHOR",
+      "group": "A",
+      "label": "A: author delivered model (OFF)",
+      "multi_ca": "OFF",
+      "evaluation_mode": "direct inference; weights unchanged",
+      "source_path": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/model/server_model_breast_cancer.pk",
+      "source_sha256": "168ad5a4cd619ccee527a4a6c4a6816d35166e3a6bb6bc70b4bbbaa838c2ea85",
+      "source_round": null,
+      "source_payload_keys": [
+        "decoder.decoder.0.bias",
+        "decoder.decoder.0.weight",
+        "decoder.decoder.2.bias",
+        "decoder.decoder.2.weight",
+        "decoder.decoder.4.bias",
+        "decoder.decoder.4.weight",
+        "decoder.decoder.6.bias",
+        "decoder.decoder.6.weight",
+        "encoder.encoder.0.bias",
+        "encoder.encoder.0.weight",
+        "encoder.encoder.2.bias",
+        "encoder.encoder.2.weight",
+        "encoder.encoder.4.bias",
+        "encoder.encoder.4.weight",
+        "encoder.log_sigma2_l.bias",
+        "encoder.log_sigma2_l.weight",
+        "encoder.mu_l.bias",
+        "encoder.mu_l.weight",
+        "log_sigma2_c",
+        "mu_c",
+        "rho_"
+      ],
+      "source_has_client_states": false,
+      "historical_ari_reference": 0.6395,
+      "alpha": 0.01,
+      "server_K": 2,
+      "partition_seed": 42,
+      "client_sizes": [
+        115,
+        209,
+        326,
+        56,
+        218,
+        155,
+        350,
+        239,
+        138,
+        323
+      ],
+      "n_client_records": 2129,
+      "n_unique_rows": 569,
+      "protocol": "author loop: torch.manual_seed(seed); iterate client DataLoaders; predict per batch",
+      "inference_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_0_9": [
+        {
+          "ari": 0.6258472718290171,
+          "nmi": 0.5005297400207797,
+          "purity": 0.896195396899953,
+          "acc": 0.896195396899953,
+          "inference_seed": 0
+        },
+        {
+          "ari": 0.6288998935743594,
+          "nmi": 0.5042219682671859,
+          "purity": 0.8971348050728042,
+          "acc": 0.8971348050728042,
+          "inference_seed": 1
+        },
+        {
+          "ari": 0.6304686305301938,
+          "nmi": 0.5066273714002097,
+          "purity": 0.8976045091592297,
+          "acc": 0.8976045091592297,
+          "inference_seed": 2
+        },
+        {
+          "ari": 0.624308741808384,
+          "nmi": 0.4985554909158313,
+          "purity": 0.8957256928135274,
+          "acc": 0.8957256928135274,
+          "inference_seed": 3
+        },
+        {
+          "ari": 0.6332845422662003,
+          "nmi": 0.5073877610892644,
+          "purity": 0.8985439173320808,
+          "acc": 0.8985439173320808,
+          "inference_seed": 4
+        },
+        {
+          "ari": 0.6303320705925554,
+          "nmi": 0.5049341521279535,
+          "purity": 0.8976045091592297,
+          "acc": 0.8976045091592297,
+          "inference_seed": 5
+        },
+        {
+          "ari": 0.6199862038183477,
+          "nmi": 0.49583295631959745,
+          "purity": 0.8943165805542508,
+          "acc": 0.8943165805542508,
+          "inference_seed": 6
+        },
+        {
+          "ari": 0.6212928594698869,
+          "nmi": 0.49524818258542047,
+          "purity": 0.8947862846406763,
+          "acc": 0.8947862846406763,
+          "inference_seed": 7
+        },
+        {
+          "ari": 0.6515116023662287,
+          "nmi": 0.5263567469879045,
+          "purity": 0.9041803663691874,
+          "acc": 0.9041803663691874,
+          "inference_seed": 8
+        },
+        {
+          "ari": 0.6287885100355829,
+          "nmi": 0.5029542893542341,
+          "purity": 0.8971348050728042,
+          "acc": 0.8971348050728042,
+          "inference_seed": 9
+        }
+      ],
+      "draws_0_2": [
+        {
+          "ari": 0.6258472718290171,
+          "nmi": 0.5005297400207797,
+          "purity": 0.896195396899953,
+          "acc": 0.896195396899953,
+          "inference_seed": 0
+        },
+        {
+          "ari": 0.6288998935743594,
+          "nmi": 0.5042219682671859,
+          "purity": 0.8971348050728042,
+          "acc": 0.8971348050728042,
+          "inference_seed": 1
+        },
+        {
+          "ari": 0.6304686305301938,
+          "nmi": 0.5066273714002097,
+          "purity": 0.8976045091592297,
+          "acc": 0.8976045091592297,
+          "inference_seed": 2
+        }
+      ],
+      "unique_row_draws_0_9": [
+        {
+          "ari": 0.6038281225419302,
+          "nmi": 0.47905564943186424,
+          "purity": 0.8892794376098418,
+          "acc": 0.8892794376098418,
+          "inference_seed": 0
+        },
+        {
+          "ari": 0.5877412860692077,
+          "nmi": 0.465432315671376,
+          "purity": 0.8840070298769771,
+          "acc": 0.8840070298769771,
+          "inference_seed": 1
+        },
+        {
+          "ari": 0.6430968206111652,
+          "nmi": 0.5191263173006382,
+          "purity": 0.9015817223198594,
+          "acc": 0.9015817223198594,
+          "inference_seed": 2
+        },
+        {
+          "ari": 0.593049945926186,
+          "nmi": 0.469504275725415,
+          "purity": 0.8857644991212654,
+          "acc": 0.8857644991212654,
+          "inference_seed": 3
+        },
+        {
+          "ari": 0.6151449281030443,
+          "nmi": 0.4920197578309611,
+          "purity": 0.8927943760984183,
+          "acc": 0.8927943760984183,
+          "inference_seed": 4
+        },
+        {
+          "ari": 0.6319500041122712,
+          "nmi": 0.5092843841152607,
+          "purity": 0.8980667838312829,
+          "acc": 0.8980667838312829,
+          "inference_seed": 5
+        },
+        {
+          "ari": 0.6150620184481272,
+          "nmi": 0.4912176437343273,
+          "purity": 0.8927943760984183,
+          "acc": 0.8927943760984183,
+          "inference_seed": 6
+        },
+        {
+          "ari": 0.6093909032443743,
+          "nmi": 0.4847645925795801,
+          "purity": 0.8910369068541301,
+          "acc": 0.8910369068541301,
+          "inference_seed": 7
+        },
+        {
+          "ari": 0.6095640967761243,
+          "nmi": 0.48610069775740505,
+          "purity": 0.8910369068541301,
+          "acc": 0.8910369068541301,
+          "inference_seed": 8
+        },
+        {
+          "ari": 0.6207488064507983,
+          "nmi": 0.4980254440915827,
+          "purity": 0.8945518453427065,
+          "acc": 0.8945518453427065,
+          "inference_seed": 9
+        }
+      ],
+      "nll_unique": 17.15935304876387,
+      "gen_n": 5000,
+      "gen_seeds": [
+        20261124,
+        20261125,
+        20261126,
+        20261127,
+        20261128
+      ],
+      "sigma": 6.5002966838097755,
+      "gen_mmd_mean": 0.19782624056761594,
+      "gen_mmd_sd": 0.0013616233337383533,
+      "gen_swd_mean": 0.31006181117482895,
+      "gen_swd_sd": 0.0021506488079057182,
+      "gen_mmd_values": [
+        0.19585854373720016,
+        0.1975895054928736,
+        0.19964712583506036,
+        0.197795504413602,
+        0.19824052335934364
+      ],
+      "gen_swd_values": [
+        0.30769943740931194,
+        0.3097208800179088,
+        0.313361307599904,
+        0.31069637787719606,
+        0.30883105296982394
+      ],
+      "per_component": [
+        {
+          "component": 0,
+          "weight": 0.2999189078759496,
+          "support": 212,
+          "empirical_mass": 0.37258347978910367,
+          "low_mass": false,
+          "micro_mmd": 0.32326279178880074,
+          "micro_swd": 0.47274679739231057,
+          "self_rate": 0.958
+        },
+        {
+          "component": 1,
+          "weight": 0.7000810921240503,
+          "support": 357,
+          "empirical_mass": 0.6274165202108963,
+          "low_mass": false,
+          "micro_mmd": 0.19730626150609862,
+          "micro_swd": 0.2374372939986439,
+          "self_rate": 0.99
+        }
+      ],
+      "n_supported_20": 2,
+      "n_ghost": 0,
+      "mass_unsupported": 0.0,
+      "rare_q25_n": 1,
+      "rare_q25_mass": 0.2999189078759496,
+      "rare_q25_mmd": 0.32326279178880074,
+      "rare_q25_swd": 0.47274679739231057,
+      "actual_ari_seeds_0_1_2": [
+        0.6258472718290171,
+        0.6288998935743594,
+        0.6304686305301938
+      ],
+      "actual_ari_mean_0_2": 0.6284052653111901,
+      "actual_ari_sd_0_2": 0.0023500493399670696,
+      "actual_ari_mean_0_9": 0.6294720326290756,
+      "actual_ari_sd_0_9": 0.008815917218254208,
+      "client_ari_mean": 0.6294720326290756,
+      "client_ari_sd": 0.008815917218254208,
+      "unique_ari_mean": 0.6129576932283229,
+      "unique_ari_sd": 0.016595721134051722,
+      "client_purity_mean": 0.8973226867073743,
+      "client_purity_sd": 0.002749541433350911,
+      "unique_purity_mean": 0.8920913884007028,
+      "unique_purity_sd": 0.005252844000342099,
+      "client_nmi_mean": 0.5042648659068381,
+      "client_nmi_sd": 0.008847462391737457,
+      "unique_nmi_mean": 0.489453107823841,
+      "unique_nmi_sd": 0.016577251600080715,
+      "client_acc_mean": 0.8973226867073743,
+      "client_acc_sd": 0.002749541433350911,
+      "unique_acc_mean": 0.8920913884007028,
+      "unique_acc_sd": 0.005252844000342099
+    },
+    {
+      "model": "F01",
+      "group": "C",
+      "label": "C: F01 epoch-100 best model (OFF)",
+      "multi_ca": "OFF",
+      "evaluation_mode": "direct inference; weights unchanged",
+      "source_path": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_hyperparameter_search/fine/F01/epoch_100_server.pt",
+      "source_sha256": "41f425203990644c6321b68c83b7b5a7343cafe50a56215c7f505775e9912573",
+      "source_round": 100,
+      "source_payload_keys": [
+        "round",
+        "server"
+      ],
+      "source_has_client_states": false,
+      "historical_ari_reference": 0.614,
+      "alpha": 0.05,
+      "server_K": 2,
+      "partition_seed": 42,
+      "client_sizes": [
+        115,
+        209,
+        326,
+        56,
+        218,
+        155,
+        350,
+        239,
+        138,
+        323
+      ],
+      "n_client_records": 2129,
+      "n_unique_rows": 569,
+      "protocol": "author loop: torch.manual_seed(seed); iterate client DataLoaders; predict per batch",
+      "inference_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "draws_0_9": [
+        {
+          "ari": 0.5973312491202104,
+          "nmi": 0.469294181746903,
+          "purity": 0.8872710192578676,
+          "acc": 0.8872710192578676,
+          "inference_seed": 0
+        },
+        {
+          "ari": 0.6063097913439999,
+          "nmi": 0.4790967288565993,
+          "purity": 0.8900892437764208,
+          "acc": 0.8900892437764208,
+          "inference_seed": 1
+        },
+        {
+          "ari": 0.6136900737551098,
+          "nmi": 0.4863511753526142,
+          "purity": 0.8924377642085486,
+          "acc": 0.8924377642085486,
+          "inference_seed": 2
+        },
+        {
+          "ari": 0.6181640900291924,
+          "nmi": 0.49093494456733394,
+          "purity": 0.8938468764678252,
+          "acc": 0.8938468764678252,
+          "inference_seed": 3
+        },
+        {
+          "ari": 0.6182834047722384,
+          "nmi": 0.49196727617190267,
+          "purity": 0.8938468764678252,
+          "acc": 0.8938468764678252,
+          "inference_seed": 4
+        },
+        {
+          "ari": 0.6107263814227599,
+          "nmi": 0.4833917870347907,
+          "purity": 0.8914983560356975,
+          "acc": 0.8914983560356975,
+          "inference_seed": 5
+        },
+        {
+          "ari": 0.6107263814227599,
+          "nmi": 0.4833917870347907,
+          "purity": 0.8914983560356975,
+          "acc": 0.8914983560356975,
+          "inference_seed": 6
+        },
+        {
+          "ari": 0.6121295294170352,
+          "nmi": 0.48431706277906145,
+          "purity": 0.891968060122123,
+          "acc": 0.891968060122123,
+          "inference_seed": 7
+        },
+        {
+          "ari": 0.6270997306857246,
+          "nmi": 0.4997306061964446,
+          "purity": 0.8966651009863785,
+          "acc": 0.8966651009863785,
+          "inference_seed": 8
+        },
+        {
+          "ari": 0.6256158722596407,
+          "nmi": 0.4983323051858792,
+          "purity": 0.896195396899953,
+          "acc": 0.896195396899953,
+          "inference_seed": 9
+        }
+      ],
+      "draws_0_2": [
+        {
+          "ari": 0.5973312491202104,
+          "nmi": 0.469294181746903,
+          "purity": 0.8872710192578676,
+          "acc": 0.8872710192578676,
+          "inference_seed": 0
+        },
+        {
+          "ari": 0.6063097913439999,
+          "nmi": 0.4790967288565993,
+          "purity": 0.8900892437764208,
+          "acc": 0.8900892437764208,
+          "inference_seed": 1
+        },
+        {
+          "ari": 0.6136900737551098,
+          "nmi": 0.4863511753526142,
+          "purity": 0.8924377642085486,
+          "acc": 0.8924377642085486,
+          "inference_seed": 2
+        }
+      ],
+      "unique_row_draws_0_9": [
+        {
+          "ari": 0.5929596966241258,
+          "nmi": 0.46883204373647436,
+          "purity": 0.8857644991212654,
+          "acc": 0.8857644991212654,
+          "inference_seed": 0
+        },
+        {
+          "ari": 0.5551278523875228,
+          "nmi": 0.4313627359774233,
+          "purity": 0.8734622144112478,
+          "acc": 0.8734622144112478,
+          "inference_seed": 1
+        },
+        {
+          "ari": 0.6093005605714245,
+          "nmi": 0.484295213823074,
+          "purity": 0.8910369068541301,
+          "acc": 0.8910369068541301,
+          "inference_seed": 2
+        },
+        {
+          "ari": 0.576659963470425,
+          "nmi": 0.452740671708397,
+          "purity": 0.8804920913884007,
+          "acc": 0.8804920913884007,
+          "inference_seed": 3
+        },
+        {
+          "ari": 0.6037352356543153,
+          "nmi": 0.47864547712398947,
+          "purity": 0.8892794376098418,
+          "acc": 0.8892794376098418,
+          "inference_seed": 4
+        },
+        {
+          "ari": 0.6093005605714245,
+          "nmi": 0.484295213823074,
+          "purity": 0.8910369068541301,
+          "acc": 0.8910369068541301,
+          "inference_seed": 5
+        },
+        {
+          "ari": 0.6205853836488786,
+          "nmi": 0.49641763326342503,
+          "purity": 0.8945518453427065,
+          "acc": 0.8945518453427065,
+          "inference_seed": 6
+        },
+        {
+          "ari": 0.5982882903120328,
+          "nmi": 0.4734215057480953,
+          "purity": 0.8875219683655536,
+          "acc": 0.8875219683655536,
+          "inference_seed": 7
+        },
+        {
+          "ari": 0.5767551686362147,
+          "nmi": 0.45335900098065984,
+          "purity": 0.8804920913884007,
+          "acc": 0.8804920913884007,
+          "inference_seed": 8
+        },
+        {
+          "ari": 0.5926733223463969,
+          "nmi": 0.46756042375737156,
+          "purity": 0.8857644991212654,
+          "acc": 0.8857644991212654,
+          "inference_seed": 9
+        }
+      ],
+      "nll_unique": 17.604032973548655,
+      "gen_n": 5000,
+      "gen_seeds": [
+        20261124,
+        20261125,
+        20261126,
+        20261127,
+        20261128
+      ],
+      "sigma": 6.5002966838097755,
+      "gen_mmd_mean": 0.18776102998217895,
+      "gen_mmd_sd": 0.0015265033277043608,
+      "gen_swd_mean": 0.27281074872479316,
+      "gen_swd_sd": 0.002310078578888255,
+      "gen_mmd_values": [
+        0.188369912768468,
+        0.1858526131087315,
+        0.18667399117478575,
+        0.18975385941403686,
+        0.18815477344487253
+      ],
+      "gen_swd_values": [
+        0.2720089700251338,
+        0.27071199779158345,
+        0.2708659028179145,
+        0.27585673014038425,
+        0.2746101428489495
+      ],
+      "per_component": [
+        {
+          "component": 0,
+          "weight": 0.7098696020284414,
+          "support": 363,
+          "empirical_mass": 0.6379613356766256,
+          "low_mass": false,
+          "micro_mmd": 0.1976853639486366,
+          "micro_swd": 0.20749898174751893,
+          "self_rate": 0.998
+        },
+        {
+          "component": 1,
+          "weight": 0.29013039797155865,
+          "support": 206,
+          "empirical_mass": 0.36203866432337434,
+          "low_mass": false,
+          "micro_mmd": 0.35186639994762886,
+          "micro_swd": 0.5423164037358368,
+          "self_rate": 0.984
+        }
+      ],
+      "n_supported_20": 2,
+      "n_ghost": 0,
+      "mass_unsupported": 0.0,
+      "rare_q25_n": 1,
+      "rare_q25_mass": 0.29013039797155865,
+      "rare_q25_mmd": 0.35186639994762886,
+      "rare_q25_swd": 0.5423164037358368,
+      "actual_ari_seeds_0_1_2": [
+        0.5973312491202104,
+        0.6063097913439999,
+        0.6136900737551098
+      ],
+      "actual_ari_mean_0_2": 0.6057770380731067,
+      "actual_ari_sd_0_2": 0.008192414503342894,
+      "actual_ari_mean_0_9": 0.6140076504228672,
+      "actual_ari_sd_0_9": 0.008845793011608358,
+      "client_ari_mean": 0.6140076504228672,
+      "client_ari_sd": 0.008845793011608358,
+      "unique_ari_mean": 0.5935386034222762,
+      "unique_ari_sd": 0.019430730388035455,
+      "client_purity_mean": 0.8925317050258338,
+      "client_purity_sd": 0.0027902513743473063,
+      "unique_purity_mean": 0.8859402460456943,
+      "unique_purity_sd": 0.006279520654182363,
+      "client_nmi_mean": 0.4866807854926319,
+      "client_nmi_sd": 0.009063009919389872,
+      "unique_nmi_mean": 0.4690929919941983,
+      "unique_nmi_sd": 0.019031503272970665,
+      "client_acc_mean": 0.8925317050258338,
+      "client_acc_sd": 0.0027902513743473063,
+      "unique_acc_mean": 0.8859402460456943,
+      "unique_acc_sd": 0.006279520654182363
+    }
+  ],
+  "protocol_check": {
+    "F01_recorded_mean": 0.6140076504228672,
+    "F01_reproduced_mean": 0.6140076504228672,
+    "exact": true,
+    "evidence": "round7 F01 inference.csv per-seed values reproduced bit-for-bit; recorded mean 0.6140076504228672"
+  }
+}
