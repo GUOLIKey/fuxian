@@ -1,0 +1,287 @@
+[
+  {
+    "file": "A_seed0.json",
+    "group": "A",
+    "seed": 0,
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "sha256": "ab160bd882d9b70d2005413e1b9060fd5a23bbe6720375b796b093eedd762e20",
+    "n_clients": 10
+  },
+  {
+    "file": "A_seed1.json",
+    "group": "A",
+    "seed": 1,
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "sha256": "fe8be02b0ef35f302fe2978da6c6eedc2061d43a6375ac9ad3d54e4836053fbb",
+    "n_clients": 10
+  },
+  {
+    "file": "A_seed2.json",
+    "group": "A",
+    "seed": 2,
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "sha256": "b8aafbdcaa8bd858bf2d502f29717baf1e7e34d5844e3fa54f3b8f7073980527",
+    "n_clients": 10
+  },
+  {
+    "file": "B_seed0.json",
+    "group": "B",
+    "seed": 0,
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "sha256": "11a5774f27a4010dea8e4d640d9e326132f571ed612523297f74c1a1fb4181b6",
+    "n_clients": 10
+  },
+  {
+    "file": "B_seed1.json",
+    "group": "B",
+    "seed": 1,
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "sha256": "4d15c7157de2844161f6c960ecb674de8a6e31db378e2f3068980a77a7778d16",
+    "n_clients": 10
+  },
+  {
+    "file": "B_seed2.json",
+    "group": "B",
+    "seed": 2,
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "sha256": "585894af57778f82148f93ce59580acac38659b799502eba6aefb65c6d922a7a",
+    "n_clients": 10
+  },
+  {
+    "file": "C_seed0.json",
+    "group": "C",
+    "seed": 0,
+    "local_K": [
+      7,
+      4,
+      8,
+      10,
+      7,
+      12,
+      7,
+      4,
+      5,
+      7
+    ],
+    "sha256": "78e31e8ee7fc51241beb828ac57c7a25c176c88b7a817de1498b95f452f73a27",
+    "n_clients": 10
+  },
+  {
+    "file": "C_seed1.json",
+    "group": "C",
+    "seed": 1,
+    "local_K": [
+      7,
+      7,
+      12,
+      2,
+      10,
+      5,
+      6,
+      4,
+      5,
+      6
+    ],
+    "sha256": "58fce007a483439318cd75402056b6dfe2e47af8a6791193ec97e1d971299962",
+    "n_clients": 10
+  },
+  {
+    "file": "C_seed2.json",
+    "group": "C",
+    "seed": 2,
+    "local_K": [
+      5,
+      7,
+      8,
+      10,
+      7,
+      7,
+      6,
+      6,
+      3,
+      6
+    ],
+    "sha256": "3973b1bec6288a21d398b29137ac46376870ea33344b86f7e824b7b5444fd3a9",
+    "n_clients": 10
+  },
+  {
+    "file": "D_seed0.json",
+    "group": "D",
+    "seed": 0,
+    "local_K": [
+      53,
+      90,
+      129,
+      27,
+      91,
+      69,
+      148,
+      104,
+      61,
+      131
+    ],
+    "sha256": "d5c07b1609cabd0d5336e47c33dbf8fa240f50230a78e93d27924a959343c56b",
+    "n_clients": 10
+  },
+  {
+    "file": "D_seed1.json",
+    "group": "D",
+    "seed": 1,
+    "local_K": [
+      53,
+      94,
+      139,
+      28,
+      96,
+      66,
+      151,
+      100,
+      60,
+      133
+    ],
+    "sha256": "de464f420bc2a88775d12d7cbf184c0c20fb0e1f73e64e3500c54520729f1a47",
+    "n_clients": 10
+  },
+  {
+    "file": "D_seed2.json",
+    "group": "D",
+    "seed": 2,
+    "local_K": [
+      55,
+      92,
+      129,
+      27,
+      92,
+      68,
+      144,
+      104,
+      64,
+      139
+    ],
+    "sha256": "b7e5612d26857bcba057d6a4a1db674c1a3f701afa63c2a1407e6a62f8944bf3",
+    "n_clients": 10
+  },
+  {
+    "file": "E_seed0.json",
+    "group": "E",
+    "seed": 0,
+    "local_K": [
+      53,
+      90,
+      129,
+      27,
+      91,
+      69,
+      148,
+      104,
+      61,
+      131
+    ],
+    "sha256": "9fadae2b9a22b045100ff7a8602182eef097ec13751e969666ed98a4d6f74872",
+    "n_clients": 10
+  },
+  {
+    "file": "E_seed1.json",
+    "group": "E",
+    "seed": 1,
+    "local_K": [
+      53,
+      94,
+      139,
+      28,
+      96,
+      66,
+      151,
+      100,
+      60,
+      133
+    ],
+    "sha256": "5fae2185c2823b5c94b9a77680e9cb1a06bd97a6988b3411e1d63c265dd17c6d",
+    "n_clients": 10
+  },
+  {
+    "file": "E_seed2.json",
+    "group": "E",
+    "seed": 2,
+    "local_K": [
+      55,
+      92,
+      129,
+      27,
+      92,
+      68,
+      144,
+      104,
+      64,
+      139
+    ],
+    "sha256": "2be4f6865d4641806d11c33a09920bcad73c3f590fec0b695dd72e282ce39a32",
+    "n_clients": 10
+  }
+]

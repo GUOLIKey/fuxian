@@ -1,0 +1,46 @@
+{
+  "experiment": "acd_f01_global_v1",
+  "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/fine/F01/epoch_100_full.pt",
+  "checkpoint_sha256": "3be341c451a186d1f36673080164af208993d215f0c2cb03709407892f7d6f3e",
+  "checkpoint_round": 100,
+  "initial_global_ari": 0.605326980742813,
+  "frozen_reference_policy": "0.6053 is a separate frozen reference; A group is a matched 10-round server-update control, not the frozen reference",
+  "groups": {
+    "A": "checkpoint original local GMM",
+    "B": "A1 prior full-data: original K + ordinary GMM refit",
+    "C": "A2 prior full-data: BIC original range + ordinary GMM",
+    "D": "A4 prior full-data: author ACD FCPL + moment-matched GMM",
+    "E": "A5 prior full-data: ordinary GMM with D K per client/seed"
+  },
+  "prior_local_gmm_source": "/root/autodl-tmp/fedvade_project/experiments/acd_f01_frozen_v1/results/units",
+  "prior_local_gmm_note": "full-data fits only; holdout fits are not used",
+  "rounds": 10,
+  "primary_endpoint_round": 10,
+  "experiment_seeds": [0, 1, 2],
+  "inference_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+  "generation_seeds": [0, 1, 2],
+  "sample": 100,
+  "sample_interpretation": "total 100 samples across the concatenated client component mixture; not per client or per component",
+  "server_optimizer": "Adam, restored from checkpoint server_optimizer; all server parameters including GMM",
+  "server_scheduler": "StepLR(step_size=10, gamma=0.85), restored from checkpoint; one step per round",
+  "client_training": "skipped; client encoder/decoder and local GMMs frozen; no client broadcast",
+  "server_gmm_update": "original server ELBO update by server optimizer; never replaced by client GMM",
+  "evaluation": "historical F01 Round6 evaluator: evaluate_saved_round6.evaluate_one, 2129 client records, 10 inference seeds",
+  "generation": "global server GMM + server decoder; 5000 samples; 3 generation seeds",
+  "server_training_data_flow": "gmm_sampling from frozen client local GMMs -> client decoders for decoded_X_hat -> server decoder for X_hat -> ELBO_Loss_server",
+  "pairing": "same experiment seed and round use the same NumPy/Torch RNG seed across the five groups; RNG is reseeded before each round; no checkpoint RNG restoration",
+  "source_hashes": {
+    "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9",
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758"
+  },
+  "acd_source": {
+    "repo": "hongdream/Fed-HIRE",
+    "commit": "c116c8354f988d4c3080bbd9b1ab685117e78787",
+    "paper": "https://arxiv.org/abs/2601.06404v2",
+    "function": "FCPL"
+  },
+  "no_300_round_training": true,
+  "highest_ari_policy": "exploratory only; primary comparison is round 10"
+}

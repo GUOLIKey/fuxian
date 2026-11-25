@@ -1,0 +1,2210 @@
+{
+  "group": "C",
+  "seed": 1,
+  "status": "DONE",
+  "local_method": "A2",
+  "rounds": [
+    {
+      "ari": 0.605326980742813,
+      "ari_sd_inference": 0.00477945449801502,
+      "purity": 0.8900422733677782,
+      "nmi": 0.4759959016649821,
+      "per_seed_ari": [
+        0.6008633434056614,
+        0.6024696065936399,
+        0.5995617983690813,
+        0.6145006674052116,
+        0.6115282273008994,
+        0.6009772614546879,
+        0.6054220671425898,
+        0.6054220671425898,
+        0.605568623419667,
+        0.6069561451941017
+      ],
+      "global_nll": 17.563750718332095,
+      "gen_mmd": 0.18789938118176716,
+      "gen_mmd_sd": 0.001432395884070421,
+      "gen_swd": 0.2704224201955683,
+      "gen_swd_sd": 0.0009689247060126576,
+      "minority_label": 0,
+      "minority_mass": 0.2937551438808441,
+      "minority_gen_frac": 0.29506666666666664,
+      "minority_mmd": 0.311964399686494,
+      "minority_swd": 0.4327893165465558,
+      "gen_finite": true,
+      "round": 0,
+      "server_loss": null,
+      "server_lr": 0.0003937488086814452
+    },
+    {
+      "round": 1,
+      "server_loss": 2.6002180576324463,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5876148243825143,
+      "ari_sd_inference": 0.007511595926830161,
+      "purity": 0.8844058243306717,
+      "nmi": 0.4584930028168964,
+      "per_seed_ari": [
+        0.5789459698362641,
+        0.5906535253637584,
+        0.5818425834254786,
+        0.5937684839315146,
+        0.589252291108587,
+        0.580373154105117,
+        0.580373154105117,
+        0.586299719624431,
+        0.5920954701622616,
+        0.6025438921626146
+      ],
+      "global_nll": 17.47143684047901,
+      "gen_mmd": 0.19418854770723207,
+      "gen_mmd_sd": 0.00157719227123377,
+      "gen_swd": 0.2846404079785412,
+      "gen_swd_sd": 0.0013661565834545062,
+      "minority_label": 0,
+      "minority_mass": 0.2936968505382538,
+      "minority_gen_frac": 0.295,
+      "minority_mmd": 0.3296369007172378,
+      "minority_swd": 0.45247223431536404,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.0,
+        "unique_sampled_total": 40,
+        "low_support_total": 11,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              3,
+              1,
+              2,
+              1,
+              0,
+              1,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              1,
+              2,
+              2,
+              0,
+              0,
+              0,
+              5
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              2,
+              2,
+              2,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              4,
+              0,
+              1
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              0,
+              1,
+              1,
+              1,
+              1,
+              0,
+              0,
+              7,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              1,
+              0,
+              3,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              3,
+              2,
+              1,
+              2,
+              4,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              8,
+              0,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              0,
+              4,
+              2,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              6,
+              4,
+              2,
+              0,
+              4,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "server_loss": 2.5885403156280518,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5479968042414102,
+      "ari_sd_inference": 0.006691941827151089,
+      "purity": 0.8713950211366839,
+      "nmi": 0.41986750380730287,
+      "per_seed_ari": [
+        0.5490263313075248,
+        0.5519327854638708,
+        0.5391853651882872,
+        0.5548442569095472,
+        0.5434482684159146,
+        0.5449579641208522,
+        0.5405607771091072,
+        0.544872397489405,
+        0.5504575776739048,
+        0.5606823187356884
+      ],
+      "global_nll": 17.51185628955894,
+      "gen_mmd": 0.20477428670794753,
+      "gen_mmd_sd": 0.0018006996009378776,
+      "gen_swd": 0.2992799208318422,
+      "gen_swd_sd": 0.0015046470924464578,
+      "minority_label": 0,
+      "minority_mass": 0.2936473488807678,
+      "minority_gen_frac": 0.295,
+      "minority_mmd": 0.3079405601001067,
+      "minority_swd": 0.4328432920227916,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.4,
+        "unique_sampled_total": 44,
+        "low_support_total": 11,
+        "low_support_sampled": 2,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              0,
+              2,
+              2,
+              0,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              1,
+              4,
+              2,
+              4,
+              1,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 8,
+            "sampled_counts": [
+              1,
+              1,
+              1,
+              3,
+              0,
+              0,
+              1,
+              0,
+              2,
+              1,
+              0,
+              1
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 1
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              1,
+              0,
+              1,
+              2,
+              0,
+              4,
+              1,
+              0,
+              1,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 1
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              2,
+              2,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              6,
+              2,
+              0,
+              2,
+              1,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              4,
+              0,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              2,
+              4,
+              1,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              4,
+              3,
+              2,
+              0,
+              6,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "server_loss": 2.6891226768493652,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5429925502592378,
+      "ari_sd_inference": 0.006018338300867916,
+      "purity": 0.8696571160169094,
+      "nmi": 0.41513983154783596,
+      "per_seed_ari": [
+        0.5379860984171662,
+        0.5437033864219456,
+        0.5393596697573219,
+        0.5494839993770436,
+        0.5366143696411992,
+        0.5437033864219456,
+        0.5366143696411992,
+        0.5408630273747094,
+        0.5465087437275908,
+        0.555088451812256
+      ],
+      "global_nll": 17.619651388237294,
+      "gen_mmd": 0.20507654693893476,
+      "gen_mmd_sd": 0.0017350783372086563,
+      "gen_swd": 0.30349841391904947,
+      "gen_swd_sd": 0.0015420735726295153,
+      "minority_label": 0,
+      "minority_mass": 0.2936025857925415,
+      "minority_gen_frac": 0.295,
+      "minority_mmd": 0.27844645397858514,
+      "minority_swd": 0.40555717373836403,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.1,
+        "unique_sampled_total": 41,
+        "low_support_total": 11,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              2,
+              0,
+              2,
+              1,
+              0,
+              3,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              0,
+              3,
+              0,
+              0,
+              2,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              0,
+              1,
+              2,
+              4,
+              0,
+              0,
+              0,
+              0,
+              4,
+              2,
+              0,
+              2
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              1,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              0,
+              0,
+              3,
+              1,
+              5,
+              0,
+              1,
+              1,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              1,
+              1,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              3,
+              2,
+              1,
+              3,
+              6,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              5,
+              0,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              3,
+              1,
+              1,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              6,
+              3,
+              2,
+              0,
+              4,
+              3
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "server_loss": 2.4542887210845947,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5615151863264437,
+      "ari_sd_inference": 0.005140756428650982,
+      "purity": 0.875904180366369,
+      "nmi": 0.4329197396983762,
+      "per_seed_ari": [
+        0.5560720515277136,
+        0.563246261844464,
+        0.5560294301187666,
+        0.5691284761545063,
+        0.5603547875865719,
+        0.5589114216216821,
+        0.5545476593701822,
+        0.5632047024990098,
+        0.566061737748518,
+        0.5675953347930228
+      ],
+      "global_nll": 17.815787692132375,
+      "gen_mmd": 0.19781489548001918,
+      "gen_mmd_sd": 0.001465341691506462,
+      "gen_swd": 0.3003788723859512,
+      "gen_swd_sd": 0.0013044527414737132,
+      "minority_label": 0,
+      "minority_mass": 0.2935607135295868,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.27620896934365285,
+      "minority_swd": 0.396576664258424,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.1,
+        "unique_sampled_total": 41,
+        "low_support_total": 11,
+        "low_support_sampled": 1,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              0,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              1,
+              0,
+              2,
+              1,
+              1,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              4,
+              1,
+              1,
+              5,
+              0,
+              0,
+              0,
+              0,
+              1,
+              4,
+              0,
+              1
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              1,
+              0,
+              2,
+              0,
+              2,
+              0,
+              2,
+              2,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              4,
+              4,
+              2,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              3,
+              1,
+              0,
+              5,
+              1,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              5,
+              10,
+              1,
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              2,
+              0,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              3,
+              1,
+              3,
+              1,
+              1,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 1
+          }
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "server_loss": 2.238187313079834,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5773930329033671,
+      "ari_sd_inference": 0.006103701433519766,
+      "purity": 0.8810709253170502,
+      "nmi": 0.44833974994116704,
+      "per_seed_ari": [
+        0.5675135324504603,
+        0.5762575189714991,
+        0.5761778379445965,
+        0.583625915688457,
+        0.5732962922002702,
+        0.5718784051767963,
+        0.5746755655194654,
+        0.5791456409524304,
+        0.5864163812636021,
+        0.5849432388660928
+      ],
+      "global_nll": 18.056973516224193,
+      "gen_mmd": 0.19416314194167902,
+      "gen_mmd_sd": 0.0012522002579334224,
+      "gen_swd": 0.2992402968289081,
+      "gen_swd_sd": 0.0011506228316644786,
+      "minority_label": 0,
+      "minority_mass": 0.29352936148643494,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2804644391334616,
+      "minority_swd": 0.39519010807805127,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 3.8,
+        "unique_sampled_total": 38,
+        "low_support_total": 11,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              3,
+              0,
+              2,
+              0,
+              0,
+              2,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              2,
+              4,
+              1,
+              2,
+              1,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              1,
+              3,
+              1,
+              3,
+              0,
+              0,
+              0,
+              0,
+              3,
+              6,
+              0,
+              4
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              0,
+              1,
+              3,
+              2,
+              0,
+              0,
+              1,
+              2,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              4,
+              2,
+              2,
+              3,
+              5,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              1,
+              4,
+              0,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              0,
+              3,
+              5,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              2,
+              3,
+              1,
+              0,
+              5,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 6,
+      "server_loss": 2.942744016647339,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5615769314368898,
+      "ari_sd_inference": 0.005693127223921451,
+      "purity": 0.8757162987317988,
+      "nmi": 0.43355340495077793,
+      "per_seed_ari": [
+        0.5566806126624588,
+        0.5595923971013295,
+        0.5581166960263784,
+        0.5653580207847132,
+        0.5667295809896451,
+        0.5580781657709271,
+        0.5509123884340267,
+        0.5653209848120285,
+        0.5667666197556395,
+        0.5682138480317519
+      ],
+      "global_nll": 18.030825257590156,
+      "gen_mmd": 0.19999183895167683,
+      "gen_mmd_sd": 0.0013376155478354557,
+      "gen_swd": 0.3077918585886053,
+      "gen_swd_sd": 0.0011164882598453918,
+      "minority_label": 0,
+      "minority_mass": 0.29349932074546814,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.28185090016198117,
+      "minority_swd": 0.39992728455091964,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.6,
+        "unique_sampled_total": 46,
+        "low_support_total": 11,
+        "low_support_sampled": 1,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              1,
+              3,
+              2,
+              1,
+              0,
+              2,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              0,
+              3,
+              6,
+              1,
+              0,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              0,
+              1,
+              5,
+              1,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              2
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              1
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              1,
+              2,
+              2,
+              1,
+              2,
+              3,
+              0,
+              3,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              2,
+              2,
+              3,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              2,
+              4,
+              1,
+              1,
+              0,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              2,
+              4,
+              2,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              3,
+              4,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              1,
+              2,
+              2,
+              1,
+              4,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 1
+          }
+        ]
+      }
+    },
+    {
+      "round": 7,
+      "server_loss": 2.4423160552978516,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5456633522977101,
+      "ari_sd_inference": 0.004035197258337454,
+      "purity": 0.8705965241897605,
+      "nmi": 0.4176149935530241,
+      "per_seed_ari": [
+        0.5406484622788016,
+        0.5435770139737486,
+        0.5406919061824541,
+        0.5478099153650203,
+        0.5449579641208522,
+        0.5435770139737486,
+        0.5434482684159146,
+        0.5506682002298101,
+        0.5519749070535552,
+        0.5492798713831962
+      ],
+      "global_nll": 18.015062167243663,
+      "gen_mmd": 0.19981148818775032,
+      "gen_mmd_sd": 0.001320523413564655,
+      "gen_swd": 0.31108832925965885,
+      "gen_swd_sd": 0.0010497589641258673,
+      "minority_label": 0,
+      "minority_mass": 0.293475478887558,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2998106456802024,
+      "minority_swd": 0.4144008748505217,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.4,
+        "unique_sampled_total": 44,
+        "low_support_total": 11,
+        "low_support_sampled": 1,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              1,
+              1,
+              3,
+              1,
+              1,
+              2,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 1
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              0,
+              2,
+              2,
+              1,
+              1,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              4,
+              0,
+              3,
+              0,
+              0,
+              0,
+              0,
+              1,
+              4,
+              1,
+              0,
+              0
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              1,
+              1,
+              2,
+              1,
+              1,
+              0,
+              1,
+              5,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              0,
+              3,
+              3,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              4,
+              4,
+              0,
+              2,
+              7,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              2,
+              3,
+              2,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              1,
+              1,
+              3,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              3,
+              0,
+              4,
+              0,
+              6,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 8,
+      "server_loss": 2.3665881156921387,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5455812349567528,
+      "ari_sd_inference": 0.0050197639356545,
+      "purity": 0.8705965241897605,
+      "nmi": 0.4175427858010214,
+      "per_seed_ari": [
+        0.5434048251904238,
+        0.5405165355433562,
+        0.5463407591411928,
+        0.5463407591411928,
+        0.5406919061824541,
+        0.5533669308817178,
+        0.5391853651882872,
+        0.5434482684159146,
+        0.5518904047848447,
+        0.5506265950981433
+      ],
+      "global_nll": 17.924166210697837,
+      "gen_mmd": 0.19899840242807978,
+      "gen_mmd_sd": 0.0013437616114869713,
+      "gen_swd": 0.30977225474550607,
+      "gen_swd_sd": 0.000990315936470465,
+      "minority_label": 0,
+      "minority_mass": 0.2934536933898926,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.3012589656980675,
+      "minority_swd": 0.41221269261720406,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 4.3,
+        "unique_sampled_total": 43,
+        "low_support_total": 11,
+        "low_support_sampled": 1,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              0,
+              0,
+              1,
+              0,
+              0,
+              3,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              0,
+              1,
+              3,
+              4,
+              0,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              2,
+              1,
+              4,
+              1,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 1
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              2,
+              1,
+              2,
+              4,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              1,
+              2,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              4,
+              1,
+              1,
+              3,
+              2,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              1,
+              1,
+              6,
+              0,
+              3
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              2,
+              6,
+              5,
+              0,
+              3,
+              3
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 9,
+      "server_loss": 2.1338272094726562,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5488278343335609,
+      "ari_sd_inference": 0.004982242807705701,
+      "purity": 0.8717238139971817,
+      "nmi": 0.4207150191324141,
+      "per_seed_ari": [
+        0.5433171457907273,
+        0.5433171457907273,
+        0.5517617067591196,
+        0.5518048655786563,
+        0.5446981042446035,
+        0.5575119930112045,
+        0.5432729093167467,
+        0.5489831619332739,
+        0.5503715087994528,
+        0.5532398021110967
+      ],
+      "global_nll": 17.763883583272193,
+      "gen_mmd": 0.19797813063168737,
+      "gen_mmd_sd": 0.0013701053170799217,
+      "gen_swd": 0.30724681449818697,
+      "gen_swd_sd": 0.0010657976221817116,
+      "minority_label": 0,
+      "minority_mass": 0.29342716932296753,
+      "minority_gen_frac": 0.29486666666666667,
+      "minority_mmd": 0.29295452187036525,
+      "minority_swd": 0.4021791867225364,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 3.9,
+        "unique_sampled_total": 39,
+        "low_support_total": 11,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              0,
+              1,
+              1,
+              0,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              3,
+              4,
+              3,
+              3,
+              1,
+              0,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              2,
+              0,
+              4,
+              3,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              0
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              0,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 6,
+            "sampled_counts": [
+              0,
+              2,
+              3,
+              1,
+              0,
+              1,
+              1,
+              3,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              2,
+              3,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              3,
+              0,
+              0,
+              0,
+              4,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              6,
+              0,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              0,
+              4,
+              1,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              3,
+              3,
+              2,
+              0,
+              7,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 10,
+      "server_loss": 2.072862148284912,
+      "server_lr": 0.0003346864873792284,
+      "ari": 0.5384391050956616,
+      "ari_sd_inference": 0.004262678871116301,
+      "purity": 0.8683889149835604,
+      "nmi": 0.4113697992338494,
+      "per_seed_ari": [
+        0.5331059969742266,
+        0.5386839893764964,
+        0.5443829277428334,
+        0.5374039659940631,
+        0.5358439559439594,
+        0.5387309082605657,
+        0.5315956924546195,
+        0.5416227806900263,
+        0.5386839893764964,
+        0.5443368441433296
+      ],
+      "global_nll": 17.650378614707147,
+      "gen_mmd": 0.1959064281661376,
+      "gen_mmd_sd": 0.0013118624535655155,
+      "gen_swd": 0.30415416597176054,
+      "gen_swd_sd": 0.0010808159716948552,
+      "minority_label": 0,
+      "minority_mass": 0.29339927434921265,
+      "minority_gen_frac": 0.29486666666666667,
+      "minority_mmd": 0.29004358034728744,
+      "minority_swd": 0.3980179331020411,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 3.8,
+        "unique_sampled_total": 38,
+        "low_support_total": 11,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 7,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              1,
+              2,
+              2,
+              0,
+              0,
+              4,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 7,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              2,
+              4,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 12,
+            "sampled_components_unique": 7,
+            "sampled_counts": [
+              3,
+              2,
+              2,
+              3,
+              0,
+              0,
+              0,
+              2,
+              3,
+              0,
+              0,
+              1
+            ],
+            "low_support_total": 3,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 2,
+            "sampled_components_unique": 0,
+            "sampled_counts": [
+              0,
+              0
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 10,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              0,
+              2,
+              0,
+              1,
+              0,
+              1,
+              0,
+              4,
+              0,
+              0
+            ],
+            "low_support_total": 2,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              0,
+              1,
+              1,
+              0,
+              1
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              8,
+              2,
+              0,
+              5,
+              4,
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 4,
+            "sampled_components_unique": 4,
+            "sampled_counts": [
+              5,
+              4,
+              2,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 5,
+            "sampled_components_unique": 3,
+            "sampled_counts": [
+              0,
+              3,
+              1,
+              0,
+              3
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 6,
+            "sampled_components_unique": 5,
+            "sampled_counts": [
+              5,
+              3,
+              2,
+              0,
+              2,
+              2
+            ],
+            "low_support_total": 1,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    }
+  ],
+  "final": {
+    "round": 10,
+    "server_loss": 2.072862148284912,
+    "server_lr": 0.0003346864873792284,
+    "ari": 0.5384391050956616,
+    "ari_sd_inference": 0.004262678871116301,
+    "purity": 0.8683889149835604,
+    "nmi": 0.4113697992338494,
+    "per_seed_ari": [
+      0.5331059969742266,
+      0.5386839893764964,
+      0.5443829277428334,
+      0.5374039659940631,
+      0.5358439559439594,
+      0.5387309082605657,
+      0.5315956924546195,
+      0.5416227806900263,
+      0.5386839893764964,
+      0.5443368441433296
+    ],
+    "global_nll": 17.650378614707147,
+    "gen_mmd": 0.1959064281661376,
+    "gen_mmd_sd": 0.0013118624535655155,
+    "gen_swd": 0.30415416597176054,
+    "gen_swd_sd": 0.0010808159716948552,
+    "minority_label": 0,
+    "minority_mass": 0.29339927434921265,
+    "minority_gen_frac": 0.29486666666666667,
+    "minority_mmd": 0.29004358034728744,
+    "minority_swd": 0.3980179331020411,
+    "gen_finite": true,
+    "coverage": {
+      "mean_unique_sampled": 3.8,
+      "unique_sampled_total": 38,
+      "low_support_total": 11,
+      "low_support_sampled": 0,
+      "clients": [
+        {
+          "client": 0,
+          "components": 7,
+          "sampled_components_unique": 4,
+          "sampled_counts": [
+            1,
+            2,
+            2,
+            0,
+            0,
+            4,
+            0
+          ],
+          "low_support_total": 2,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 1,
+          "components": 7,
+          "sampled_components_unique": 3,
+          "sampled_counts": [
+            2,
+            4,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "low_support_total": 1,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 2,
+          "components": 12,
+          "sampled_components_unique": 7,
+          "sampled_counts": [
+            3,
+            2,
+            2,
+            3,
+            0,
+            0,
+            0,
+            2,
+            3,
+            0,
+            0,
+            1
+          ],
+          "low_support_total": 3,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 3,
+          "components": 2,
+          "sampled_components_unique": 0,
+          "sampled_counts": [
+            0,
+            0
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 4,
+          "components": 10,
+          "sampled_components_unique": 4,
+          "sampled_counts": [
+            0,
+            2,
+            0,
+            1,
+            0,
+            1,
+            0,
+            4,
+            0,
+            0
+          ],
+          "low_support_total": 2,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 5,
+          "components": 5,
+          "sampled_components_unique": 3,
+          "sampled_counts": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "low_support_total": 1,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 6,
+          "components": 6,
+          "sampled_components_unique": 5,
+          "sampled_counts": [
+            8,
+            2,
+            0,
+            5,
+            4,
+            2
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 7,
+          "components": 4,
+          "sampled_components_unique": 4,
+          "sampled_counts": [
+            5,
+            4,
+            2,
+            4
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 8,
+          "components": 5,
+          "sampled_components_unique": 3,
+          "sampled_counts": [
+            0,
+            3,
+            1,
+            0,
+            3
+          ],
+          "low_support_total": 1,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 9,
+          "components": 6,
+          "sampled_components_unique": 5,
+          "sampled_counts": [
+            5,
+            3,
+            2,
+            0,
+            2,
+            2
+          ],
+          "low_support_total": 1,
+          "low_support_sampled": 0
+        }
+      ]
+    }
+  },
+  "highest_exploratory": {
+    "round": 0,
+    "ari": 0.605326980742813
+  },
+  "config": {
+    "rounds": 10,
+    "sample": 100,
+    "client_weights": [
+      0.054015969938938466,
+      0.09816815406294034,
+      0.15312353217472993,
+      0.026303428839830906,
+      0.10239549084077032,
+      0.07280413339596055,
+      0.16439643024894315,
+      0.11225927665570691,
+      0.06481916392672617,
+      0.15171441991545326
+    ],
+    "local_K": [
+      7,
+      7,
+      12,
+      2,
+      10,
+      5,
+      6,
+      4,
+      5,
+      6
+    ],
+    "restored_server_optimizer": true,
+    "restored_server_scheduler": true,
+    "client_frozen": true,
+    "primary_endpoint": 10
+  }
+}

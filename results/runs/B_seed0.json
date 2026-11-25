@@ -1,0 +1,1660 @@
+{
+  "group": "B",
+  "seed": 0,
+  "status": "DONE",
+  "local_method": "A1",
+  "rounds": [
+    {
+      "ari": 0.605326980742813,
+      "ari_sd_inference": 0.00477945449801502,
+      "purity": 0.8900422733677782,
+      "nmi": 0.4759959016649821,
+      "per_seed_ari": [
+        0.6008633434056614,
+        0.6024696065936399,
+        0.5995617983690813,
+        0.6145006674052116,
+        0.6115282273008994,
+        0.6009772614546879,
+        0.6054220671425898,
+        0.6054220671425898,
+        0.605568623419667,
+        0.6069561451941017
+      ],
+      "global_nll": 17.563750718332095,
+      "gen_mmd": 0.18789938118176716,
+      "gen_mmd_sd": 0.001432395884070421,
+      "gen_swd": 0.2704224201955683,
+      "gen_swd_sd": 0.0009689247060126576,
+      "minority_label": 0,
+      "minority_mass": 0.2937551438808441,
+      "minority_gen_frac": 0.29506666666666664,
+      "minority_mmd": 0.311964399686494,
+      "minority_swd": 0.4327893165465558,
+      "gen_finite": true,
+      "round": 0,
+      "server_loss": null,
+      "server_lr": 0.0003937488086814452
+    },
+    {
+      "round": 1,
+      "server_loss": 2.8453238010406494,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5895772745420206,
+      "ari_sd_inference": 0.00736892789588392,
+      "purity": 0.885016439643025,
+      "nmi": 0.4603621644084388,
+      "per_seed_ari": [
+        0.5833534763240465,
+        0.587775214145974,
+        0.5819226280376255,
+        0.5997096204468901,
+        0.5907693087154884,
+        0.5819622874004708,
+        0.5833135929096489,
+        0.5907693087154884,
+        0.5936166181811061,
+        0.6025806905434667
+      ],
+      "global_nll": 17.444536463082684,
+      "gen_mmd": 0.1961348318826813,
+      "gen_mmd_sd": 0.00166934759386306,
+      "gen_swd": 0.28642335353592685,
+      "gen_swd_sd": 0.001437703936771842,
+      "minority_label": 0,
+      "minority_mass": 0.2936924397945404,
+      "minority_gen_frac": 0.295,
+      "minority_mmd": 0.3262845915561923,
+      "minority_swd": 0.45157527543416937,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              12
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              7,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              3,
+              10
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              11
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              13
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              11,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 2,
+      "server_loss": 2.4358179569244385,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5513971223180777,
+      "ari_sd_inference": 0.005214717451145295,
+      "purity": 0.8726162517613905,
+      "nmi": 0.42332258748104357,
+      "per_seed_ari": [
+        0.5502843982525296,
+        0.5460366856450587,
+        0.5488520862530617,
+        0.5588690728199326,
+        0.5473768676658398,
+        0.5544605957658967,
+        0.5430933147183002,
+        0.5515420145658301,
+        0.5559865515689159,
+        0.5574696359254114
+      ],
+      "global_nll": 17.57261505105099,
+      "gen_mmd": 0.20080682176062356,
+      "gen_mmd_sd": 0.0018041347924158818,
+      "gen_swd": 0.2976397066329158,
+      "gen_swd_sd": 0.0015740351094528573,
+      "minority_label": 0,
+      "minority_mass": 0.2936422526836395,
+      "minority_gen_frac": 0.295,
+      "minority_mmd": 0.3122658707883174,
+      "minority_swd": 0.4362412555150626,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              9,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              12
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              7,
+              12
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              4,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 3,
+      "server_loss": 2.9105732440948486,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5616534664197446,
+      "ari_sd_inference": 0.008670576141265502,
+      "purity": 0.8758572099577266,
+      "nmi": 0.43307147265899504,
+      "per_seed_ari": [
+        0.5576375282339523,
+        0.5620453452109854,
+        0.5505847304201157,
+        0.5721934574902738,
+        0.5606823187356884,
+        0.5592410313546698,
+        0.5490692396689362,
+        0.5592007213869232,
+        0.5735727601808951,
+        0.5723075315150054
+      ],
+      "global_nll": 17.689498560603038,
+      "gen_mmd": 0.20155236808494179,
+      "gen_mmd_sd": 0.0017427949464797476,
+      "gen_swd": 0.3024055906688627,
+      "gen_swd_sd": 0.001535438781028032,
+      "minority_label": 0,
+      "minority_mass": 0.2935991585254669,
+      "minority_gen_frac": 0.295,
+      "minority_mmd": 0.2778550326582945,
+      "minority_swd": 0.4048242448246484,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              10,
+              10
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              10
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              9,
+              10
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              15
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              7,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 4,
+      "server_loss": 2.180962324142456,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5695254314820963,
+      "ari_sd_inference": 0.006449090580188314,
+      "purity": 0.878346641615782,
+      "nmi": 0.4411097782158568,
+      "per_seed_ari": [
+        0.5636479817289518,
+        0.571040235072171,
+        0.5608787876782401,
+        0.578247284782995,
+        0.5709663985536079,
+        0.5651703433264971,
+        0.5651320579155019,
+        0.5652083785925807,
+        0.5767516196277896,
+        0.5782112275426282
+      ],
+      "global_nll": 17.95853494985731,
+      "gen_mmd": 0.20009342669013294,
+      "gen_mmd_sd": 0.0015074052859719294,
+      "gen_swd": 0.3049049606938904,
+      "gen_swd_sd": 0.0013218830468161823,
+      "minority_label": 0,
+      "minority_mass": 0.2935594320297241,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2713154464186678,
+      "minority_swd": 0.39519466063813,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              10,
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              1
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              10,
+              15
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              10,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 5,
+      "server_loss": 2.514125347137451,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5765987908902852,
+      "ari_sd_inference": 0.0053125717525073215,
+      "purity": 0.8806951620479098,
+      "nmi": 0.4477538473541177,
+      "per_seed_ari": [
+        0.5765286966577344,
+        0.5780645745366988,
+        0.570853793964386,
+        0.5882977498357325,
+        0.5765664595641792,
+        0.5679125561235895,
+        0.5765286966577344,
+        0.5779897918567786,
+        0.5751072036091398,
+        0.5781383860968793
+      ],
+      "global_nll": 18.227572257144093,
+      "gen_mmd": 0.19599345891028586,
+      "gen_mmd_sd": 0.0013082022853109104,
+      "gen_swd": 0.30587661350611456,
+      "gen_swd_sd": 0.0012894406218936073,
+      "minority_label": 0,
+      "minority_mass": 0.29353541135787964,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2898394099033663,
+      "minority_swd": 0.4090305893294428,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              8,
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              1
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              12
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              11,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 6,
+      "server_loss": 2.3916242122650146,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5625696979122903,
+      "ari_sd_inference": 0.005279838660465327,
+      "purity": 0.8760450915922968,
+      "nmi": 0.43449450511474,
+      "per_seed_ari": [
+        0.5595160903899019,
+        0.5610314139851771,
+        0.5595543703247627,
+        0.5739828874735988,
+        0.5609936359541152,
+        0.5609173229305349,
+        0.5567191390124562,
+        0.5595543703247627,
+        0.5638016258714873,
+        0.5696261228561063
+      ],
+      "global_nll": 18.245496154381417,
+      "gen_mmd": 0.19899139320092638,
+      "gen_mmd_sd": 0.0012911809215106708,
+      "gen_swd": 0.31189869928684516,
+      "gen_swd_sd": 0.001206385380726266,
+      "minority_label": 0,
+      "minority_mass": 0.2935168147087097,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.29630327700627374,
+      "minority_swd": 0.4162448594088424,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              7,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              2
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              7,
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              11
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              18
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 7,
+      "server_loss": 2.2882237434387207,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5555464995165799,
+      "ari_sd_inference": 0.006612637427922377,
+      "purity": 0.8736965711601691,
+      "nmi": 0.42795825608558913,
+      "per_seed_ari": [
+        0.546792649396982,
+        0.5596676916963388,
+        0.548256106863308,
+        0.5669122885695584,
+        0.5568706978311918,
+        0.5496426308069805,
+        0.5524989747921779,
+        0.5525374838185043,
+        0.5611432356953785,
+        0.5611432356953785
+      ],
+      "global_nll": 18.269021275119247,
+      "gen_mmd": 0.20436543979387714,
+      "gen_mmd_sd": 0.0014115098563474884,
+      "gen_swd": 0.31673042092383685,
+      "gen_swd_sd": 0.0011699901536178733,
+      "minority_label": 0,
+      "minority_mass": 0.29350727796554565,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2924132010833947,
+      "minority_swd": 0.4120552683034114,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              15
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              6,
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              15
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              9,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 8,
+      "server_loss": 2.413606643676758,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5380180407279499,
+      "ari_sd_inference": 0.004709283108684954,
+      "purity": 0.8679192108971348,
+      "nmi": 0.41065534705143153,
+      "per_seed_ari": [
+        0.5284226442767481,
+        0.5368677748429767,
+        0.5354978448010538,
+        0.5411925585687011,
+        0.5354562873623039,
+        0.5425698755979962,
+        0.5354144622764418,
+        0.5439890483696173,
+        0.5382808494941783,
+        0.5424890616894829
+      ],
+      "global_nll": 18.296725516260345,
+      "gen_mmd": 0.20140943066212466,
+      "gen_mmd_sd": 0.001359185678267342,
+      "gen_swd": 0.3146038040524576,
+      "gen_swd_sd": 0.001063901183806208,
+      "minority_label": 0,
+      "minority_mass": 0.29350438714027405,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2963490951726032,
+      "minority_swd": 0.4105321658496918,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              8,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              3
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              4,
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              10,
+              12
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              8,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 9,
+      "server_loss": 2.4310359954833984,
+      "server_lr": 0.0003937488086814452,
+      "ari": 0.5264221419390693,
+      "ari_sd_inference": 0.0041842669227540276,
+      "purity": 0.8641146077970878,
+      "nmi": 0.39934045457919554,
+      "per_seed_ari": [
+        0.5239991383076921,
+        0.52255502323352,
+        0.5324670769067357,
+        0.5296091550123138,
+        0.5255327010512504,
+        0.5324670769067357,
+        0.5198540470463408,
+        0.5254440218925526,
+        0.5282042788614625,
+        0.5240889001720901
+      ],
+      "global_nll": 18.193837250663503,
+      "gen_mmd": 0.19648150999504133,
+      "gen_mmd_sd": 0.0012836645799709741,
+      "gen_swd": 0.31046753782005543,
+      "gen_swd_sd": 0.001037396830941398,
+      "minority_label": 0,
+      "minority_mass": 0.2935102581977844,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.2987200377930574,
+      "minority_swd": 0.4091154250279345,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.3,
+        "unique_sampled_total": 13,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              13,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 0,
+            "sampled_counts": [
+              0
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              15
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              4,
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              10
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              9,
+              5
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    },
+    {
+      "round": 10,
+      "server_loss": 2.300320625305176,
+      "server_lr": 0.0003346864873792284,
+      "ari": 0.5372731788978894,
+      "ari_sd_inference": 0.00668134911951407,
+      "purity": 0.8677313292625646,
+      "nmi": 0.40970782399765937,
+      "per_seed_ari": [
+        0.5337461487526199,
+        0.5282924422174371,
+        0.5325102303719941,
+        0.5452491722294421,
+        0.533919327288269,
+        0.5409469973589472,
+        0.5282924422174371,
+        0.5409051447974816,
+        0.5436615257102304,
+        0.5452083580350348
+      ],
+      "global_nll": 17.969162443733666,
+      "gen_mmd": 0.19576774009177988,
+      "gen_mmd_sd": 0.0012739087433483577,
+      "gen_swd": 0.30860682580941945,
+      "gen_swd_sd": 0.0011000118838059853,
+      "minority_label": 0,
+      "minority_mass": 0.2935181260108948,
+      "minority_gen_frac": 0.2949333333333333,
+      "minority_mmd": 0.29054331375786574,
+      "minority_swd": 0.4018742212004691,
+      "gen_finite": true,
+      "coverage": {
+        "mean_unique_sampled": 1.4,
+        "unique_sampled_total": 14,
+        "low_support_total": 0,
+        "low_support_sampled": 0,
+        "clients": [
+          {
+            "client": 0,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 1,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              8
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 2,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              9
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 3,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 4,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              5,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 5,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              7
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 6,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              9,
+              12
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 7,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              10
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 8,
+            "components": 1,
+            "sampled_components_unique": 1,
+            "sampled_counts": [
+              6
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          },
+          {
+            "client": 9,
+            "components": 2,
+            "sampled_components_unique": 2,
+            "sampled_counts": [
+              8,
+              4
+            ],
+            "low_support_total": 0,
+            "low_support_sampled": 0
+          }
+        ]
+      }
+    }
+  ],
+  "final": {
+    "round": 10,
+    "server_loss": 2.300320625305176,
+    "server_lr": 0.0003346864873792284,
+    "ari": 0.5372731788978894,
+    "ari_sd_inference": 0.00668134911951407,
+    "purity": 0.8677313292625646,
+    "nmi": 0.40970782399765937,
+    "per_seed_ari": [
+      0.5337461487526199,
+      0.5282924422174371,
+      0.5325102303719941,
+      0.5452491722294421,
+      0.533919327288269,
+      0.5409469973589472,
+      0.5282924422174371,
+      0.5409051447974816,
+      0.5436615257102304,
+      0.5452083580350348
+    ],
+    "global_nll": 17.969162443733666,
+    "gen_mmd": 0.19576774009177988,
+    "gen_mmd_sd": 0.0012739087433483577,
+    "gen_swd": 0.30860682580941945,
+    "gen_swd_sd": 0.0011000118838059853,
+    "minority_label": 0,
+    "minority_mass": 0.2935181260108948,
+    "minority_gen_frac": 0.2949333333333333,
+    "minority_mmd": 0.29054331375786574,
+    "minority_swd": 0.4018742212004691,
+    "gen_finite": true,
+    "coverage": {
+      "mean_unique_sampled": 1.4,
+      "unique_sampled_total": 14,
+      "low_support_total": 0,
+      "low_support_sampled": 0,
+      "clients": [
+        {
+          "client": 0,
+          "components": 1,
+          "sampled_components_unique": 1,
+          "sampled_counts": [
+            7
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 1,
+          "components": 1,
+          "sampled_components_unique": 1,
+          "sampled_counts": [
+            8
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 2,
+          "components": 2,
+          "sampled_components_unique": 2,
+          "sampled_counts": [
+            5,
+            9
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 3,
+          "components": 1,
+          "sampled_components_unique": 1,
+          "sampled_counts": [
+            6
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 4,
+          "components": 2,
+          "sampled_components_unique": 2,
+          "sampled_counts": [
+            5,
+            4
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 5,
+          "components": 1,
+          "sampled_components_unique": 1,
+          "sampled_counts": [
+            7
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 6,
+          "components": 2,
+          "sampled_components_unique": 2,
+          "sampled_counts": [
+            9,
+            12
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 7,
+          "components": 1,
+          "sampled_components_unique": 1,
+          "sampled_counts": [
+            10
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 8,
+          "components": 1,
+          "sampled_components_unique": 1,
+          "sampled_counts": [
+            6
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        },
+        {
+          "client": 9,
+          "components": 2,
+          "sampled_components_unique": 2,
+          "sampled_counts": [
+            8,
+            4
+          ],
+          "low_support_total": 0,
+          "low_support_sampled": 0
+        }
+      ]
+    }
+  },
+  "highest_exploratory": {
+    "round": 0,
+    "ari": 0.605326980742813
+  },
+  "config": {
+    "rounds": 10,
+    "sample": 100,
+    "client_weights": [
+      0.054015969938938466,
+      0.09816815406294034,
+      0.15312353217472993,
+      0.026303428839830906,
+      0.10239549084077032,
+      0.07280413339596055,
+      0.16439643024894315,
+      0.11225927665570691,
+      0.06481916392672617,
+      0.15171441991545326
+    ],
+    "local_K": [
+      1,
+      1,
+      2,
+      1,
+      2,
+      1,
+      2,
+      1,
+      1,
+      2
+    ],
+    "restored_server_optimizer": true,
+    "restored_server_scheduler": true,
+    "client_frozen": true,
+    "primary_endpoint": 10
+  }
+}

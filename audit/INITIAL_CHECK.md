@@ -1,0 +1,7 @@
+# Initial F01 @100 Global ARI reload check
+
+- Checkpoint SHA256: `3be341c451a186d1f36673080164af208993d215f0c2cb03709407892f7d6f3e`
+- 10 inference seeds: [0.600863, 0.60247, 0.599562, 0.614501, 0.611528, 0.600977, 0.605422, 0.605422, 0.605569, 0.606956]
+- Mean ARI: **0.605326980743** (target 0.605326980743)
+- Inference SD: 0.004779
+- Exact at 1e-12: **True**
