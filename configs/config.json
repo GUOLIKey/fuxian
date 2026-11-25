@@ -1,0 +1,61 @@
+{
+  "experiment": "acd_f01_frozen_v1",
+  "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/round7_f01_full_repro/fine/F01/epoch_100_full.pt",
+  "checkpoint_sha256": "3be341c451a186d1f36673080164af208993d215f0c2cb03709407892f7d6f3e",
+  "acd": {
+    "implementation": "vendor/FedHIRE/MultiClustering.py",
+    "function": "FCPL",
+    "sha256": "2d49665775bdc0af91874a48c2533276dcf5a23086c1542f5db3b3578d0bfc49",
+    "repo": "https://github.com/hongdream/Fed-HIRE",
+    "commit": "c116c8354f988d4c3080bbd9b1ab685117e78787",
+    "paper": "https://arxiv.org/abs/2601.06404v2",
+    "rate": 0.05,
+    "k0": 0.5,
+    "max_iter": 100,
+    "modified": false
+  },
+  "local_gmm": {
+    "feature": "client encoder mu (FedVaDE pre_train)",
+    "covariance": "diag",
+    "reg_covar": 1e-06,
+    "pi_log_epsilon": 1e-10,
+    "variance_estimator": "population (ddof=0)"
+  },
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "holdout_seed": 20261125,
+  "holdout_fraction": 0.2,
+  "bic": {
+    "original_range": [
+      2,
+      14
+    ],
+    "extended_range": [
+      2,
+      30
+    ],
+    "sample_cap_per_component": 5,
+    "sample_cap_rule": "k_max = min(range_max, n_fit // 5)",
+    "source": "prior project build_init.bic_select range 2..14"
+  },
+  "generation": {
+    "n": 2000,
+    "diversity_n": 500,
+    "decoder": "client decoder",
+    "swd_directions": 64
+  },
+  "methods": {
+    "A0": "original local GMM from checkpoint",
+    "A1": "original K + ordinary GMM refit",
+    "A2": "BIC original range + ordinary GMM",
+    "A3": "BIC extended range + ordinary GMM",
+    "A4": "author ACD FCPL + moment-matched GMM, no EM",
+    "A5": "ordinary GMM with A4 K per client/seed/split"
+  },
+  "python": "3.11.18",
+  "numpy": "1.25.2",
+  "torch": "2.0.1+cpu"
+}

@@ -1,0 +1,70 @@
+{
+  "passed": true,
+  "checkpoint_sha256": "3be341c451a186d1f36673080164af208993d215f0c2cb03709407892f7d6f3e",
+  "client": 0,
+  "seed": 0,
+  "checks": {
+    "A0": {
+      "present": true,
+      "K": 1,
+      "ari": 1.0,
+      "interface_ok": null,
+      "holdout_interface_ok": null,
+      "generation_finite": true,
+      "ok": true
+    },
+    "A1": {
+      "present": true,
+      "K": 1,
+      "ari": 1.0,
+      "interface_ok": null,
+      "holdout_interface_ok": null,
+      "generation_finite": true,
+      "ok": true
+    },
+    "A2": {
+      "present": true,
+      "K": 7,
+      "ari": 0.0,
+      "interface_ok": null,
+      "holdout_interface_ok": null,
+      "generation_finite": true,
+      "ok": true
+    },
+    "A3": {
+      "present": true,
+      "K": 7,
+      "ari": 0.0,
+      "interface_ok": null,
+      "holdout_interface_ok": null,
+      "generation_finite": true,
+      "ok": true
+    },
+    "A4": {
+      "present": true,
+      "K": 53,
+      "ari": 0.0,
+      "interface_ok": true,
+      "holdout_interface_ok": true,
+      "generation_finite": true,
+      "ok": true
+    },
+    "A5": {
+      "present": true,
+      "K": 53,
+      "ari": 0.0,
+      "interface_ok": null,
+      "holdout_interface_ok": null,
+      "generation_finite": true,
+      "ok": true
+    }
+  },
+  "failures": [],
+  "holdout": {
+    "seed": 20261125,
+    "frac": 0.2,
+    "n_fit": 92,
+    "n_hold": 23,
+    "split_hash": "81b078f4ae7f3f2b"
+  }
+}

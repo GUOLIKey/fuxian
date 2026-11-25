@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+*.pt
+*.pt.gz
+*.pk
+*.tar.gz
+.DS_Store
+results/pca_points.csv
