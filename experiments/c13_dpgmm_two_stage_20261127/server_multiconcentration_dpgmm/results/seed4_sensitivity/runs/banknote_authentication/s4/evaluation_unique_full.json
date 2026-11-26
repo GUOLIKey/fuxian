@@ -1,0 +1,153 @@
+{
+  "schema": "audit_evaluation_v1",
+  "run": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_server_dpgmm_multigranularity_v1/sensitivity_iris_banknote_s4_20261127/runs/banknote_authentication/s4",
+  "dataset": "banknote_authentication",
+  "mode": "author",
+  "repair_package": {
+    "package_sha256": "217e80963a883ff2ad3b906e6fb9d85f0c2349d5e8941764de1e4d9f3f9cf6bc",
+    "files": {
+      "common/__init__.py": "4d69be6dc90ff247a8d20dda803a0fd814b373eb649131587cb1101f34676181",
+      "common/data.py": "4a87f98d6e5719cc5d5151f09b2906990edef9bd788942909c487e1fde6c7760",
+      "common/distances.py": "3dfeb4a732c4466dcd2284a7f542f4befd30c9108ed692a0974766cb4e53060c",
+      "common/evaluate.py": "16410d3a6505b929956e7511e81af2083541b9832980338938e45deabd3e9483",
+      "common/local_gmm.py": "7169804e932dbbabbd03d80948dfed1bdbeddc544195e07595b440ca9f258e4d",
+      "common/metrics.py": "81408e31d88a04414d2157ad4d083f2933c361f23625afa4f7a25d2c0c091c9b",
+      "common/model.py": "78024b2d462c8393190101516e7ac17ec1a173370f796a7594310cd53bec0e69",
+      "common/provenance.py": "f9fa8ef2638546e209bdbe06e9e3f202656e3990d2aef859893eec7f02425285",
+      "common/sampling.py": "c037541dfa8bd2503d423eb828460c79a91d600ea3b6ba10bba2ceb606d24374",
+      "common/train.py": "35bf8c2854173def22deeb789ad5a282e9c22c332d7dee5847f50ad6fbd097ab",
+      "lines/server_reweight/main.py": "8873088e4d48eb0302febc70e488bec0c9db7ae4cf6d77198c7ca9520d93ac64"
+    }
+  },
+  "runtime_packages": {
+    "torch": "2.0.1+cpu",
+    "numpy": "1.25.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "pandas": "2.3.2",
+    "munkres": "1.1.4",
+    "threadpoolctl": "3.8.0"
+  },
+  "training_seed_from_config": 4,
+  "environment": {
+    "torch": "2.0.1+cpu",
+    "numpy": "1.25.2",
+    "torch_threads": 1
+  },
+  "population": "unique_full",
+  "independent_test": false,
+  "n_evaluation": 1372,
+  "n_client_records": 4318,
+  "n_unique_input": 1372,
+  "input_sha256": "8e8f636c47954066ac3ab1a47b948dd9d9d4e86bec2ea5b953c1e84d7ddbd64a",
+  "label_sha256": "26cc5aeb0ad014fc0bfae82e6911350af9ecce7e5a9ab7327f6968431469b829",
+  "source_hashes": {
+    "._dataloader.py": "e6c0ce2c363283e3eef8121dfc29af38884dd3567ebc50c7d4f8b66c7a59584f",
+    "._experiment.py": "e6c0ce2c363283e3eef8121dfc29af38884dd3567ebc50c7d4f8b66c7a59584f",
+    "._main.py": "e6c0ce2c363283e3eef8121dfc29af38884dd3567ebc50c7d4f8b66c7a59584f",
+    "._model.py": "e6c0ce2c363283e3eef8121dfc29af38884dd3567ebc50c7d4f8b66c7a59584f",
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "bb0578325ace89fd6d277300ff4bab830a6f95eabe24849cae06ec3197e7b79e",
+    "model.py": "df4660ad1751c78289765282ced0ad8f53e7710eb323a993f50cd0fe5fd834c2"
+  },
+  "data_dir": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+  "inference_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "sd_ddof": 0,
+  "rounds": {
+    "300": {
+      "ari": {
+        "mean": 0.07222278073689228,
+        "sd": 0.0043113224820157435
+      },
+      "purity": {
+        "mean": 0.6415451895043731,
+        "sd": 0.0036704601492752696
+      },
+      "nmi": {
+        "mean": 0.14770959181327914,
+        "sd": 0.009557057480081597
+      },
+      "acc": {
+        "mean": 0.6415451895043731,
+        "sd": 0.0036704601492752696
+      },
+      "draws": [
+        {
+          "ari": 0.07542060180782487,
+          "purity": 0.6443148688046647,
+          "nmi": 0.15714335756309697,
+          "acc": 0.6443148688046647
+        },
+        {
+          "ari": 0.08074334850736462,
+          "purity": 0.6486880466472303,
+          "nmi": 0.16384169107024227,
+          "acc": 0.6486880466472303
+        },
+        {
+          "ari": 0.06861104560225592,
+          "purity": 0.6384839650145773,
+          "nmi": 0.1411857260083297,
+          "acc": 0.6384839650145773
+        },
+        {
+          "ari": 0.07542060180782487,
+          "purity": 0.6443148688046647,
+          "nmi": 0.15714335756309697,
+          "acc": 0.6443148688046647
+        },
+        {
+          "ari": 0.07024876185547775,
+          "purity": 0.6399416909620991,
+          "nmi": 0.15041054302106263,
+          "acc": 0.6399416909620991
+        },
+        {
+          "ari": 0.06699047821032436,
+          "purity": 0.6370262390670554,
+          "nmi": 0.13404783095445819,
+          "acc": 0.6370262390670554
+        },
+        {
+          "ari": 0.07115251645186613,
+          "purity": 0.64067055393586,
+          "nmi": 0.144558324580517,
+          "acc": 0.64067055393586
+        },
+        {
+          "ari": 0.07200805953809213,
+          "purity": 0.641399416909621,
+          "nmi": 0.14568049570117467,
+          "acc": 0.641399416909621
+        },
+        {
+          "ari": 0.06616023703584416,
+          "purity": 0.6362973760932945,
+          "nmi": 0.13292491484982796,
+          "acc": 0.6362973760932945
+        },
+        {
+          "ari": 0.07547215655204806,
+          "purity": 0.6443148688046647,
+          "nmi": 0.15015967682098486,
+          "acc": 0.6443148688046647
+        }
+      ],
+      "checkpoint": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_server_dpgmm_multigranularity_v1/sensitivity_iris_banknote_s4_20261127/runs/banknote_authentication/s4/epoch_300_server.pt",
+      "checkpoint_sha256": "ec618b05e0fe902511dc8bb9fd300aaf0f7d135ded69bd77f1f173e6816d406b",
+      "round": 300
+    }
+  }
+}

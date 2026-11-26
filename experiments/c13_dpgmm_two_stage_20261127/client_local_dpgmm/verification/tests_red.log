@@ -1,0 +1,60 @@
+test_dp_config_required_and_validated (test_protocol.ProtocolTests) ... FAIL
+test_hook_precedes_gmm (test_protocol.ProtocolTests) ... FAIL
+test_no_silent_dataset_or_group (test_protocol.ProtocolTests) ... FAIL
+test_rejects_duplicate_hook (test_protocol.ProtocolTests) ... FAIL
+test_samek_does_not_refit_dp (test_protocol.ProtocolTests) ... FAIL
+
+======================================================================
+FAIL: test_dp_config_required_and_validated (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 21, in test_dp_config_required_and_validated
+    m=self.load()
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 9, in load
+    self.assertTrue(p.exists(), 'protocol implementation missing')
+AssertionError: False is not true : protocol implementation missing
+
+======================================================================
+FAIL: test_hook_precedes_gmm (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 12, in test_hook_precedes_gmm
+    m=self.load();src=(ROOT/'vendor/author/model.py').read_text()
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 9, in load
+    self.assertTrue(p.exists(), 'protocol implementation missing')
+AssertionError: False is not true : protocol implementation missing
+
+======================================================================
+FAIL: test_no_silent_dataset_or_group (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 25, in test_no_silent_dataset_or_group
+    m=self.load()
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 9, in load
+    self.assertTrue(p.exists(), 'protocol implementation missing')
+AssertionError: False is not true : protocol implementation missing
+
+======================================================================
+FAIL: test_rejects_duplicate_hook (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 18, in test_rejects_duplicate_hook
+    m=self.load();src=(ROOT/'vendor/author/model.py').read_text()
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 9, in load
+    self.assertTrue(p.exists(), 'protocol implementation missing')
+AssertionError: False is not true : protocol implementation missing
+
+======================================================================
+FAIL: test_samek_does_not_refit_dp (test_protocol.ProtocolTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 29, in test_samek_does_not_refit_dp
+    m=self.load();src=(ROOT/'vendor/author/model.py').read_text();new=m.instrument_model(src)
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_protocol.py", line 9, in load
+    self.assertTrue(p.exists(), 'protocol implementation missing')
+AssertionError: False is not true : protocol implementation missing
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+FAILED (failures=5)

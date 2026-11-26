@@ -1,0 +1,5 @@
+{
+  "server_equal": true,
+  "all_clients_equal": true,
+  "scope": "Iris seed0 CPU 2 pretrain / 3 rounds"
+}

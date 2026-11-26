@@ -1,0 +1,15 @@
+{
+  "schema": "server_dpgmm_multigranularity_v1",
+  "levels": [
+    {"name": "coarse", "concentration": 0.1},
+    {"name": "medium", "concentration": 1.0},
+    {"name": "fine", "concentration": 10.0}
+  ],
+  "upper_bound": 10,
+  "prune": 0.01,
+  "covariance_type": "diag",
+  "prior_type": "dirichlet_process",
+  "max_iter": 1000,
+  "tol": 0.001,
+  "reg_covar": 0.000001
+}

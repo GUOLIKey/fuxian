@@ -1,0 +1,159 @@
+{
+  "dataset": "iris",
+  "partition_mode": "author",
+  "seed": 0,
+  "lr": 0.002,
+  "alpha": 0.01,
+  "schedule": "author",
+  "sample": 100,
+  "pretrain": 50,
+  "rounds": 300,
+  "save_every": 300,
+  "batch_size": 200,
+  "clients": 10,
+  "latent_dim": 10,
+  "device": "cpu",
+  "local_gmm": "author",
+  "wcp": 0.1,
+  "prune": 0.01,
+  "source_dir": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/review_code/vendor/author",
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "author_source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+  },
+  "executed_main_sha": "e0f6decd529defeded0cd6610d9df76570e6c5d983f842d9765e68b0bcb353f6",
+  "executed_source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "e0f6decd529defeded0cd6610d9df76570e6c5d983f842d9765e68b0bcb353f6",
+    "model.py": "f5f45839e30df5f17262c88bbf9583fb6acbd181767aba6d49d02968f7301a29"
+  },
+  "data_dir": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+  "data_sha256": "818e805222a1735aa6649bdce4430b72d2bc6012900a4850518c38b183f5b179",
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "scripts/run_experiment.py",
+    "--group",
+    "C",
+    "--dataset",
+    "iris",
+    "--seed",
+    "0",
+    "--alpha",
+    "0.01",
+    "--prepared",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/prepared/iris/s0/pre_gmm.pt",
+    "--b-run",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/runs/iris/B/s0",
+    "--data-dir",
+    "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+    "--out",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/runs/iris/C/s0"
+  ],
+  "repair_package": {
+    "package_sha256": "a7689e07ed13cb864046f43fc22ea38ab11e51bc68df0ee3789e9182b18493dd",
+    "files": {
+      "common/__init__.py": "4d69be6dc90ff247a8d20dda803a0fd814b373eb649131587cb1101f34676181",
+      "common/data.py": "4a87f98d6e5719cc5d5151f09b2906990edef9bd788942909c487e1fde6c7760",
+      "common/distances.py": "3dfeb4a732c4466dcd2284a7f542f4befd30c9108ed692a0974766cb4e53060c",
+      "common/evaluate.py": "16410d3a6505b929956e7511e81af2083541b9832980338938e45deabd3e9483",
+      "common/local_gmm.py": "7169804e932dbbabbd03d80948dfed1bdbeddc544195e07595b440ca9f258e4d",
+      "common/metrics.py": "81408e31d88a04414d2157ad4d083f2933c361f23625afa4f7a25d2c0c091c9b",
+      "common/model.py": "78024b2d462c8393190101516e7ac17ec1a173370f796a7594310cd53bec0e69",
+      "common/provenance.py": "f9fa8ef2638546e209bdbe06e9e3f202656e3990d2aef859893eec7f02425285",
+      "common/sampling.py": "c037541dfa8bd2503d423eb828460c79a91d600ea3b6ba10bba2ceb606d24374",
+      "common/train.py": "35bf8c2854173def22deeb789ad5a282e9c22c332d7dee5847f50ad6fbd097ab",
+      "lines/client_acd/main.py": "8b7c7ad237e75a95cb81acc560879c730006a1a8c06521a537fab3ccd4d095f3",
+      "lines/client_dpgmm/main.py": "ef6c46e802f0c1b05705889bd996737d028db6ed0407d21dbf0d9fba7e4edf44",
+      "lines/coverage_metric/main.py": "5051e9c0db8b723a78654d1075bb008fcbbd477734ebf0702f6af00030902518",
+      "lines/diagnostics/main.py": "695d5f8ac430bba1bc6634958fd61b0c92325b9e816b5b7cf1cffc0d8dccfbac",
+      "lines/fmnist_benchmark/main.py": "0842bf2cd784c8ca2dd5694cfce3bd1fd9de108aaa39b7223c787fe3165f7234",
+      "lines/latent_width/main.py": "885aedb6922391baaf134fa8f841fa6229b169542ec6c56f5af3d5aac5bd4733",
+      "lines/server_multica/main.py": "b63ba728f6c86034ffc0b14bf6085e2ba3c966d437508ae21afaa288f5713e81",
+      "lines/server_reweight/main.py": "8873088e4d48eb0302febc70e488bec0c9db7ae4cf6d77198c7ca9520d93ac64"
+    }
+  },
+  "runtime_packages": {
+    "torch": "2.0.1+cpu",
+    "numpy": "1.25.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "pandas": "2.3.2",
+    "munkres": "1.1.4",
+    "threadpoolctl": "3.8.0"
+  },
+  "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+  "sample_floor": 0,
+  "usage_floor": 0.0,
+  "usage_beta": 4.0,
+  "torch": "2.0.1+cpu",
+  "numpy": "1.25.2",
+  "cuda_available": false,
+  "imported_model_file": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/runs/iris/C/s0/source/model.py",
+  "partition": {
+    "mode": "author",
+    "input_csv": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset/iris.csv"
+  },
+  "input_dim": 4,
+  "clusters": 3,
+  "client_sizes": [
+    58,
+    49,
+    99,
+    48,
+    15,
+    62,
+    46,
+    77,
+    46,
+    32
+  ],
+  "input_sha256": "2016e1455dd1eb8843c78fb52679a096100a8df4db3df72cb6e5d0443cd9eb9c",
+  "label_sha256": "c1f255e4540a6464758737109edbf1b1599c88b01d433be9dad78cbf085c4c4e",
+  "client_data_hashes": [
+    {
+      "x": "43abd331f6ee84d62527e5de0f789507f6dea69e193205a6324f4a67a82ab671",
+      "y": "f9f6bb1d2001bee9e93ee43e8d6c262c7acb40cb8b2f350b2f48d5d6e7d57afc"
+    },
+    {
+      "x": "8984f04cb857e0e7a72c4630661a3cd16a000c9c9be8897f06cb524c40cb5a73",
+      "y": "324eae80e08db88f628087dac1f81727cd224eacba1eff897b32560216000053"
+    },
+    {
+      "x": "ac7290c37996b59a678edf77f871aa9f1a6d2b3987f45e8c1aca6faeb2a3f49f",
+      "y": "bb811ab6d3f618582af1378703b8ca5f374a5c47f379ec93a2b86b9557334a87"
+    },
+    {
+      "x": "54d61c1dd40000dcbd0a16bf25262177ef3c26d8cdb537e38c1b91c1c7a3ea9d",
+      "y": "bd8c79f66e249edf70e296b18cf2502a76914433a92fea98de993c4ac892ed63"
+    },
+    {
+      "x": "521fa7bfcdc709ff17b80872d0ae04976f55284f0ea59334be7266cb4a4c41cc",
+      "y": "d62fdaabcba6e55a5b61b3909aed057c43948f528a445cd9616d29747b8a585a"
+    },
+    {
+      "x": "47bc78f306ef0fb10d0394be771795ff62f592f4a77f2a6aa7c1cad5affa59ac",
+      "y": "f8d8e926d7229d5166aa57a0207a4fd849472312a3c98b3bc4b0757e91cf3165"
+    },
+    {
+      "x": "c05e6c3a6912bb9ec0a4e06d5afc26eeeaa007066beba194ae8b5a44e7a5cb36",
+      "y": "d808e21fb39a08058aff45d5506219a6a1207fa8bb2bb94a0b99a30aba94aa9d"
+    },
+    {
+      "x": "fc57de04e54114f4a6a92e7d90d8aab33b6c572a68a3f8aa3defc134be60a1fc",
+      "y": "a894ef24de24acd29cb154cd4692dcd69c00cdcc2df1af8f5f75fff678ce4656"
+    },
+    {
+      "x": "076ce474865ba6d130cfdf189aeb9785c1a0292efca4c8b796c41155e2930bc7",
+      "y": "e5150994cf4bdcb24714daf9a884025c3acd588bfb2b2d4c5c0af51ca9a09dd7"
+    },
+    {
+      "x": "4e9ac3f6b395a738007e772d462bbff5c9c7b4e4432839900e54f6a7c545c9fb",
+      "y": "c20617cbbd78c68d283bae51bb125df4e1dc722c841eaf29444c72b90b4fccb3"
+    }
+  ],
+  "input_csv_sha256": "818e805222a1735aa6649bdce4430b72d2bc6012900a4850518c38b183f5b179"
+}

@@ -1,0 +1,159 @@
+{
+  "dataset": "breast_cancer",
+  "partition_mode": "author",
+  "seed": 4,
+  "lr": 0.002,
+  "alpha": 0.05,
+  "schedule": "author",
+  "sample": 100,
+  "pretrain": 50,
+  "rounds": 300,
+  "save_every": 300,
+  "batch_size": 200,
+  "clients": 10,
+  "latent_dim": 10,
+  "device": "cpu",
+  "local_gmm": "author",
+  "wcp": 0.1,
+  "prune": 0.01,
+  "source_dir": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/supplement_code_seeds34_20261127/vendor/author",
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "author_source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+    "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+  },
+  "executed_main_sha": "e0f6decd529defeded0cd6610d9df76570e6c5d983f842d9765e68b0bcb353f6",
+  "executed_source_hashes": {
+    "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+    "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+    "main.py": "e0f6decd529defeded0cd6610d9df76570e6c5d983f842d9765e68b0bcb353f6",
+    "model.py": "f5f45839e30df5f17262c88bbf9583fb6acbd181767aba6d49d02968f7301a29"
+  },
+  "data_dir": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+  "data_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+  "command": [
+    "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+    "scripts/run_experiment.py",
+    "--group",
+    "B",
+    "--dataset",
+    "breast_cancer",
+    "--seed",
+    "4",
+    "--alpha",
+    "0.05",
+    "--prepared",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_ab_seeds34_20261127/prepared/breast_cancer/s4/pre_gmm.pt",
+    "--dp-config",
+    "configs/formal_breast_cancer.json",
+    "--data-dir",
+    "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+    "--out",
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_ab_seeds34_20261127/runs/breast_cancer/B/s4"
+  ],
+  "repair_package": {
+    "package_sha256": "a7689e07ed13cb864046f43fc22ea38ab11e51bc68df0ee3789e9182b18493dd",
+    "files": {
+      "common/__init__.py": "4d69be6dc90ff247a8d20dda803a0fd814b373eb649131587cb1101f34676181",
+      "common/data.py": "4a87f98d6e5719cc5d5151f09b2906990edef9bd788942909c487e1fde6c7760",
+      "common/distances.py": "3dfeb4a732c4466dcd2284a7f542f4befd30c9108ed692a0974766cb4e53060c",
+      "common/evaluate.py": "16410d3a6505b929956e7511e81af2083541b9832980338938e45deabd3e9483",
+      "common/local_gmm.py": "7169804e932dbbabbd03d80948dfed1bdbeddc544195e07595b440ca9f258e4d",
+      "common/metrics.py": "81408e31d88a04414d2157ad4d083f2933c361f23625afa4f7a25d2c0c091c9b",
+      "common/model.py": "78024b2d462c8393190101516e7ac17ec1a173370f796a7594310cd53bec0e69",
+      "common/provenance.py": "f9fa8ef2638546e209bdbe06e9e3f202656e3990d2aef859893eec7f02425285",
+      "common/sampling.py": "c037541dfa8bd2503d423eb828460c79a91d600ea3b6ba10bba2ceb606d24374",
+      "common/train.py": "35bf8c2854173def22deeb789ad5a282e9c22c332d7dee5847f50ad6fbd097ab",
+      "lines/client_acd/main.py": "8b7c7ad237e75a95cb81acc560879c730006a1a8c06521a537fab3ccd4d095f3",
+      "lines/client_dpgmm/main.py": "ef6c46e802f0c1b05705889bd996737d028db6ed0407d21dbf0d9fba7e4edf44",
+      "lines/coverage_metric/main.py": "5051e9c0db8b723a78654d1075bb008fcbbd477734ebf0702f6af00030902518",
+      "lines/diagnostics/main.py": "695d5f8ac430bba1bc6634958fd61b0c92325b9e816b5b7cf1cffc0d8dccfbac",
+      "lines/fmnist_benchmark/main.py": "0842bf2cd784c8ca2dd5694cfce3bd1fd9de108aaa39b7223c787fe3165f7234",
+      "lines/latent_width/main.py": "885aedb6922391baaf134fa8f841fa6229b169542ec6c56f5af3d5aac5bd4733",
+      "lines/server_multica/main.py": "b63ba728f6c86034ffc0b14bf6085e2ba3c966d437508ae21afaa288f5713e81",
+      "lines/server_reweight/main.py": "8873088e4d48eb0302febc70e488bec0c9db7ae4cf6d77198c7ca9520d93ac64"
+    }
+  },
+  "runtime_packages": {
+    "torch": "2.0.1+cpu",
+    "numpy": "1.25.2",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "pandas": "2.3.2",
+    "munkres": "1.1.4",
+    "threadpoolctl": "3.8.0"
+  },
+  "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+  "sample_floor": 0,
+  "usage_floor": 0.0,
+  "usage_beta": 4.0,
+  "torch": "2.0.1+cpu",
+  "numpy": "1.25.2",
+  "cuda_available": false,
+  "imported_model_file": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_ab_seeds34_20261127/runs/breast_cancer/B/s4/source/model.py",
+  "partition": {
+    "mode": "author",
+    "input_csv": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset/breast_cancer.csv"
+  },
+  "input_dim": 31,
+  "clusters": 2,
+  "client_sizes": [
+    115,
+    209,
+    326,
+    56,
+    218,
+    155,
+    350,
+    239,
+    138,
+    323
+  ],
+  "input_sha256": "81e5420a1e0c37a7706133165f8063e4ebc4a95c5bcc8f1a4c486af2a1550350",
+  "label_sha256": "a03ccde3555223d4647b207e61220c1dd2c03d379afc97ed637ae5fcd82f0f82",
+  "client_data_hashes": [
+    {
+      "x": "46415de18350448f97fc0b7dce79beca5b186a20b999df2c31350a932d9e6e3f",
+      "y": "6aaf6f2ab6591f98ab05cfa77a258acd0652c24b7b7e8b7929fbf68a61431d3d"
+    },
+    {
+      "x": "8a43a15c6626723d5bc38ef70ed40ce1561e6e67d76a6586fb4bccb4c0fd4ac4",
+      "y": "f0a8c30530297edabb0c6bdfef7ddd06a1d3efa72d7b2350720c4a75bf9c28a9"
+    },
+    {
+      "x": "5495f4eb014c86a1cbf4202a0ae47795447225f8e17bf4fe592cb414aaab9dd0",
+      "y": "a6597083ead2e05c6fe4c3634fd429ea8ca6d076ee549d265f9d80be654dc63d"
+    },
+    {
+      "x": "7f7cd8cde0b72f42ab0dd06c519729f7de7fc4238eeba12e8db52e863cd01844",
+      "y": "21c7ff222fb66aa681912f03a96c6a15e5b214223adbf3b6a26040c7c424c422"
+    },
+    {
+      "x": "b45fbcedfa11b2261c8ec03def562d39088bb6ddbc1bbaefa40263b29e2f0637",
+      "y": "6fae50cc0151ad15ada4ef2d2c11baf41a07c7adf7452642a1ea20eab57b7478"
+    },
+    {
+      "x": "ef3ca7072d92d011090a55605f8ae51cfefc101813240e4c6a595aae995cef46",
+      "y": "64e5267a7ad3400b35a368262b01920f03a383441fbfa5cdf2edb9f97a200c80"
+    },
+    {
+      "x": "9ed572d8b33e0f03a99c24f9e5bb4c23e36860edb7de665159a9c8f620c89188",
+      "y": "7c127e1bb927d979bceed4d7d550900137d8b87433ae68bf37f1894cb0a4d911"
+    },
+    {
+      "x": "7ad75449245ca3e210d096ca0436c50de55713caceacfa516148903552b95723",
+      "y": "0885604adf2754075674fa9c9f9b8a454977b71ef7942d94f8c8abc065dd0275"
+    },
+    {
+      "x": "2294a6609c3bf056d227c3809344d3bce04badf2fddc27fd98040282ce9a0939",
+      "y": "6ab34bc990abdf422ab3b15b3c8d9f9e98d85fc9fc7e7022a506b021b01ecc96"
+    },
+    {
+      "x": "fa53188c5e809d14c085b25a9fb1d98fcebbf21a8d233baab8451ce9cfae2731",
+      "y": "129f5170228161b52e87816764ade5d78c2a0b159a37db984a5a9398c03102d9"
+    }
+  ],
+  "input_csv_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc"
+}

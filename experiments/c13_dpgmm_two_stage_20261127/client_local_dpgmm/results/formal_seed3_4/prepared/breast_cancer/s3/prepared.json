@@ -1,0 +1,74 @@
+{
+  "checkpoint_sha256": "be4be999b3b9cf78f6dd9fe2c490dfe406a8aef72f956ed40ee9c1aece809eb7",
+  "identity": {
+    "dataset": "breast_cancer",
+    "seed": 3,
+    "alpha": 0.05,
+    "lr": 0.002,
+    "schedule": "author",
+    "sample": 100,
+    "pretrain": 50,
+    "batch_size": 200,
+    "clients": 10,
+    "latent_dim": 10,
+    "device": "cpu",
+    "data_sha256": "67db1943b487ca11f00d07e6fb944099ada86df1cfd2910b6306c72292ff9ffc",
+    "client_data_hashes": [
+      {
+        "x": "46415de18350448f97fc0b7dce79beca5b186a20b999df2c31350a932d9e6e3f",
+        "y": "6aaf6f2ab6591f98ab05cfa77a258acd0652c24b7b7e8b7929fbf68a61431d3d"
+      },
+      {
+        "x": "8a43a15c6626723d5bc38ef70ed40ce1561e6e67d76a6586fb4bccb4c0fd4ac4",
+        "y": "f0a8c30530297edabb0c6bdfef7ddd06a1d3efa72d7b2350720c4a75bf9c28a9"
+      },
+      {
+        "x": "5495f4eb014c86a1cbf4202a0ae47795447225f8e17bf4fe592cb414aaab9dd0",
+        "y": "a6597083ead2e05c6fe4c3634fd429ea8ca6d076ee549d265f9d80be654dc63d"
+      },
+      {
+        "x": "7f7cd8cde0b72f42ab0dd06c519729f7de7fc4238eeba12e8db52e863cd01844",
+        "y": "21c7ff222fb66aa681912f03a96c6a15e5b214223adbf3b6a26040c7c424c422"
+      },
+      {
+        "x": "b45fbcedfa11b2261c8ec03def562d39088bb6ddbc1bbaefa40263b29e2f0637",
+        "y": "6fae50cc0151ad15ada4ef2d2c11baf41a07c7adf7452642a1ea20eab57b7478"
+      },
+      {
+        "x": "ef3ca7072d92d011090a55605f8ae51cfefc101813240e4c6a595aae995cef46",
+        "y": "64e5267a7ad3400b35a368262b01920f03a383441fbfa5cdf2edb9f97a200c80"
+      },
+      {
+        "x": "9ed572d8b33e0f03a99c24f9e5bb4c23e36860edb7de665159a9c8f620c89188",
+        "y": "7c127e1bb927d979bceed4d7d550900137d8b87433ae68bf37f1894cb0a4d911"
+      },
+      {
+        "x": "7ad75449245ca3e210d096ca0436c50de55713caceacfa516148903552b95723",
+        "y": "0885604adf2754075674fa9c9f9b8a454977b71ef7942d94f8c8abc065dd0275"
+      },
+      {
+        "x": "2294a6609c3bf056d227c3809344d3bce04badf2fddc27fd98040282ce9a0939",
+        "y": "6ab34bc990abdf422ab3b15b3c8d9f9e98d85fc9fc7e7022a506b021b01ecc96"
+      },
+      {
+        "x": "fa53188c5e809d14c085b25a9fb1d98fcebbf21a8d233baab8451ce9cfae2731",
+        "y": "129f5170228161b52e87816764ade5d78c2a0b159a37db984a5a9398c03102d9"
+      }
+    ],
+    "author_source_hashes": {
+      "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+      "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+      "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+      "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+    },
+    "runtime_packages": {
+      "torch": "2.0.1+cpu",
+      "numpy": "1.25.2",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.15.3",
+      "pandas": "2.3.2",
+      "munkres": "1.1.4",
+      "threadpoolctl": "3.8.0"
+    }
+  }
+}

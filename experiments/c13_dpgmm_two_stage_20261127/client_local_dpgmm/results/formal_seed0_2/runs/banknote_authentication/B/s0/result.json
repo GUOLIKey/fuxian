@@ -1,0 +1,219 @@
+{
+  "status": "ok",
+  "config": {
+    "dataset": "banknote_authentication",
+    "partition_mode": "author",
+    "seed": 0,
+    "lr": 0.002,
+    "alpha": 0.05,
+    "schedule": "author",
+    "sample": 100,
+    "pretrain": 50,
+    "rounds": 300,
+    "save_every": 300,
+    "batch_size": 200,
+    "clients": 10,
+    "latent_dim": 10,
+    "device": "cpu",
+    "local_gmm": "author",
+    "wcp": 0.1,
+    "prune": 0.01,
+    "source_dir": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/review_code/vendor/author",
+    "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+    "author_source_hashes": {
+      "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+      "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+      "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+      "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+    },
+    "executed_main_sha": "e0f6decd529defeded0cd6610d9df76570e6c5d983f842d9765e68b0bcb353f6",
+    "executed_source_hashes": {
+      "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+      "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+      "main.py": "e0f6decd529defeded0cd6610d9df76570e6c5d983f842d9765e68b0bcb353f6",
+      "model.py": "f5f45839e30df5f17262c88bbf9583fb6acbd181767aba6d49d02968f7301a29"
+    },
+    "data_dir": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+    "data_sha256": "3fa179122c2748d4f07a59ba66415d647f471ad213d89793c4195ff36717003f",
+    "command": [
+      "/root/autodl-tmp/fedvade_project/.venv-cpu/bin/python",
+      "scripts/run_experiment.py",
+      "--group",
+      "B",
+      "--dataset",
+      "banknote_authentication",
+      "--seed",
+      "0",
+      "--alpha",
+      "0.05",
+      "--prepared",
+      "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/prepared/banknote_authentication/s0/pre_gmm.pt",
+      "--dp-config",
+      "configs/formal_banknote_authentication.json",
+      "--data-dir",
+      "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset",
+      "--out",
+      "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/runs/banknote_authentication/B/s0"
+    ],
+    "repair_package": {
+      "package_sha256": "a7689e07ed13cb864046f43fc22ea38ab11e51bc68df0ee3789e9182b18493dd",
+      "files": {
+        "common/__init__.py": "4d69be6dc90ff247a8d20dda803a0fd814b373eb649131587cb1101f34676181",
+        "common/data.py": "4a87f98d6e5719cc5d5151f09b2906990edef9bd788942909c487e1fde6c7760",
+        "common/distances.py": "3dfeb4a732c4466dcd2284a7f542f4befd30c9108ed692a0974766cb4e53060c",
+        "common/evaluate.py": "16410d3a6505b929956e7511e81af2083541b9832980338938e45deabd3e9483",
+        "common/local_gmm.py": "7169804e932dbbabbd03d80948dfed1bdbeddc544195e07595b440ca9f258e4d",
+        "common/metrics.py": "81408e31d88a04414d2157ad4d083f2933c361f23625afa4f7a25d2c0c091c9b",
+        "common/model.py": "78024b2d462c8393190101516e7ac17ec1a173370f796a7594310cd53bec0e69",
+        "common/provenance.py": "f9fa8ef2638546e209bdbe06e9e3f202656e3990d2aef859893eec7f02425285",
+        "common/sampling.py": "c037541dfa8bd2503d423eb828460c79a91d600ea3b6ba10bba2ceb606d24374",
+        "common/train.py": "35bf8c2854173def22deeb789ad5a282e9c22c332d7dee5847f50ad6fbd097ab",
+        "lines/client_acd/main.py": "8b7c7ad237e75a95cb81acc560879c730006a1a8c06521a537fab3ccd4d095f3",
+        "lines/client_dpgmm/main.py": "ef6c46e802f0c1b05705889bd996737d028db6ed0407d21dbf0d9fba7e4edf44",
+        "lines/coverage_metric/main.py": "5051e9c0db8b723a78654d1075bb008fcbbd477734ebf0702f6af00030902518",
+        "lines/diagnostics/main.py": "695d5f8ac430bba1bc6634958fd61b0c92325b9e816b5b7cf1cffc0d8dccfbac",
+        "lines/fmnist_benchmark/main.py": "0842bf2cd784c8ca2dd5694cfce3bd1fd9de108aaa39b7223c787fe3165f7234",
+        "lines/latent_width/main.py": "885aedb6922391baaf134fa8f841fa6229b169542ec6c56f5af3d5aac5bd4733",
+        "lines/server_multica/main.py": "b63ba728f6c86034ffc0b14bf6085e2ba3c966d437508ae21afaa288f5713e81",
+        "lines/server_reweight/main.py": "8873088e4d48eb0302febc70e488bec0c9db7ae4cf6d77198c7ca9520d93ac64"
+      }
+    },
+    "runtime_packages": {
+      "torch": "2.0.1+cpu",
+      "numpy": "1.25.2",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.15.3",
+      "pandas": "2.3.2",
+      "munkres": "1.1.4",
+      "threadpoolctl": "3.8.0"
+    },
+    "python": "3.11.18 (main, Oct 26 2026, 18:19:35) [GCC 14.3.0]",
+    "sample_floor": 0,
+    "usage_floor": 0.0,
+    "usage_beta": 4.0,
+    "torch": "2.0.1+cpu",
+    "numpy": "1.25.2",
+    "cuda_available": false,
+    "imported_model_file": "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/runs/banknote_authentication/B/s0/source/model.py",
+    "partition": {
+      "mode": "author",
+      "input_csv": "/root/autodl-tmp/fedvade_project/fuxian-round2/FedVaDE_source/dataset/banknote_authentication.csv"
+    },
+    "input_dim": 4,
+    "clusters": 2,
+    "client_sizes": [
+      399,
+      289,
+      383,
+      202,
+      285,
+      971,
+      628,
+      219,
+      511,
+      431
+    ],
+    "input_sha256": "8e8f636c47954066ac3ab1a47b948dd9d9d4e86bec2ea5b953c1e84d7ddbd64a",
+    "label_sha256": "26cc5aeb0ad014fc0bfae82e6911350af9ecce7e5a9ab7327f6968431469b829",
+    "client_data_hashes": [
+      {
+        "x": "89a2e1b0fdee3ef9fd40d20dd269bcc11b0b5ebd553c43c4c56c7a4be45dd4b1",
+        "y": "fa426305541174f0379598fdc556734e83338ef0f37c516486e1ffe4c2b421e4"
+      },
+      {
+        "x": "7ed428b213410388c56d6f57a192278c03344479cac32e12d4bc30095f058d60",
+        "y": "75480cd8b93856e9b313f209c1e1b17bc763d0c6498fdcd4e0945ab21692edad"
+      },
+      {
+        "x": "e858a502d9a746b451740c5d3eb025755390c55feaa95d1514f89f71630b025a",
+        "y": "4ac154233885568da1a938727d128acbfb825e7e54f54b482d4d9a025cb12174"
+      },
+      {
+        "x": "a8acf3eb10aa730ab5af5e73bdf4ecd28fa617e93f816f49fdd4baf84f85ddb2",
+        "y": "ace681547bcacbf032d5bdf21d7a935b20031a566fb4612a4ec75bf42cbaf56b"
+      },
+      {
+        "x": "63286318fb21ed0ae293a30bbce920531be7392a2c105ba9acf8251c94b7e72b",
+        "y": "51c9353b579e71be72ae76cf50be21a22db316c0f5e9c293ab262fee4106b6f5"
+      },
+      {
+        "x": "b38a9f306ebf14a34e6ee48770aa69cd5c5cea7c15b75ed8f0960ee30c701822",
+        "y": "3aa7bc168dbba4017d93963aeb3eac4aaca9d86e81adbb52ccd6a87341dd97d5"
+      },
+      {
+        "x": "7be6cffe730bb78eb7f6cc15b734a9d92b99d03bf207608e212981bf77595bf2",
+        "y": "6ade01f546358c96ebacfe2ff1a94a8cd95cdc6a12077ce59e8ae77d302d5216"
+      },
+      {
+        "x": "f8b65dd60e7edd7a6806749e38c1ab359d6e44dc166d733fa76e3b3f83c3a051",
+        "y": "8d10e1452aeea86b850836fb4ff65d4721adebc4f7d33aa3e5291e17d223cb04"
+      },
+      {
+        "x": "4c1829190da6a0c1b2fc6f5cd20df9409197c056e1274d3fe06fba51b61f0d24",
+        "y": "805a27c361708f99e97cfbf27b600b21ca3c5ebe1ae4570a72183405e6fca728"
+      },
+      {
+        "x": "c8a8ee8a3037851898ce2ea4df2af3aaffebc3f688f5bdb7cd0fce5f0572a753",
+        "y": "00bb63d0daced7a1d5821d78a6a747b54c0d9a05fedb58570dd212114cdc4440"
+      }
+    ],
+    "input_csv_sha256": "3fa179122c2748d4f07a59ba66415d647f471ad213d89793c4195ff36717003f"
+  },
+  "author_argv": [
+    "/root/autodl-tmp/fedvade_project/reproduction_runs/c13_dpgmm_3datasets_v1/formal_cv_selected_20261126/runs/banknote_authentication/B/s0/source/main.py",
+    "--dataset",
+    "banknote_authentication",
+    "--epoch",
+    "300",
+    "--lr",
+    "0.002",
+    "--alpha",
+    "0.05",
+    "--sample",
+    "100",
+    "--client_num",
+    "10",
+    "--batch_size",
+    "200",
+    "--hid_dim",
+    "10"
+  ],
+  "last": {
+    "round": 300,
+    "client_loss": 1.8242882698774339,
+    "server_loss": 0.6269947290420532,
+    "purity": 0.6949976841130153,
+    "ari": 0.0,
+    "client_losses": {
+      "0": 0.5109750032424927,
+      "1": 0.5111497640609741,
+      "2": 0.5547847747802734,
+      "3": 0.4872274696826935,
+      "4": 1.506745457649231,
+      "5": 0.6124599575996399,
+      "6": 0.7220878005027771,
+      "7": 0.5764600038528442,
+      "8": 0.49496471881866455,
+      "9": 0.8818119168281555
+    },
+    "server_lr": 1.526151918957897e-05,
+    "client_lr": [
+      1.1645698398694353e-07,
+      1.1645698398694353e-07,
+      1.1645698398694353e-07,
+      1.1645698398694353e-07,
+      1.1645698398694353e-07,
+      5.1745054989550244e-14,
+      6.781114559667606e-12,
+      1.1645698398694353e-07,
+      8.886552479386141e-10,
+      8.886552479386141e-10
+    ],
+    "nonfinite_server_params": [],
+    "nonfinite_client_params": {},
+    "nonfinite_client_losses": [],
+    "elapsed_seconds": 571.3742118831724
+  },
+  "nan_events": 0,
+  "elapsed_seconds": 571.503068048507
+}

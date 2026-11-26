@@ -73,3 +73,7 @@ Average L_c: 5.2172, L_s: 2.2133, Purity: 0.8671, ARI: 0.5334
 ## Round 11B-pre：联邦 GMM 因素分离与统计量聚合诊断
 
 本轮不训练神经网络，只在冻结 latent 上比较 M、协方差结构、K、Union Sampling EM、矩匹配与统计量初始化，并给出集中式 full GMM oracle gap。选定 M=10000，协方差=shrink_percomp，BIC 选定 K=6 diag；暂定决策 B：优先开发 Full-Covariance / Shrinkage 服务器 GMM：在固定 M、K、来源后仍有稳定增益。。全部比较为验证集探索性诊断，不使用测试集选择模型。详见 [Round 11B-pre 报告](experiments/round11b_pre/ROUND11B_PRE_REPORT.md)、[实验协议](experiments/round11b_pre/experiment_protocol.md)、[M sweep](experiments/round11b_pre/m_sweep_results.csv)、[协方差消融](experiments/round11b_pre/covariance_ablation.csv)、[K 容量](experiments/round11b_pre/k_capacity_ablation.csv)、[联邦统计量聚合](experiments/round11b_pre/federated_statistics_aggregation.csv)。
+
+## C13 DPGMM 两轮实验：客户端自适应 K 与服务器多浓度划分
+
+2026-11-27 的两轮实验分别检查客户端 Local DPGMM，以及保持客户端普通 GMM、仅在服务器使用三档浓度 DPGMM 的方案。客户端 DPGMM 在三个数据集、三个训练 seed 的平均 ARI 上没有改善 C13；服务器方案能产生不同 K，但没有形成稳定有序的粗—中—细层次，其 Banknote seed1 改善也没有在 seed4 敏感性检查中保持。方案、参数、正式日志、JSON/JSONL 结果、表格和结论见 [C13 DPGMM 两轮实验目录](experiments/c13_dpgmm_two_stage_20261127/README.md)。作者源码、数据、权重和 checkpoint 未上传。

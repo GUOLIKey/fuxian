@@ -1,0 +1,44 @@
+{
+  "method": "C_server_dpgmm",
+  "dataset": "banknote_authentication",
+  "training_seed": 4,
+  "alpha": 0.05,
+  "smoke": false,
+  "server_config": {
+    "schema": "server_dpgmm_multigranularity_v1",
+    "levels": [
+      {
+        "name": "coarse",
+        "concentration": 0.1
+      },
+      {
+        "name": "medium",
+        "concentration": 1.0
+      },
+      {
+        "name": "fine",
+        "concentration": 10.0
+      }
+    ],
+    "upper_bound": 10,
+    "prune": 0.01,
+    "covariance_type": "diag",
+    "prior_type": "dirichlet_process",
+    "max_iter": 1000,
+    "tol": 0.001,
+    "reg_covar": 1e-06
+  },
+  "server_config_sha256": "c78c4e09f84601c93214e66efbf042470c8fd8a0eb585edf0873184c7dc2487e",
+  "method_code_hashes": {
+    "._precheck.py": "5da9c10fc512dd1dd4d7c9760611bb55875fb29cb710c2cdd1fb04350550389b",
+    "._protocol.py": "5da9c10fc512dd1dd4d7c9760611bb55875fb29cb710c2cdd1fb04350550389b",
+    "._run_experiment.py": "5da9c10fc512dd1dd4d7c9760611bb55875fb29cb710c2cdd1fb04350550389b",
+    "._server_multigranularity.py": "5da9c10fc512dd1dd4d7c9760611bb55875fb29cb710c2cdd1fb04350550389b",
+    "._server_runtime.py": "5da9c10fc512dd1dd4d7c9760611bb55875fb29cb710c2cdd1fb04350550389b",
+    "precheck.py": "ee8b550ca05efcdda2ddefe379ad0536a9844012eb7d24597bc0075a28306a55",
+    "protocol.py": "ec6cb6f52396c3fd8f1966ef5b168d6edfbfd9b08d1dd34edd645fa47d36d446",
+    "run_experiment.py": "131474259b90e190a202d652f69ece1ab0f6e5fe93416ce4bbe6f50f9b63cd11",
+    "server_multigranularity.py": "de2e9dd978b0658936555de87dfaa7e1799af990d80438b14dab426d3f39a98f",
+    "server_runtime.py": "849d48143840616d2b6d6f65bf177fb831b115b118e2afdf84193acb972e12a9"
+  }
+}

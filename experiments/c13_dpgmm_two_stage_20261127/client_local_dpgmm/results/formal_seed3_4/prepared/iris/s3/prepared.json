@@ -1,0 +1,74 @@
+{
+  "checkpoint_sha256": "31ab955617d3483e891bb02d9b5d8dbfb748d1d0eb95eb6384a4b508aa62ad21",
+  "identity": {
+    "dataset": "iris",
+    "seed": 3,
+    "alpha": 0.01,
+    "lr": 0.002,
+    "schedule": "author",
+    "sample": 100,
+    "pretrain": 50,
+    "batch_size": 200,
+    "clients": 10,
+    "latent_dim": 10,
+    "device": "cpu",
+    "data_sha256": "818e805222a1735aa6649bdce4430b72d2bc6012900a4850518c38b183f5b179",
+    "client_data_hashes": [
+      {
+        "x": "43abd331f6ee84d62527e5de0f789507f6dea69e193205a6324f4a67a82ab671",
+        "y": "f9f6bb1d2001bee9e93ee43e8d6c262c7acb40cb8b2f350b2f48d5d6e7d57afc"
+      },
+      {
+        "x": "8984f04cb857e0e7a72c4630661a3cd16a000c9c9be8897f06cb524c40cb5a73",
+        "y": "324eae80e08db88f628087dac1f81727cd224eacba1eff897b32560216000053"
+      },
+      {
+        "x": "ac7290c37996b59a678edf77f871aa9f1a6d2b3987f45e8c1aca6faeb2a3f49f",
+        "y": "bb811ab6d3f618582af1378703b8ca5f374a5c47f379ec93a2b86b9557334a87"
+      },
+      {
+        "x": "54d61c1dd40000dcbd0a16bf25262177ef3c26d8cdb537e38c1b91c1c7a3ea9d",
+        "y": "bd8c79f66e249edf70e296b18cf2502a76914433a92fea98de993c4ac892ed63"
+      },
+      {
+        "x": "521fa7bfcdc709ff17b80872d0ae04976f55284f0ea59334be7266cb4a4c41cc",
+        "y": "d62fdaabcba6e55a5b61b3909aed057c43948f528a445cd9616d29747b8a585a"
+      },
+      {
+        "x": "47bc78f306ef0fb10d0394be771795ff62f592f4a77f2a6aa7c1cad5affa59ac",
+        "y": "f8d8e926d7229d5166aa57a0207a4fd849472312a3c98b3bc4b0757e91cf3165"
+      },
+      {
+        "x": "c05e6c3a6912bb9ec0a4e06d5afc26eeeaa007066beba194ae8b5a44e7a5cb36",
+        "y": "d808e21fb39a08058aff45d5506219a6a1207fa8bb2bb94a0b99a30aba94aa9d"
+      },
+      {
+        "x": "fc57de04e54114f4a6a92e7d90d8aab33b6c572a68a3f8aa3defc134be60a1fc",
+        "y": "a894ef24de24acd29cb154cd4692dcd69c00cdcc2df1af8f5f75fff678ce4656"
+      },
+      {
+        "x": "076ce474865ba6d130cfdf189aeb9785c1a0292efca4c8b796c41155e2930bc7",
+        "y": "e5150994cf4bdcb24714daf9a884025c3acd588bfb2b2d4c5c0af51ca9a09dd7"
+      },
+      {
+        "x": "4e9ac3f6b395a738007e772d462bbff5c9c7b4e4432839900e54f6a7c545c9fb",
+        "y": "c20617cbbd78c68d283bae51bb125df4e1dc722c841eaf29444c72b90b4fccb3"
+      }
+    ],
+    "author_source_hashes": {
+      "dataloader.py": "28fc737a243ea550dc4c18ec98928a51af2701132452c68d1e7ef0d1db9c9cad",
+      "experiment.py": "979739dacb8950e074d8cbc775722aaa5ff8c304a1dba13efc64d97d9da4d758",
+      "main.py": "33bd9927437c444f3f5355813dba8de1896fd59e2eb3fbd9f16960ff3041b87b",
+      "model.py": "6cdef32b831d090ee79fa952a6f55386bba2e37a6c0c38d6ebc865441c1379d9"
+    },
+    "runtime_packages": {
+      "torch": "2.0.1+cpu",
+      "numpy": "1.25.2",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.15.3",
+      "pandas": "2.3.2",
+      "munkres": "1.1.4",
+      "threadpoolctl": "3.8.0"
+    }
+  }
+}

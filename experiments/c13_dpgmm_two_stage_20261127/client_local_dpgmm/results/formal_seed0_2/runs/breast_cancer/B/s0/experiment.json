@@ -1,0 +1,22 @@
+{
+  "group": "B",
+  "dataset": "breast_cancer",
+  "seed": 0,
+  "alpha": 0.05,
+  "dp_config": {
+    "upper_bound": 5,
+    "prior": 0.1,
+    "prune": 0.05,
+    "fit_seed": 42,
+    "max_iter": 1000,
+    "tol": 0.001,
+    "reg_covar": 1e-06
+  },
+  "smoke": false,
+  "method_code_hashes": {
+    "paired_runtime.py": "e3c0ca47f76f2a3a35a07ea1c69e14b2dfcea7d563b32540178bc12e3817b17a",
+    "protocol.py": "9f79e168906a4acbc9db32601ba720234e857ee059378c94c9eb5c3a23605f76",
+    "run_experiment.py": "2d36c1dd4a4d9704334137db6f15ed599c2bf2668b737678958a8c10367e10a9"
+  },
+  "note": "config.local_gmm=author names base transport; actual method is this group and paired_model.diff"
+}

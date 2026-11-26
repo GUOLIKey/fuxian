@@ -1,0 +1,32 @@
+{
+  "k": 4,
+  "weights": [
+    0.3999999761581421,
+    0.20000003278255463,
+    0.06666672974824905,
+    0.3333333134651184
+  ],
+  "raw_weights": [
+    0.3999999761581421,
+    0.20000003278255463,
+    0.06666672974824905,
+    0.3333333134651184
+  ],
+  "removed_mass": 0.0,
+  "converged": true,
+  "n_iter": 2,
+  "lower_bound": 19.96865463256836,
+  "warnings": [],
+  "group": "C",
+  "client_id": 4,
+  "input_sha256": "9d9c2bfbf8cf375afa8551694a8dffa426f5ba328b31fd0641ad4771c01c6571",
+  "dp_config": {
+    "upper_bound": 6,
+    "prior": 0.1,
+    "prune": 0.05,
+    "fit_seed": 42,
+    "max_iter": 1000,
+    "tol": 0.001,
+    "reg_covar": 1e-06
+  }
+}

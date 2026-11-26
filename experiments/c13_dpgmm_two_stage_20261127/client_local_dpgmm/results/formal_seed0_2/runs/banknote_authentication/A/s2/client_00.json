@@ -1,0 +1,18 @@
+{
+  "k": 1,
+  "weights": [
+    1.0
+  ],
+  "raw_weights": [
+    1.0
+  ],
+  "removed_mass": 0.0,
+  "converged": true,
+  "n_iter": 2,
+  "lower_bound": -9.649776458740234,
+  "warnings": [],
+  "group": "A",
+  "client_id": 0,
+  "input_sha256": "64cf14decbd36a343e3d054b3974319598f9b674d269332277907c02a054c006",
+  "dp_config": null
+}

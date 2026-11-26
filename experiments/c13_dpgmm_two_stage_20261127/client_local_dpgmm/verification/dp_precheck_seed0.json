@@ -1,0 +1,53 @@
+{
+  "date": "2026-11-26",
+  "stage": "after_50_AE_pretrain_before_local_GMM",
+  "seed": 0,
+  "scope": "local_latent_representation_fit_only_not_federated_training",
+  "estimator": "sklearn.mixture.BayesianGaussianMixture",
+  "covariance_type": "diag",
+  "weight_concentration_prior_type": "dirichlet_process",
+  "fit_seed": 42,
+  "max_iter": 1000,
+  "tol": 0.001,
+  "reg_covar": 0.000001,
+  "nonconverged_fits": 0,
+  "note": "Iris checkpoint was prepared with alpha=0.05; AE pretraining does not use alpha. A new alpha=0.01 checkpoint is still required for formal paired runs.",
+  "datasets": {
+    "breast_cancer": {
+      "prepared": "c13_dpgmm_3datasets_v1/bc_precheck_prepared/pre_gmm.pt",
+      "client_sizes": [115, 209, 326, 56, 218, 155, 350, 239, 138, 323],
+      "k_by_setting": {
+        "cap5_prior0.1_prune0.01": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        "cap5_prior0.1_prune0.05": [4, 4, 4, 5, 5, 4, 5, 3, 3, 5],
+        "cap10_prior0.1_prune0.01": [10, 9, 9, 10, 9, 10, 10, 10, 10, 9],
+        "cap10_prior0.1_prune0.05": [9, 5, 7, 7, 5, 5, 6, 7, 6, 7],
+        "cap10_prior0.001_prune0.01": [10, 9, 9, 10, 9, 10, 10, 10, 10, 9],
+        "cap10_prior0.001_prune0.05": [9, 5, 7, 7, 5, 5, 6, 7, 6, 7]
+      }
+    },
+    "iris": {
+      "prepared": "c13_paired_baselines_20261126/prepared/iris/s0/pre_gmm.pt",
+      "client_sizes": [58, 49, 99, 48, 15, 62, 46, 77, 46, 32],
+      "k_by_setting": {
+        "cap5_prior0.1_prune0.01": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        "cap5_prior0.1_prune0.05": [5, 4, 5, 5, 4, 5, 5, 5, 5, 5],
+        "cap10_prior0.1_prune0.01": [9, 10, 10, 10, 7, 9, 10, 9, 10, 9],
+        "cap10_prior0.1_prune0.05": [7, 9, 7, 6, 6, 6, 7, 8, 6, 7],
+        "cap10_prior0.001_prune0.01": [9, 10, 10, 10, 7, 9, 9, 9, 10, 9],
+        "cap10_prior0.001_prune0.05": [7, 9, 7, 6, 6, 6, 7, 8, 6, 7]
+      }
+    },
+    "banknote_authentication": {
+      "prepared": "c13_paired_baselines_20261126/prepared/banknote_authentication/s0/pre_gmm.pt",
+      "client_sizes": [399, 289, 383, 202, 285, 971, 628, 219, 511, 431],
+      "k_by_setting": {
+        "cap5_prior0.1_prune0.01": [5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+        "cap5_prior0.1_prune0.05": [5, 5, 5, 5, 5, 5, 5, 4, 5, 5],
+        "cap10_prior0.1_prune0.01": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "cap10_prior0.1_prune0.05": [10, 10, 8, 9, 9, 9, 9, 8, 8, 9],
+        "cap10_prior0.001_prune0.01": [10, 10, 10, 10, 10, 10, 10, 10, 10, 10],
+        "cap10_prior0.001_prune0.05": [10, 10, 8, 9, 9, 9, 9, 8, 8, 9]
+      }
+    }
+  }
+}

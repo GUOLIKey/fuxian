@@ -1,0 +1,43 @@
+test_dp_and_samek (test_mixtures.MixtureTests) ... ERROR
+test_fit_without_torch_dependency (test_mixtures.MixtureTests) ... ERROR
+test_invalid_input_and_all_pruned_rejected (test_mixtures.MixtureTests) ... ERROR
+test_dp_config_required_and_validated (test_protocol.ProtocolTests) ... ok
+test_hook_precedes_gmm (test_protocol.ProtocolTests) ... ok
+test_no_silent_dataset_or_group (test_protocol.ProtocolTests) ... ok
+test_rejects_duplicate_hook (test_protocol.ProtocolTests) ... ok
+test_samek_does_not_refit_dp (test_protocol.ProtocolTests) ... ok
+
+======================================================================
+ERROR: test_dp_and_samek (test_mixtures.MixtureTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_mixtures.py", line 12, in test_dp_and_samek
+    import paired_runtime as r
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/scripts/paired_runtime.py", line 5, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_fit_without_torch_dependency (test_mixtures.MixtureTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_mixtures.py", line 7, in test_fit_without_torch_dependency
+    import paired_runtime as r
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/scripts/paired_runtime.py", line 5, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+======================================================================
+ERROR: test_invalid_input_and_all_pruned_rejected (test_mixtures.MixtureTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/tests/test_mixtures.py", line 19, in test_invalid_input_and_all_pruned_rejected
+    import paired_runtime as r
+  File "/Users/cheeseowl/Desktop/科研/fuxian/reproduction_runs/c13_dpgmm_3datasets_v1/scripts/paired_runtime.py", line 5, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.012s
+
+FAILED (errors=3)
