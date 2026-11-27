@@ -1,5 +1,7 @@
 # C13 DPGMM 两轮实验（2026-11-27）
 
+统一表格、组名和结论以 [两轮实验统一结果](COMBINED_RESULTS_20261127.md) 为准。下列内容保留较短的发布摘要，分实验目录保留详细证据。
+
 本目录记录两轮相互独立的 FedVaDE/C13 改动。第一轮改变客户端 Local GMM；第二轮恢复客户端普通 GMM，只改变服务器潜变量采样。两轮不能合并解释为“客户端和服务器同时使用 DPGMM”的联合实验。
 
 ## 两轮实验
@@ -55,6 +57,7 @@ Iris 和 Banknote 又使用按既有 A 组表现选出的 seed4 做敏感性检�
 
 | 内容 | 位置 |
 | --- | --- |
+| 两轮实验统一表格与最终结论 | `COMBINED_RESULTS_20261127.md` |
 | 第一轮方案、参数、实现与测试 | `client_local_dpgmm/docs/`、`configs/`、`scripts/`、`tests/` |
 | 第一轮 seed0–2 日志与 JSON/JSONL | `client_local_dpgmm/results/formal_seed0_2/` |
 | 第一轮 seed3–4 补充日志与 JSON/JSONL | `client_local_dpgmm/results/formal_seed3_4/` |
