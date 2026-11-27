@@ -18,10 +18,9 @@
 | --- | --- | --- | --- | --- |
 | `A_baseline` | 第一轮 A | 按原 C13 规则固定 K 的普通 GMM | 原 FedVaDE/C13 采样 | 共同基线 |
 | `B_client_dpgmm` | 第一轮 B | DPGMM 自适应拟合 | 与 A 相同 | 检查客户端 DPGMM |
-| `K_matched_gmm` | 第一轮 C | 使用 B 得到的同一客户端 K，重新拟合普通 GMM | 与 A 相同 | 检查“只改变局部分量数”是否足够 |
 | `S_server_dpgmm` | 第二轮 C | 与 A 相同的普通 GMM | 浓度 `0.1/1.0/10.0` 的三个 DPGMM | 检查服务器多浓度划分 |
 
-`K_matched_gmm` 和 `S_server_dpgmm` 在原记录中都曾被简称为 C，但它们不是同一个实验。本文不再单独使用“C 组”称呼它们。
+第一轮的 `K_matched_gmm` 是额外消融，不是主方法，已移至 `K_MATCHED_GMM_ABLATION_20261127.md` 单独报告。本文只保留准备向学长汇报的 A、B、S。
 
 ## 3. 统一实验协议
 
@@ -51,7 +50,7 @@
 
 ## 4. 第一轮结果：客户端方法
 
-每个训练 seed 都先对 10 次推理求平均，下面再对这些固定 checkpoint 均值取算术平均。seed0–2 是原正式配对实验；seed3–4 是后来补充的 A/B 训练，没有运行 `K_matched_gmm`。因此 A/B 可以汇总五个训练 seed，而三方法对照必须限定在共同的 seed0–2。
+每个训练 seed 都先对 10 次推理求平均，下面再对这些固定 checkpoint 均值取算术平均。seed0–2 是原正式配对实验，seed3–4 是后来补充的 A/B 训练，因此 A/B 可以汇总五个训练 seed。
 
 ### 4.1 A/B 的五训练 seed 汇总
 
@@ -66,37 +65,24 @@
 
 五 seed 汇总中，B 在 Iris 和 Banknote 明显低于 A；Breast Cancer 的均值只高约 0.0033。Breast Cancer 的配对差值随训练 seed 改变方向：seed0、3、4 为正，seed1、2 为负，其中 seed2 明显下降。这个结果不支持“稳定改善”，也不能用 +0.0033 宣称有效。
 
-### 4.2 A/B/K 的共同三个训练 seed 汇总
-
-| 数据集 | 评价总体 | A_baseline | B_client_dpgmm | B − A | K_matched_gmm | K − A |
-| --- | --- | ---: | ---: | ---: | ---: | ---: |
-| Iris | unique_full | 0.491326 | 0.463676 | −0.027650 | 0.396034 | −0.095291 |
-| Iris | legacy_clients | 0.513558 | 0.492537 | −0.021021 | 0.410228 | −0.103329 |
-| Breast Cancer | unique_full | 0.492831 | 0.466702 | −0.026128 | 0.223795 | −0.269035 |
-| Breast Cancer | legacy_clients | 0.512261 | 0.480248 | −0.032014 | 0.231504 | −0.280757 |
-| Banknote | unique_full | 0.139134 | 0.006557 | −0.132577 | 0.004612 | −0.134523 |
-| Banknote | legacy_clients | 0.181059 | 0.011520 | −0.169538 | 0.013154 | −0.167904 |
-
-在共同的 seed0–2 上，`B_client_dpgmm` 和 `K_matched_gmm` 在三个数据集、两种评价总体上都低于 A。单纯把普通 GMM 的局部分量数改成 B 保留的 K 没有解决问题。B 与 K 使用相同潜在输入和相同 K，但拟合算法不同；B−K 不能被单独解释为纯粹的“贝叶斯先验贡献”。
-
-## 5. 统一 seed1 对照：四种方法使用同一训练 seed
+## 5. 统一 seed1 对照：A、B、S 使用同一训练 seed
 
 每个单元格格式为“ARI 均值 ± 推理标准差（相对 A 的差值）”。seed1 是服务器实验覆盖三个数据集的共同训练 seed，因此用于把两轮方法放在同一张表中；它不是三个数据集各自的最佳 seed。
 
-| 数据集 | 评价总体 | A_baseline | B_client_dpgmm | K_matched_gmm | S_server_dpgmm |
-| --- | --- | ---: | ---: | ---: | ---: |
-| Iris | unique_full | 0.532524 ± 0.007004 | 0.496343 ± 0.004829（−0.036181） | 0.482685 ± 0.015888（−0.049839） | 0.494698 ± 0.018023（−0.037826） |
-| Iris | legacy_clients | 0.551635 ± 0.003457 | 0.528108 ± 0.000740（−0.023527） | 0.507485 ± 0.007929（−0.044149） | 0.509104 ± 0.010695（−0.042531） |
-| Breast Cancer | unique_full | 0.626278 ± 0.012545 | 0.611066 ± 0.015320（−0.015212） | 0.593883 ± 0.012376（−0.032395） | 0.610224 ± 0.016694（−0.016054） |
-| Breast Cancer | legacy_clients | 0.638135 ± 0.007298 | 0.622993 ± 0.009492（−0.015142） | 0.602114 ± 0.008502（−0.036022） | 0.637301 ± 0.005758（−0.000834） |
-| Banknote | unique_full | 0.407751 ± 0.013747 | 0.028930 ± 0.004133（−0.378821） | 0.013799 ± 0.000925（−0.393952） | 0.495218 ± 0.019861（+0.087467） |
-| Banknote | legacy_clients | 0.511751 ± 0.010248 | 0.075124 ± 0.003503（−0.436627） | 0.039252 ± 0.002846（−0.472499） | 0.519406 ± 0.008791（+0.007655） |
+| 数据集 | 评价总体 | A_baseline | B_client_dpgmm | S_server_dpgmm |
+| --- | --- | ---: | ---: | ---: |
+| Iris | unique_full | 0.532524 ± 0.007004 | 0.496343 ± 0.004829（−0.036181） | 0.494698 ± 0.018023（−0.037826） |
+| Iris | legacy_clients | 0.551635 ± 0.003457 | 0.528108 ± 0.000740（−0.023527） | 0.509104 ± 0.010695（−0.042531） |
+| Breast Cancer | unique_full | 0.626278 ± 0.012545 | 0.611066 ± 0.015320（−0.015212） | 0.610224 ± 0.016694（−0.016054） |
+| Breast Cancer | legacy_clients | 0.638135 ± 0.007298 | 0.622993 ± 0.009492（−0.015142） | 0.637301 ± 0.005758（−0.000834） |
+| Banknote | unique_full | 0.407751 ± 0.013747 | 0.028930 ± 0.004133（−0.378821） | 0.495218 ± 0.019861（+0.087467） |
+| Banknote | legacy_clients | 0.511751 ± 0.010248 | 0.075124 ± 0.003503（−0.436627） | 0.519406 ± 0.008791（+0.007655） |
 
 seed1 下，`S_server_dpgmm` 在 Iris 低于 A；Breast Cancer 仅在 `legacy_clients` 上与 A 数值接近，但 `unique_full` 仍低 0.016054；Banknote 在两种评价总体上高于 A。由于这只是一次训练，不能据此把 Breast Cancer 写成等价，也不能把 Banknote 写成稳定提升。
 
 ## 6. seed4 敏感性检查
 
-Iris 和 Banknote 的 seed4 是依据既有 `A_baseline` 在训练 seed 0–4 中的表现选出的强基线案例，因此属于事后敏感性检查，不是预先规定的多训练 seed 总体估计。`K_matched_gmm` 没有运行 seed4。
+Iris 和 Banknote 的 seed4 是依据既有 `A_baseline` 在训练 seed 0–4 中的表现选出的强基线案例，因此属于事后敏感性检查，不是预先规定的多训练 seed 总体估计。
 
 | 数据集 | 评价总体 | A_baseline | B_client_dpgmm | S_server_dpgmm |
 | --- | --- | ---: | ---: | ---: |
@@ -124,15 +110,14 @@ Iris seed4 的 S 仍低于 A。Banknote seed1 的正向结果没有保持：seed
 ## 8. 统一结论
 
 1. **客户端 DPGMM 没有显示稳定收益。** 在共同的 seed0–2 上，B 在三个数据集、两种评价总体上全部低于 A；扩展到 seed0–4 后，Iris 和 Banknote 仍明显下降，Breast Cancer 仅高约 0.0033，而且配对差值随 seed 改变方向。
-2. **只改变局部分量数也没有解决问题。** `K_matched_gmm` 的三 seed 平均结果同样全部低于 A，而且在 Iris、Breast Cancer 上下降更大。
-3. **服务器多浓度 DPGMM 没有稳定收益。** Iris 在 seed1 和 seed4 均低于 A；Breast Cancer seed1 只在有重复记录的 `legacy_clients` 上接近 A；Banknote seed1 的正向结果在 seed4 大幅反向。
-4. **服务器方法对训练 seed 敏感。** Banknote 的 `unique_full` 从 seed1 的 0.495218 变为 seed4 的 0.072223，不能把单个 seed 的改善写成方法结论。
-5. **“多浓度”不等于稳定多粒度层次。** 三档 DPGMM 经常产生不同 K，但逐轮 K 顺序不可靠。当前结果没有证明学长所说的 Multi-CA 式多粒度结构已经实现。
-6. **现有结果不支持组合协同。** S 在若干案例中明显高于 B，只能说明服务器改法没有出现客户端 B 那么严重的下降；由于没有联合组，不能推断客户端和服务器同时使用 DPGMM 会有效。
-7. **负面结果不是明显的数值崩溃。** 服务器方法的五条正式训练均完成 300 轮，`status=ok`、`nan_events=0`，结构日志没有 warning，DPGMM 路径确实被调用。
-8. **结论范围有限。** 客户端 A/B 有五个训练 seed，但 `K_matched_gmm` 只有 seed0–2；服务器主比较只有 seed1，seed4 又是基线选出的敏感性案例。10 个推理 seed 不是独立训练。不能宣称统计显著、独立测试泛化或“DPGMM 普遍无效”。
+2. **服务器多浓度 DPGMM 没有稳定收益。** Iris 在 seed1 和 seed4 均低于 A；Breast Cancer seed1 只在有重复记录的 `legacy_clients` 上接近 A；Banknote seed1 的正向结果在 seed4 大幅反向。
+3. **服务器方法对训练 seed 敏感。** Banknote 的 `unique_full` 从 seed1 的 0.495218 变为 seed4 的 0.072223，不能把单个 seed 的改善写成方法结论。
+4. **“多浓度”不等于稳定多粒度层次。** 三档 DPGMM 经常产生不同 K，但逐轮 K 顺序不可靠。当前结果没有证明学长所说的 Multi-CA 式多粒度结构已经实现。
+5. **现有结果不支持组合协同。** S 在若干案例中明显高于 B，只能说明服务器改法没有出现客户端 B 那么严重的下降；由于没有联合组，不能推断客户端和服务器同时使用 DPGMM 会有效。
+6. **负面结果不是明显的数值崩溃。** 服务器方法的五条正式训练均完成 300 轮，`status=ok`、`nan_events=0`，结构日志没有 warning，DPGMM 路径确实被调用。
+7. **结论范围有限。** 客户端 A/B 有五个训练 seed；服务器主比较只有 seed1，seed4 又是基线选出的敏感性案例。10 个推理 seed 不是独立训练。不能宣称统计显著、独立测试泛化或“DPGMM 普遍无效”。
 
-最窄且准确的总结是：**在当前 C13、作者重叠划分和已记录参数下，客户端 DPGMM 没有表现出跨数据集、跨训练 seed 的稳定收益，按其 K 重拟合普通 GMM 在共同的三个 seed 上也没有改善；服务器三浓度 DPGMM 能产生不同划分，但没有形成稳定有序层次，其 ARI 收益对训练 seed 不稳定。**
+最窄且准确的总结是：**在当前 C13、作者重叠划分和已记录参数下，客户端 DPGMM 没有表现出跨数据集、跨训练 seed 的稳定收益；服务器三浓度 DPGMM 能产生不同划分，但没有形成稳定有序层次，其 ARI 收益对训练 seed 不稳定。**
 
 ## 9. 后续决定
 
@@ -142,6 +127,7 @@ Iris seed4 的 S 仍低于 A。Banknote seed1 的正向结果没有保持：seed
 
 - 客户端方法详细报告：本地 `../c13_dpgmm_3datasets_v1/docs/FORMAL_RESULTS_20261127.md`；GitHub 发布包 `client_local_dpgmm/docs/FORMAL_RESULTS_20261127.md`。
 - 固定 checkpoint 补充表：本地 `../c13_dpgmm_3datasets_v1/docs/FIXED_CHECKPOINT_INFERENCE_RESULTS_20261127.md`；GitHub 发布包 `client_local_dpgmm/docs/FIXED_CHECKPOINT_INFERENCE_RESULTS_20261127.md`。
+- K 对照消融：`K_MATCHED_GMM_ABLATION_20261127.md`。
 - 服务器方法详细报告：本地 `../c13_server_dpgmm_multigranularity_v1/docs/C_SERVER_DPGMM_RESULTS_20261127.md`；GitHub 发布包 `server_multiconcentration_dpgmm/docs/C_SERVER_DPGMM_RESULTS_20261127.md`。
 - 客户端 seed0–2 原始结果：本地 `../c13_dpgmm_3datasets_v1/server_formal/`；GitHub 发布包 `client_local_dpgmm/results/formal_seed0_2/`。
 - 服务器 seed1 与 seed4 原始日志、评价 JSON 和结构 JSONL 保留在服务器，并已发布到 GitHub 实验分支；模型权重和数据未上传。
